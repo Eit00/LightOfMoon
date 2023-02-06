@@ -32,16 +32,22 @@ TabList:
     PlayerName: '[playerDisplayName]'
     Header:
       '1':
-      - '&f------------------------------------'
-      - '&7Welcome'
-      - '&7Online &f%server_online%&7/&f%server_max_players%'
-      - '&f------------------------------------'
+      - '&d----------------------------------&9----------------------------------'
+      - ''
+      - '&dLight O&9f Moon'
+      - ''
+      - '&aОнлайн: &f%server_online%&7/&f%server_max_players%'
+      - ''
+      - '&d----------------------------------&9----------------------------------'
     Footer:
       '1':
-      - '&f------------------------------------'
-      - '&7%player_world% &f%player_x%:&7%player_y%:&f%player_z%'
-      - '&7Money: &f%vault_eco_balance_formatted% &7Time: &f%server_time_HH:mm:ss%'
-      - '&f------------------------------------'
+      - '&d----------------------------------&9----------------------------------'
+      - ''
+      - '&aНаигранное время: %cmi_user_playtime_formatted%'
+      - '&aДеньги: &c%vault_eco_balance_formatted%'
+      - '&aОнлайн карта мира: &chttp://5.105.48.90:8123'
+      - ''
+      - '&d----------------------------------&9----------------------------------'
   useGeneralName: false
   # When this set to true, in case you dint defined PlayerName, Header or Footer in GroupFormat, then default one from GeneralFormat will be used
   useGeneralHeader: false
