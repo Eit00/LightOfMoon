@@ -262,22 +262,22 @@ Economy:
   # Server economy account
   # With this enabled, players will get money from defined user (server account)
   # If this account don't have enough money to pay for players for, player will get message
-  UseServerAccount: false
+  UseServerAccount: true
   # Username should be with Correct capitalization
-  AccountName: Server
+  AccountName: LightOfMoon
   Taxes:
     # Do you want to use taxes feature for jobs payment?
     # You can bypass taxes with permission jobs.tax.bypass
-    use: false
+    use: true
     # Username should be with Correct capitalization, it can be same as setup in server account before
-    AccountName: Server
+    AccountName: LightOfMoon
     # Amount in percentage. You can grant money and points permissions (jobs.tax.money.amount, jobs.tax.points.amount) for taxes.
     Amount: 15.0
     # Do you want to transfer taxes to server account?
     TransferToServerAccount: true
     # With this true, taxes will be taken from players payment and he will get less money than its shown in jobs info
     # When its false player will get full payment and server account will get taxes amount to hes account
-    TakeFromPlayersPayment: false
+    TakeFromPlayersPayment: true
   Limit:
     # Money gain limit
     # With this enabled, players will be limited how much they can make in defined time

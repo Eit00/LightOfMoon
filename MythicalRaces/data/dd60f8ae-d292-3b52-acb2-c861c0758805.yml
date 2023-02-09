@@ -1,0 +1,22 @@
+race: Dragonborn
+time: '0'
+Human:
+  level: 1
+  xp: 2
+forceRace: false
+playerName: Eit0_
+Elf:
+  level: 1
+  xp: 0
+Dwarf:
+  level: 1
+  xp: 2
+Angel:
+  level: 1
+  xp: 0
+Merfolk:
+  level: 1
+  xp: 2
+Dragonborn:
+  level: 3
+  xp: 20
