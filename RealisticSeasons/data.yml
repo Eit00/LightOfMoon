@@ -1,0 +1,38 @@
+players:
+  colorsdisabled: []
+  tempdisabled: []
+  particlesdisabled: []
+  knownplayers:
+  - dd60f8ae-d292-3b52-acb2-c861c0758805
+  - 603a1793-3846-3db8-b304-ff1eddf01220
+  - db290f3f-9bc2-3b38-b7c4-6dc3cf846041
+  - 3cc42df8-22d6-3c1f-b277-69b3926f6e43
+  - 15ed1ec9-09be-3013-be0f-9b1a50f13b36
+  - de81d87d-3df0-3c41-bd3f-3574fd1a3fdb
+  - 23a69934-9926-3230-bb2a-2f4e1055b204
+  - 224c4e45-59f9-38f6-a210-fbbe74d3a431
+  - adf35fa2-0926-30d5-92f8-8c57c0b521be
+  - ae914f49-82df-3be7-95ad-86252907de95
+  - cbedbe40-7ff0-3177-bdc4-8008a5ce96cf
+  - 0156eefb-549d-3eb2-a166-92582bc05e99
+  - ec5c596a-d73c-3280-95c6-3d8d456bdd06
+  - d56980b2-1776-3183-af46-2a5a17298dbf
+  - 80b365d9-399c-383c-8e83-bafd73cde446
+  - 17d989a5-114c-3037-9970-ca4faa364a08
+  - 84264ae2-ee7a-3764-b836-ba23a0301353
+  fahrenheit-mode: []
+worlds:
+  world: SUMMER
+dates:
+  world:
+    day: 3
+    month: 6
+    year: 2
+temperature:
+  world: true
+time-paused: []
+placedblocks:
+  world:
+  - -220,114,105,world
+  - -222,114,105,world
+  - 846,68,-309,world
