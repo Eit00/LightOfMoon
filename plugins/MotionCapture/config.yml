@@ -1,0 +1,2 @@
+# Enable start of animations if any region trigger is registered for that animation
+regions_triggers: true

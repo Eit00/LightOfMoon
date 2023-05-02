@@ -1,0 +1,193 @@
+Engineer:
+  fullname: Инженер
+  shortname: И
+  FullDescription:
+  - "Зарабатывает на крафте механизмов."
+  ChatColour: DARK_GRAY
+  chat-display: full
+  max-level: 450
+  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*2)
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Готов к рааааботе
+      Objectives:
+      - Place;rail;50
+      - Craft;rail;50
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Инженер add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Скрафтите и поставьте 50 обычных рельсов
+      - Получите 1000 лунитов и опыта!
+  Gui:
+    Item: redstone_lamp
+  Place:
+    rail:
+      income: 0.25
+      points: 0.5
+      experience: 0.5
+  Craft:
+    lever:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    oak_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    stone_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    spruce_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    birch_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    jungle_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    acacia_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    dark_oak_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    mangrove_button:
+      income: 1.0
+      points: 2.0
+      experience: 2.0
+    crimson_button:
+      income: 1.5
+      points: 3.0
+      experience: 3.0
+    warped_button:
+      income: 1.5
+      points: 3.0
+      experience: 3.0
+    polished_blackstone_button:
+      income: 1.5
+      points: 3.0
+      experience: 3.0
+    repeater:
+      income: 1.5
+      points: 3.0
+      experience: 3.0
+    comparator:
+      income: 1.5
+      points: 3.0
+      experience: 3.0
+    dispenser:
+      income: 2.5
+      points: 5.0
+      experience: 5.0
+    dropper:
+      income: 2.5
+      points: 5.0
+      experience: 5.0
+    observer:
+      income: 2.5
+      points: 5.0
+      experience: 5.0
+    redstone_lamp:
+      income: 2.5
+      points: 5.0
+      experience: 5.0
+    beacon:
+      income: 500.0
+      points: 1000.0
+      experience: 1000.0
+    conduit:
+      income: 500.0
+      points: 1000.0
+      experience: 1000.0
+  commands:
+    engineer_craft_1:
+      command:
+      - lp user [player] permission set engineer.rail
+      - lp user [player] permission set engineer.hopper
+      - lp user [player] permission set engineer.rail
+      - lp user [player] permission set engineer.lighting_rod
+      - lp user [player] permission set engineer.comparator
+      - lp user [player] permission set engineer.piston
+      - lp user [player] permission set engineer.redstone_lamp
+      - lp user [player] permission set engineer.note_block
+      - lp user [player] permission set engineer.hopper
+      - lp user [player] permission set engineer.daylight_detector
+      levelFrom: 100
+      levelUntil: 200
+    engineer_craft_2:
+      command:
+      - lp user [player] permission set engineer.hook
+      - lp user [player] permission set engineer.repeater
+      - lp user [player] permission set engineer.compass
+      - lp user [player] permission set engineer.clock
+      - lp user [player] permission set engineer.plate
+      - lp user [player] permission set engineer.iron_door
+      levelFrom: 50
+      levelUntil: 100
+    engineer_craft_3:
+      command:
+      - lp user [player] permission set engineer.beacon
+      - lp user [player] permission set engineer.tnt
+      levelFrom: 400
+      levelUntil: 450
+    engineer_craft_3:
+      command:
+      - lp user [player] permission set engineer.conduit
+      levelFrom: 350
+      levelUntil: 400
+    engineer_craft_4:
+      command:
+      - lp user [player] permission set engineer.button
+      levelFrom: 30
+      levelUntil: 100
+    engineer_craft_5:
+      command:
+      - lp user [player] permission set engineer.spyglass
+      - lp user [player] permission set engineer.sticky_piston
+      - lp user [player] permission set engineer.minecart
+      - lp user [player] permission set engineer.jukebox
+      levelFrom: 200
+      levelUntil: 300
+    engineer_craft_6:
+      command:
+      - lp user [player] permission set engineer.crossbow
+      - lp user [player] permission set engineer.firework
+      levelFrom: 250
+      levelUntil: 300
+    engineer_craft_7:
+      command:
+      - lp user [player] permission set engineer.observer
+      - lp user [player] permission set engineer.dropper
+      - lp user [player] permission set engineer.dispenser
+      levelFrom: 300
+      levelUntil: 400
+    engineer_craft_8:
+      command:
+      - lp user [player] permission set engineer.recovery_compass
+      levelFrom: 350
+      levelUntil: 400
+  permissions:
+    1:
+      value: true
+      permission: engineer.lever 
+      level: 0
+    2:
+      value: true
+      permission: engineer.redstone_torch
+      level: 0

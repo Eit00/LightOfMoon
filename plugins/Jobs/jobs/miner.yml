@@ -1,0 +1,138 @@
+Miner:
+  fullname: Шахтер
+  shortname: Ш
+  FullDescription:
+  - "Зарабатывает через добычу минералов и выплавку."
+  ChatColour: DARK_GRAY
+  chat-display: full
+  max-level: 450
+  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*2)
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Пора в шахту!
+      Objectives:
+      - Break;iron_ore;15
+      - Break;coal_ore;20
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Шахтер add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Добудьте 20 угля и 15 железной руды
+      - Получите 1000 лунитов и опыта!
+    '2':
+      Name: Куй пока горячо!
+      Objectives:
+      - Smelt;iron_ingot;30
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Шахтер add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Переплавьте 30 железных слитков
+      - Получите 1000 лунитов и опыта!
+    '3':
+      Name: Спускаемся поблубже
+      Objectives:
+      - Break;deepslate_iron_ore;15
+      - Break;deepslate_coal_ore;20
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Шахтер add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Добудьте 20 сланцевого угля и 15 сланцевой железной руды
+      - Получите 1000 лунитов и опыта!
+  Gui:
+    Item: netherite_pickaxe
+  Break:
+    coal_ore:
+      income: 1.5
+      points: 2
+      experience: 2
+    deepslate_coal_ore:
+      income: 2
+      points: 3
+      experience: 3
+    redstone_ore:
+      income: 1.25
+      points: 2
+      experience: 2
+    deepslate_redstone_ore:
+      income: 1.75
+      points: 3
+      experience: 3
+    copper_ore:
+      income: 1.75
+      points: 3
+      experience: 2
+    deepslate_copper_ore:
+      income: 2.25
+      points: 4
+      experience: 3
+    iron_ore:
+      income: 1.75
+      points: 3
+      experience: 2
+    deepslate_iron_ore:
+      income: 2.25
+      points: 4
+      experience: 3
+    gold_ore:
+      income: 2.5
+      points: 4
+      experience: 2
+    deepslate_gold_ore:
+      income: 3
+      points: 5
+      experience: 3
+    lapis_ore:
+      income: 3.75
+      points: 6
+      experience: 2
+    deepslate_lapis_ore:
+      income: 4.25
+      points: 7
+      experience: 3
+    diamond_ore:
+      income: 5
+      points: 10
+      experience: 10
+    deepslate_diamond_ore:
+      income: 6.25
+      points: 12.5
+      experience: 12.5
+    emerald_ore:
+      income: 7.5
+      points: 15
+      experience: 30
+    deepslate_emerald_ore:
+      income: 8.75
+      points: 17.5
+      experience: 35
+    nether_quartz_ore:
+      income: 1.25
+      points: 2.5
+      experience: 2.5
+  Smelt:
+    iron_ingot:
+      income: 0.65
+      points: 1.3
+      experience: 2.0
+    gold_ingot:
+      income: 2.5
+      points: 5.0
+      experience: 10
+  commands:
+    miner_craft_1:
+      command:
+      - lp user [player] permission set netherite.netherite_craft
+      levelFrom: 100
+      levelUntil: 150

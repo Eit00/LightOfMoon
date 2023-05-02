@@ -1,0 +1,45 @@
+Stats:
+  TotalFluxFound: 0
+  MoneyMade: 0.0
+  BlocksMined: 0
+  GemsFound: 0
+  RuneGuardiansKilled: 0
+  OraclesKilled: 0
+  Basic: 0
+  Blazed: 0
+  ArtifactsIdentified: 0
+  ArtifactsFound: 0
+  FossilsIdentified: 0
+  VesselsCreated: 0
+Singularity:
+  Level: 1
+  Active: false
+  Blocks: 0
+  Points: 0
+  Runes:
+  - Ground,1
+  Upgrades:
+  - ORACLE_DAMAGE,0
+  - REQUIUM_PROGRESS,0
+  - RUNE_DROP_CHANCE,0
+  - MORE_ZETA,0
+  - CHEAPER_UPGRADES,0
+Passives:
+  Zeta: 0
+  SkillTree:
+    Level: 0
+    XP: 0
+    RequiredXP: 2000
+Pickaxe:
+  OpenMenu: MAIN_MENU
+TheUnknown:
+  Marked: false
+Artifacts:
+  Upgrades:
+    Overclocked: 0
+    Patience: 0
+    Archaeologist: 0
+    LuckyCharm: 0
+    Requium: 0
+Events:
+  Halloween: false

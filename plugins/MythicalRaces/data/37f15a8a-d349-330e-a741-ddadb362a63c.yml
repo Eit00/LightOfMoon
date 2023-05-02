@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 6
+  xp: 96
+forceRace: true
+playerName: KOTEKOTEIH

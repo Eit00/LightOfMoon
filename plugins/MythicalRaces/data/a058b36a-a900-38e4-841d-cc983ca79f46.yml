@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 5
+  xp: 78
+forceRace: true
+playerName: HELP1488

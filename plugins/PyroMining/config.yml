@@ -1,0 +1,495 @@
+#======================================================================================================
+#_ ________                         _____  .__       .__                
+#\______   \___.__._______  ____   /     \ |__| ____ |__| ____    ____  
+# |     ___<   |  |\_  __ \/  _ \ /  \ /  \|  |/    \|  |/    \  / ___\ 
+# |    |    \___  | |  | \(  <_> )    Y    \  |   |  \  |   |  \/ /_/  >
+# |____|    / ____| |__|   \____/\____|__  /__|___|  /__|___|  /\___  / 
+#           \/                           \/        \/        \//_____/    
+#======================================================================================================
+#                     Plugin Created by: PyroTempus
+#                         Config Version: v4.4.3
+#               This will work on versions: 1.14.X - 1.19.X
+#======================================================================================================
+
+#General Settings
+Settings:
+
+  #What worlds should the plugin features be disabled in.
+  DisabledWorlds:
+  - 'example_world'
+  
+  #Same as above - but this will only disable custom mobs from spawning in these worlds.
+  DisableCustomMobWorlds:
+  - 'example_world'
+    
+  #Other settings to consider  
+  Other:
+    
+    #The currency symbol. (Shown in the /mine shop)
+    CurrencySymbol: '$'
+    
+    #This will not give the player any money from selling, but will however run a command
+    #with the amount of money they would have gotten. E.g. for giving a physical currency
+    #or using a currency that isn't supported by Vault.
+    UseCommandSelling:
+      Enabled: false
+      #%player% for the player. %money% for the money they would have gotten.
+      #Supports multiple commands
+      Commands:
+        - 'eco give %player% %money%'
+        - 'msg %player% You got %money%$!'
+    
+    #This option will make "/mine" open the menu instead of "/mine menu"
+    MakeMineOpenMenu: false
+    
+    #This will hide the back arrows in the menus.
+    HideBackArrows: false
+    
+    #Only enable this if you are having issues with items selling
+    #for more then their intended price. 
+    MineShopOveride: false
+    
+    #This will disable the right clicking to open certain mining menus.
+    DisablePickaxeView: false
+    
+    #This will make it so when you add a 'backarrow-command' item to the mainmenu.yml
+    #it will execute the following commands when clicked. 
+    #This item is in the file but commented out, feel free to uncomment it to use this.
+    MainMenuBackArrow:
+      Commands:
+        - 'example command 1'
+
+#======================================================================================================
+
+#GUI Permission Nodes for each GUI.
+#Feel free to edit these permissions to be whatever you want.
+#If the permission is not enabled, it will not work.
+GUIPermissions:
+
+  Main:
+    enabled: false
+    Permission: 'mine.mainmenu'
+    
+  Shop:
+    enabled: false
+    Permission: 'mine.shop'
+
+  Stats:
+    enabled: false
+    Permission: 'mine.stats'
+    
+  Journal:
+    enabled: false
+    Permission: 'mine.journal'
+    
+  Artifacts:
+    enabled: false
+    Permission: 'mine.artifacts'
+    
+  Vessels:
+    enabled: false
+    Permission: 'mine.vessels'
+    
+  Singularity:
+    enabled: false
+    Permission: 'mine.singularity'
+
+#======================================================================================================
+
+#Fluxes are now a singular item with different states. Fluxes can be sold or used for multiple things.
+Fluxes:
+  
+  #Sell Prices
+  Prices:
+    Basic: 500
+    Blazed: 350
+
+  #Chances support 3 decimals place E.g. 0.005
+  #These chances do not have to equal 100 since they are independent between each other.
+  #You could do 100 for each of them if you really wanted to.
+  Chances:
+    Basic: 5.000
+    Blazed: 5.000
+    
+  #These are the blocks that the fluxes will drop from.  
+  #You can make any block drop fluxes, and add as many as you want.
+  Blocks:
+    #Normal Fluxes or 'Basic Fluxes' will only drop in the overworld. 
+    #These will name check - e.g. "DIAMOND_ORE" will work for both "DIAMOND_ORE" and "DEEPSLATE_DIAMOND_ORE".
+    #Use "DEEPSLATE_DIAMOND_ORE" if you don't want regular diamond ore to work.
+    Normal:
+      - 'COAL_ORE'
+      - 'LAPIS_ORE'
+      - 'DIAMOND_ORE'
+      - 'REDSTONE_ORE'
+      - 'EMERALD_ORE'
+    
+    #Blazed Fluxes will only drop in the nether.    
+    Blazed:
+      - 'NETHER_QUARTZ_ORE'
+
+
+#======================================================================================================
+    
+#Gemstone information and settings
+Gemstones:
+
+  #The multiplier that each Gemstone gets on its base sell price. Tier 1 at damaged would therefore give $180 instead of $200
+  QualityMultipliers:
+    Ruined: 0.70
+    BadlyDamaged: 0.80
+    Damaged: 0.90
+    Worn: 1.2
+    Pristine: 1.5
+    
+  #Sell Prices per tier for the Gemstones
+  SellPrices:
+    Tier1: 500.00
+    Tier2: 750.00
+    Tier3: 1000.00
+    Tier4: 1500.00
+    Tier5: 2000.00
+    Tier6: 2500.00
+    
+  #These are the drop chances
+  #These do not have to equal 100 they are independant.
+  #These are in percents as 2.000 meaning 2%
+  DropChances:
+    Tier1: 2.000
+    Tier2: 2.000
+    Tier3: 2.000
+    Tier4: 2.000
+    Tier5: 2.000
+    Tier6: 2.000
+    
+  #These are the blocks that each tier / gemstone will drop from.
+  #These will name check - e.g. "DIAMOND_ORE" will work for both "DIAMOND_ORE" and "DEEPSLATE_DIAMOND_ORE".
+  #Use "DEEPSLATE_DIAMOND_ORE" if you don't want regular diamond ore to work.
+  Blocks:
+    Tier1: COAL_ORE
+    Tier2: REDSTONE_ORE
+    Tier3: NETHER_QUARTZ_ORE
+    Tier4: LAPIS_ORE
+    Tier5: EMERALD_ORE
+    Tier6: DIAMOND_ORE
+        
+#======================================================================================================
+    
+#These are all the settings for Mysterious Dust. (Please note if you change anything here
+#Previous Mysterious Dust will NOT stack with old but will still be functional.
+MysteriousDust:
+
+  #The drop chance for Mysterious Dust when breaking ores.
+  DropChance: 1
+  
+  #The drop table. All these items will drop from Mysterious Dust when refining it.
+  DropTable:
+    #These chances are calculated as a % chance to get one from each.
+    RuneDust: 75
+    Oracleite: 4
+    AncientRelic: 7
+    ShatteredOrb: 10
+    
+    
+#======================================================================================================
+
+#All of the settings, drop tables and stats for artifacts
+Artifacts:
+
+  #Chance to get an artifact from breaking an ore.
+  DropChance: 0.8
+  
+  #Chance to get each tier of artifact when the dropchance is met.
+  #Lower the name in the list the rarer they should be.
+  #These SHOULD and HAVE to equal 100%!
+  ChanceForEachTier:
+    Basic: 42
+    Unusual: 21
+    Epic: 14
+    Exceptional: 10
+    Legendary: 6
+    Fabled: 4
+    Mythic: 2.4
+    Celestial: 0.5
+    Divine: 0.1
+  
+  #Time it takes to identify inside of the artifact identifier station 
+  #Time is in minutes. 
+  IdentifyTime:
+    Basic: 20
+    Unusual: 40
+    Epic: 60
+    Exceptional: 90
+    Legendary: 120
+    Fabled: 160
+    Mythic: 200
+    Celestial: 240
+    Divine: 280
+
+  #Sell price if players would rather sell the artifacts instead of identifying them.
+  SellPrice:
+    Basic: 500
+    Unusual: 800
+    Epic: 1500
+    Exceptional: 3000
+    Legendary: 4000
+    Fabled: 5000
+    Mythic: 6000
+    Celestial: 7500
+    Divine: 10000
+
+#======================================================================================================
+
+#Obtained from identifying artifacts randomly
+Fossils:
+
+  #In seconds
+  IdentifyTime: 3600
+
+#====================================================================================================== 
+  
+Vessels:
+  
+  #Everything to do with the actual boss
+  Boss:
+    Health: 150
+    Damage: 2
+    
+    #This scales with the amount of vessels on a pickaxe.
+    PerLevel:
+      Health: 50
+      Damage: 2
+      
+    #Note that the default maximum health is 2048. To exceed this, you must increase this in the spigot.yml
+    MaxHealth: 2000
+    
+    #Set this to -1 for there to be no limit.
+    MaxDamage: -1
+
+  #The minions that help to progress requium progress on vessels.
+  Thralls:
+    Health: 12
+    Damage: 2
+    
+    #This scales with the amount of vessels on a pickaxe.
+    PerLevel:
+      Health: 2
+      Damage: 1
+    
+    #This is per-block mined. There is minimum 2 minute cooldown between them spawning regardless of chance.
+    ChanceToSpawn: 7
+
+    #The requium progress to add on each thrall kill.
+    ProgressToGive:
+      Minimum: 5.25
+      Maximum: 10.75 
+
+    #The vessel anger to add on each thrall kill.
+    AngerToGive:
+      Minimum: 1.00
+      Maximum: 5.00
+
+
+#======================================================================================================
+    
+#These are the runes for the passive system.
+Runes:
+
+  #This is the chance that a Rune Guardian when killed will drop an actual rune.
+  #Given all the multipliers, I wouldn't change this from 50.
+  RuneDropChance: 50
+  
+  #This will drop bonus experience (not plugin related) when you kill the mob.
+  XPMultiplier: 8
+  
+  #The cooldown of spawning guardians. In seconds.
+  CooldownTime: 45
+  
+  #These are the stats of the Rune Guardians 
+  GuardianMobs:
+    Health: 200
+    DespawnTime: 120
+    Damage: 10
+    #The guardian will teleport to the player.
+    ChanceToTeleportToPlayer: 20
+    MovementSpeed: 0.32
+    KnockbackResistance: 0.7
+    
+  #The block players have to click to summon a rune guardian
+  #if you change this, remember to change it inside of the messages.yml too
+  #This will name check - e.g. "REDSTONE_ORE" will work for both "REDSTONE_ORE" and "DEEPSLATE_REDSTONE_ORE".
+  #Use "DEEPSLATE_REDSTONE_ORE" if you don't want regular redstone ore to work.
+  SummonBlock: REDSTONE_ORE
+ 
+#====================================================================================================== 
+
+Oracles:
+  
+  #The block used to summon oracles
+  #This will name check - e.g. "EMERALD_ORE" will work for both "EMERALD_ORE" and "DEEPSLATE_EMERALD_ORE".
+  #Use "DEEPSLATE_EMERALD_ORE" if you don't want regular emerald ore to work.
+  SummonBlock: EMERALD_ORE
+  
+  #If a broadcast message should be broadcasted whenever an oracle is killed.
+  BroadcastOnDeath: true
+
+  #This is the stuff needed to spawn Oracles
+  Oracleite:
+    #The amount of Diamond Ore needed for it to become charged. Changing this will only affect
+    #newly obtained Uncharged Oracleite.
+    #Deepslate Diamond Ore also works for this.
+    AmountOfOreForCharged: 35
+    
+  #This is the amount of time between summons - in seconds
+  CooldownTime: 3600
+  
+  #This is the minimum level to summon oracles.
+  MinimumLevel:
+    Phase1: 40
+    Phase2: 45
+    Phase3: 50
+
+  #Notes:
+  #You cannot add items to the drop tables currently.
+  Bosses:
+    Phase1:
+      #Feel free to change these but these bosses are meant to be super end-game with custom gear the plugin offers
+      Boss:
+        Health: 1100
+        Damage: 14
+        SetNameAlwaysVisible: true
+        #This is a multiplier on the base value.
+        MovementSpeed: 1.3
+        KnockbackResistance: 1
+        #This is a general chance to teleport when hit with anything from the player
+        TeleportChanceGeneral: 10
+      Drops:
+        MYTHIC_ARTIFACT: 60
+        ZETA_TEAR: 50
+        HELL_RUNE: 100
+        RUNE_DUST: 65
+        FOSSIL_TRANSMUTER: 65
+        RADALITE_CLAW: 100
+        FABLED_ARTIFACT: 75
+        ExperienceMultiplier: 3
+        
+    Phase2:
+      #Feel free to change these but these bosses are meant to be super end-game with custom gear the plugin offers
+      Boss:
+        Health: 1600
+        Damage: 18
+        SetNameAlwaysVisible: true
+        #This is a multiplier on the base value.
+        MovementSpeed: 1.5
+        KnockbackResistance: 1
+        #This is a general chance to teleport when hit with anything from the player
+        TeleportChanceGeneral: 10
+      Drops:
+        CELESTIAL_ARTIFACT: 75
+        ZETA_TEAR: 50
+        ANCIENT_RELIC: 75
+        DIVINE_ARTIFACT: 60
+        BONE_MARROW: 50
+        LIGHT_RUNE: 100
+        ExperienceMultiplier: 5
+       
+    Phase3:
+      #Feel free to change these but these bosses are meant to be super end-game with custom gear the plugin offers
+      Boss:
+        Health: 2000
+        Damage: 28
+        SetNameAlwaysVisible: true
+        #This is a multiplier on the base value.
+        MovementSpeed: 1.75
+        KnockbackResistance: 1
+        #This is a general chance to teleport when hit with anything from the player
+        TeleportChanceGeneral: 10
+      Drops:
+        ExperienceMultiplier: 10
+        ABYSSAL_SHARD: 80
+        ABYSSAL_ACCELERATOR: 60
+        ASTRAL_RUNE: 100
+        ASTRALITE: 50
+        CELESTIAL_ARTIFACT: 90
+        DIVINE_ARTIFACT: 75
+        ZETA_TEAR: 70
+        
+      
+#====================================================================================================== 
+
+#This is the custom currency for the plugin.
+Zeta:
+  #I suggest keeping these values at default. 
+  #You can add your own blocks here if you so wish.
+  #Names will automatically check for similar names, e.g. "DIAMOND_ORE" will work for "DEEPSLATE_DIAMOND_ORE". 
+  #To disable this, add an entry for the deepslate and the regular one. It will always check for exact first before matching.
+  Amounts:
+    COAL_ORE: 30
+    REDSTONE_ORE: 70
+    LAPIS_ORE: 130
+    DIAMOND_ORE: 350
+    EMERALD_ORE: 400
+    NETHER_QUARTZ_ORE: 30
+    IRON_ORE: 40
+    GOLD_ORE: 90
+    
+  #This is enabled by default and will ignore iron & gold ores even if they
+  #are on the list and the server is on 1.16.X
+  #This is to prevent abuse. 
+  LegacyOreDisabler: true
+    
+#======================================================================================================
+
+#This refers to the leveling system that the plugin uses.
+MiningLevels:
+
+  #This is the amount of XP you get from breaking ores. 
+  #Please note that you start off needing 2000 XP that that scales by 1.125x each level.
+  #You can add your own blocks here if you so wish.
+  #Names will automatically check for similar names, e.g. "DIAMOND_ORE" will work for "DEEPSLATE_DIAMOND_ORE". 
+  #To disable this, add an entry for the deepslate and the regular one. It will always check for exact first before matching.
+  Amounts:
+    COAL_ORE: 15
+    REDSTONE_ORE: 35
+    LAPIS_ORE: 50
+    DIAMOND_ORE: 150
+    EMERALD_ORE: 200
+    NETHER_QUARTZ_ORE: 15
+    IRON_ORE: 25
+    GOLD_ORE: 40
+    
+  #This is enabled by default and will ignore iron & gold ores even if they
+  #are on the list and the server is on 1.16.X
+  #This is to prevent abuse. 
+  LegacyOreDisabler: true
+
+  #This is the multiplier that the required xp for the next level is calculated.
+  #An example would be the first level needing 2000xp. The next level would then need 2000*1.15 xp.
+  MiningLevelScalar: 1.125
+      
+#====================================================================================================== 
+
+#Everything to do with PyroMining seasonal events. You can disable/enable them here, but bare in
+#mind that these are seasonal and are only active during certain parts of the year. The times are
+#displayed for each event below. 
+Events:
+
+  #Active from Oct 22nd -> November 8th. 
+  Halloween:
+    enabled: true
+    
+    #Found when breaking ores and is unkillable. Despawns after a few seconds.
+    TheUnknown:
+      #Supports 1 decimal place.
+      spawnChance: 0.6
+      
+      #The cooldown time between finding one, ensuring that if you have a high spawn chance,
+      #you wont get unlucky and find it multiple times in a row.
+      cooldown: 30
+      
+      #Below is to do with the 'varients'.
+      Varients:
+        health: 300
+        baseDamage: 7
+
+#====================================================================================================== 

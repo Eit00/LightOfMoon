@@ -1,0 +1,12 @@
+currentQuests:
+- custom5
+currentStages:
+- 0
+quest-points: 0
+questData:
+  custom5:
+    item-delivery-amounts:
+    - 0
+completed-Quests:
+- custom4
+lastKnownName: lanmolan1

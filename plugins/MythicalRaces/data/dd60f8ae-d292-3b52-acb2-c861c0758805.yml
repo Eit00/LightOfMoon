@@ -1,0 +1,28 @@
+race: Gnom
+time: '0'
+Human:
+  level: 1
+  xp: 2
+forceRace: false
+playerName: Eit0_
+Elf:
+  level: 2
+  xp: 28
+Dwarf:
+  level: 21
+  xp: 432
+Angel:
+  level: 1
+  xp: 0
+Merfolk:
+  level: 1
+  xp: 2
+Dragonborn:
+  level: 4
+  xp: 86
+Orc:
+  level: 1
+  xp: 0
+Gnom:
+  level: 1
+  xp: 4

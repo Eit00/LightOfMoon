@@ -1,0 +1,144 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pa_bison.walk": {
+      "loop": true,
+      "animation_length": 8.16,
+      "anim_time_update": "query.modified_distance_moved",
+      "bones": {
+        "leg3": {
+          "rotation": {
+            "0.0": {
+              "post": [
+                -25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "4.0": {
+              "post": [
+                25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "8.16": {
+              "post": [
+                -25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        },
+        "leg1": {
+          "rotation": {
+            "0.0": {
+              "post": [
+                25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "4.0": {
+              "post": [
+                -25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "8.16": {
+              "post": [
+                25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            }
+          },
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "leg0": {
+          "rotation": {
+            "0.0": {
+              "post": [
+                -25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "4.0": {
+              "post": [
+                25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "8.16": {
+              "post": [
+                -25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        },
+        "leg2": {
+          "rotation": {
+            "0.0": {
+              "post": [
+                25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "4.0": {
+              "post": [
+                -25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            },
+            "8.16": {
+              "post": [
+                25,
+                0,
+                0
+              ],
+              "lerp_mode": "catmullrom"
+            }
+          }
+        },
+        "centerpoint": {
+          "scale": 1
+        }
+      }
+    },
+    "animation.pa_bison.attack": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "math.sin(variable.attack_time*360)*25-this",
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

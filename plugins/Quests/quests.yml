@@ -1,0 +1,380 @@
+# For non-English characters, this file MUST stay encoded in UTF-8
+quests:
+  default1:
+    name: Iron Miner
+    ask-message: <yellow>Mine <pink>2<yellow> blocks of <pink>Iron Ore<yellow>.
+    finish-message: <yellow>Well done. Here is your reward.
+    redo-delay: 1800
+    requirements:
+      items:
+      - name-stone_pickaxe:amount-1
+      remove-items:
+      - false
+      fail-requirement-message: <red>You must have a <pink>Stone Pickaxe<red> first.
+    stages:
+      ordered:
+        '1':
+          break-block-names:
+          - IRON_ORE
+          break-block-amounts:
+          - 2
+          break-block-durability:
+          - 0
+    rewards:
+      money: 1000
+      quest-points: 1
+  default2:
+    name: Mob Hunter
+    ask-message: <yellow>Kill an assortment of Mobs.
+    finish-message: <yellow>Excellent. Here is a <pink>Diamond Sword<yellow>.
+    stages:
+      ordered:
+        '1':
+          death-event: DeathFail
+          mobs-to-kill:
+          - Pig
+          mob-amounts:
+          - 3
+          finish-event: NiceFinish
+        '2':
+          death-event: DeathFail
+          mobs-to-kill:
+          - Zombie
+          mob-amounts:
+          - 2
+          finish-event: NiceFinish
+        '3':
+          death-event: DeathFail
+          mobs-to-kill:
+          - Skeleton
+          mob-amounts:
+          - 1
+    rewards:
+      items:
+      - name-DIAMOND_SWORD:amount-1
+      exp: 100
+      quest-points: 1
+  default3:
+    name: Catch Fish
+    ask-message: <yellow>Catch some fish!
+    finish-message: <yellow>Good job. Here is some <green>experience<yellow>.
+    stages:
+      ordered:
+        '1':
+          start-event: GiveRod
+          death-event: DeathFail
+          fish-to-catch: 5
+    rewards:
+      exp: 250
+  default4:
+    name: Timed Quest
+    ask-message: <yellow>Dig up <pink>10<yellow> blocks of <pink>Dirt<yellow> before
+      time runs out!
+    finish-message: <yellow>You did it in time! Have an <pink>Iron Shovel<yellow>
+      and some <green>experience<yellow>.
+    requirements:
+      quest-points: 1
+      fail-requirement-message: <red>Complete <pink>Iron Miner<red> or <pink>Mob Hunter<red>
+        first.
+    stages:
+      ordered:
+        '1':
+          break-block-names:
+          - DIRT
+          break-block-amounts:
+          - 10
+          break-block-durability:
+          - 0
+          start-event: TimerStart
+          finish-event: CancelTimer
+    rewards:
+      items:
+      - name-GOLD_INGOT:amount-1
+      exp: 150
+  custom1:
+    name: Завтрак Вегетарианца
+    ask-message: 'Здравствуй путешественник! Ты здесь впервые? Будь добр помоги этому
+      немощному старику собрать урожай. В нашей деревне было очень много жителей,
+      но они все ушли на ЮГ. Деревня осталась беспомощной. Собери: 36 пшеницы, 12
+      картошек и 5 морковок.'
+    finish-message: Спасибо путешественник, вот твоя награда!
+    npc-giver-uuid: 252ee883-b7f7-46b6-b3ab-cf5cad1e3055
+    stages:
+      ordered:
+        '1':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: WHEAT
+            amount: 36
+          npc-delivery-uuids:
+          - 252ee883-b7f7-46b6-b3ab-cf5cad1e3055
+          delivery-messages:
+          - Не плохо сработано!
+        '2':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: POTATO
+            amount: 12
+          npc-delivery-uuids:
+          - 252ee883-b7f7-46b6-b3ab-cf5cad1e3055
+          delivery-messages:
+          - У тебя железная выдержка!
+        '3':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: CARROT
+            amount: 5
+          npc-delivery-uuids:
+          - 252ee883-b7f7-46b6-b3ab-cf5cad1e3055
+          delivery-messages:
+          - Ты прирождённый фермер!
+    rewards:
+      items:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: BREAD
+        amount: 32
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: BAKED_POTATO
+        amount: 12
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: SUSPICIOUS_STEW
+        meta:
+          ==: ItemMeta
+          meta-type: SUSPICIOUS_STEW
+          effects:
+          - ==: PotionEffect
+            effect: 10
+            duration: 160
+            amplifier: 0
+            ambient: true
+            has-particles: true
+            has-icon: true
+      money: 500
+    planner:
+      start: 11:2:2023:0:0:0:Europe/Moscow
+      end: 11:2:2500:16:14:42:Europe/Moscow
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom2:
+    name: Путь Кузнеца
+    ask-message: Приветствую тебя странник в своей кузне. Что хочешь ко мне в ученики
+      значит? Тогда выполни одно задание и я подумаю.
+    finish-message: Ты достиг больших успехов! Но это ещё не конец.
+    npc-giver-uuid: 3692fa27-d692-4e90-86f8-00bffe58bb3b
+    stages:
+      ordered:
+        '1':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: STICK
+            amount: 16
+          npc-delivery-uuids:
+          - 3692fa27-d692-4e90-86f8-00bffe58bb3b
+          delivery-messages:
+          - Ты молодец, но одних палок не достатчно для работы.
+        '2':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: COAL
+            amount: 10
+          npc-delivery-uuids:
+          - 3692fa27-d692-4e90-86f8-00bffe58bb3b
+          delivery-messages:
+          - 'Как говорится: "Разгорайся гори ярко, да так, чтобы не погасло" А ты
+            подумал, из чего будешь делать инструменты?'
+        '3':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: RAW_IRON
+            amount: 16
+          npc-delivery-uuids:
+          - 3692fa27-d692-4e90-86f8-00bffe58bb3b
+          delivery-messages:
+          - Ты молодец, и очень терпелив птешественник!
+    rewards:
+      items:
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: STICK
+        amount: 16
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: COAL
+        amount: 10
+      - ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: RAW_IRON
+        amount: 16
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom3:
+    name: Первые шаги к становлению "Мастера кузнечного дела"
+    ask-message: Ого, ты ещё здесь? А ты не из слабых! Тогда приступай к изготовлению.
+    finish-message: Ты достиг больших успехов! Увы, мне больше нечему тебя учить...
+    npc-giver-uuid: 3692fa27-d692-4e90-86f8-00bffe58bb3b
+    requirements:
+      quests:
+      - custom2
+    stages:
+      ordered:
+        '1':
+          items-to-craft:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: IRON_SWORD
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: IRON_PICKAXE
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: IRON_AXE
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: IRON_HOE
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: IRON_SHOVEL
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: BUCKET
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: SHEARS
+    rewards:
+      money: 2000
+  custom4:
+    name: Путь Просвещения
+    ask-message: Добрый день проходимец. Добро пожаловать в «Фаселур». С этой деревни
+      начнётся твой путь авантюриста. Для того чтобы заслужить звание «Авантюрист»,
+      ты должен пройти и ознакомиться с местными жителями, и доступными тебе профессиями.
+    finish-message: Что же, твой путь начался! Поднимай свой ранг, зарабатывай деньги
+      и будь хорошим Авантюристом.
+    npc-giver-uuid: 172d5e74-cb27-4d00-b728-8da14a356612
+    stages:
+      ordered:
+        '1':
+          npc-uuids-to-talk-to:
+          - 1da8a596-5944-46a1-ad63-9076aa8f3840
+          - 3692fa27-d692-4e90-86f8-00bffe58bb3b
+          - a4bdeded-a68b-4849-ad61-0f08d47252f2
+          - 252ee883-b7f7-46b6-b3ab-cf5cad1e3055
+          start-message: Здесь кто-нибудь есть?
+          complete-message: Приятно познакомиться!
+  custom5:
+    name: Присвоение территорий - 1
+    ask-message: На территории которую мы хотим отдать тебе осели монстры и прочие
+      хищники, разберись с ними, тебе же там жить.
+    finish-message: Отлично сработано!
+    npc-giver-uuid: f83ce3af-1fad-4332-9e9d-995cf5716c14
+    stages:
+      ordered:
+        '1':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: ROTTEN_FLESH
+            amount: 8
+          npc-delivery-uuids:
+          - f83ce3af-1fad-4332-9e9d-995cf5716c14
+          delivery-messages:
+          - Спасибо. Осталось всего <amount>!
+        '2':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: BONE
+            amount: 8
+          npc-delivery-uuids:
+          - f83ce3af-1fad-4332-9e9d-995cf5716c14
+          delivery-messages:
+          - Спасибо. Осталось всего <amount>!
+        '3':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: SPIDER_EYE
+            amount: 8
+          npc-delivery-uuids:
+          - f83ce3af-1fad-4332-9e9d-995cf5716c14
+          delivery-messages:
+          - Спасибо. Осталось всего <amount>!
+    rewards:
+      money: 3000
+    planner:
+      override: false
+    options:
+      allow-commands: true
+      allow-quitting: true
+      ignore-silk-touch: true
+      use-parties-plugin: true
+      share-progress-level: 1
+      same-quest-only: true
+      share-distance: 0.0
+      handle-offline-players: false
+      ignore-block-replace: true
+  custom6:
+    name: Присовение территорий - 2
+    ask-message: Ну, так как это теперь чистая территория, тебе нужны ресурсы для
+      будущего строительства, добудь их и продемонстрируй свои навыки, да благословит
+      тебя бог строительства Пресен.
+    finish-message: Отлично сработано!
+    npc-giver-uuid: f83ce3af-1fad-4332-9e9d-995cf5716c14
+    requirements:
+      quests:
+      - custom5
+    stages:
+      ordered:
+        '1':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: STONE
+            amount: 64
+          npc-delivery-uuids:
+          - f83ce3af-1fad-4332-9e9d-995cf5716c14
+          delivery-messages:
+          - Спасибо. Осталось всего <amount>!
+        '2':
+          items-to-deliver:
+          - ==: org.bukkit.inventory.ItemStack
+            v: 3337
+            type: OAK_LOG
+            amount: 64
+          npc-delivery-uuids:
+          - f83ce3af-1fad-4332-9e9d-995cf5716c14
+          delivery-messages:
+          - Спасибо. Осталось всего <amount>!
+          npc-uuids-to-talk-to:
+          - f83ce3af-1fad-4332-9e9d-995cf5716c14
+    rewards:
+      money: 1500
+      commands:
+      - give <player> iron_nugget{display:{Name:'[{"text":"Жетон","italic":false,"color":"dark_purple"}]',Lore:['[{"text":"Территория","italic":false}]']}}
+        1

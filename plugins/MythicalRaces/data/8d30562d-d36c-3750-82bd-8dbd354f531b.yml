@@ -1,0 +1,10 @@
+race: Elf
+time: '0'
+Human:
+  level: 2
+  xp: 6
+forceRace: false
+playerName: Slik_Oladyshek
+Elf:
+  level: 2
+  xp: 16

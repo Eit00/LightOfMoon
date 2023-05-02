@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 7
+  xp: 112
+forceRace: true
+playerName: kaslon

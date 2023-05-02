@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 9
+  xp: 172
+forceRace: true
+playerName: SirTools

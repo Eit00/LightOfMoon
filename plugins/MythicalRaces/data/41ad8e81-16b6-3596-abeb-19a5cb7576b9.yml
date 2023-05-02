@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 3
+  xp: 22
+forceRace: true
+playerName: Lusef

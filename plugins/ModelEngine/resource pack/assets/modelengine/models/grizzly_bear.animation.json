@@ -1,0 +1,602 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pa_grizzl_bear.unhappy": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "(query.is_scared * 123) - this",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            "(0.4 * math.sin(query.life_time * 900)) + (0.4 * math.sin(query.life_time * 0))"
+          ]
+        },
+        "leg2": {
+          "rotation": [
+            "(query.is_scared * -72)",
+            "(query.is_scared * -16)",
+            0
+          ],
+          "position": [
+            0,
+            "query.is_baby * -1.75",
+            0
+          ]
+        },
+        "leg3": {
+          "rotation": [
+            "(query.is_scared * -72)",
+            "(query.is_scared * 16)",
+            0
+          ],
+          "position": [
+            0,
+            "query.is_baby * -1.75",
+            0
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            0,
+            0,
+            "32.7 - this"
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            0,
+            0,
+            "-32.7 - this"
+          ]
+        },
+        "ear0": {
+          "rotation": [
+            90,
+            "query.is_scared * 13.45",
+            "query.is_scared * -6.3"
+          ],
+          "position": [
+            "query.is_scared * 0.72",
+            "query.is_scared * -0.5",
+            0
+          ]
+        },
+        "ear1": {
+          "rotation": [
+            90,
+            "query.is_scared * -13.45",
+            "query.is_scared * 6.3"
+          ],
+          "position": [
+            "query.is_scared * -0.72",
+            "query.is_scared * -0.5",
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.sneezing": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "-0.85 - this",
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.sleep": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "(-0.58 * (0.58 * math.sin(query.life_time * 350)))",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "-0.1 + (query.is_baby * 1.56)",
+            0
+          ]
+        },
+        "body": {
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "position": [
+            0,
+            -7.6,
+            0
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            -90,
+            30.3,
+            0
+          ],
+          "position": [
+            -4.5,
+            1.5,
+            4
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            -90,
+            -30.3,
+            0
+          ],
+          "position": [
+            4.5,
+            1.5,
+            4
+          ]
+        },
+        "leg2": {
+          "rotation": [
+            -90,
+            "32.3 + (query.is_baby * 13.3)",
+            0
+          ],
+          "position": [
+            -1.2,
+            1.5,
+            -4.6
+          ]
+        },
+        "leg3": {
+          "rotation": [
+            -90,
+            "-32.3 + (query.is_baby * -13.3)",
+            0
+          ],
+          "position": [
+            1,
+            1.5,
+            -4.6
+          ]
+        },
+        "ear0": {
+          "rotation": [
+            90,
+            "query.is_sleeping * 13.45",
+            "query.is_sleeping * -6.3"
+          ],
+          "position": [
+            "query.is_sleeping * 0.72",
+            "query.is_sleeping * -0.3",
+            0
+          ]
+        },
+        "ear1": {
+          "rotation": [
+            90,
+            "query.is_sleeping * -13.45",
+            "query.is_sleeping * 6.3"
+          ],
+          "position": [
+            "query.is_sleeping * -0.72",
+            "query.is_sleeping * -0.3",
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.sitting_head_and_legs": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            0,
+            "1.5 * (-1.5 * math.sin(query.life_time * 500)) -this",
+            0
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            "-5.1 + (5 * math.sin(query.life_time * 450)) -this",
+            0,
+            0
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            "-5.1 - (5 * math.sin(query.life_time * 450)) -this",
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.sitting": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "(query.is_scared + query.sit_amount * -90) - this",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            -1,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "90 - this",
+            0,
+            0
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            0,
+            0,
+            "32.7 - this"
+          ],
+          "position": [
+            0,
+            0,
+            1
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            0,
+            0,
+            "-32.7 - this"
+          ],
+          "position": [
+            0,
+            0,
+            1
+          ]
+        },
+        "leg2": {
+          "rotation": [
+            3.5,
+            0,
+            -15
+          ]
+        },
+        "leg3": {
+          "rotation": [
+            3.5,
+            0,
+            15
+          ]
+        },
+        "ear0": {
+          "rotation": [
+            0,
+            -20,
+            -10
+          ],
+          "position": [
+            -0.4,
+            0,
+            0
+          ]
+        },
+        "ear1": {
+          "rotation": [
+            0,
+            20,
+            10
+          ],
+          "position": [
+            0.4,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.rolling": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "(query.roll_counter / 32) * 360",
+            0,
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "(this * -118) + query.roll_counter - this",
+            0.0,
+            0.0
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            "math.sin(query.life_time * 900 + (query.is_baby ? 0.95 : 0.5) * 57.3) * 8.6 - this",
+            0,
+            0
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            "math.sin(query.life_time * 900 + (query.is_baby ? 0.95 : 0.5) * 57.3) * -8.6 - this",
+            0,
+            0
+          ]
+        },
+        "leg2": {
+          "rotation": [
+            "math.sin(query.life_time * 900 + (query.is_baby ? 0.95 : 0.5) * 57.3) * -8.6 - this",
+            0,
+            0
+          ]
+        },
+        "leg3": {
+          "rotation": [
+            "math.sin(query.life_time * 900 + (query.is_baby ? 0.95 : 0.5) * 57.3) * 8.6 - this",
+            0,
+            0
+          ]
+        },
+        "ear0": {
+          "rotation": [
+            25,
+            -35,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ear1": {
+          "rotation": [
+            25,
+            35,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.lying": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "query.lie_amount * -180 - this",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "(query.is_baby ? -8.8 : -7.67) * query.lie_amount -10 - this",
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "(query.lie_amount * 90) - this",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            "math.sin(query.life_time * 206.28) * -17.2 - this",
+            0,
+            0
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            "math.sin(query.life_time * 263.58) * 17.2 - this",
+            0,
+            0
+          ]
+        },
+        "leg2": {
+          "rotation": [
+            "math.sin(query.life_time * 172) * 17.2 - this",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "leg3": {
+          "rotation": [
+            "math.sin(query.life_time * 229.2) * -17.2 - this",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ]
+        },
+        "ear0": {
+          "rotation": [
+            0,
+            0,
+            -25
+          ],
+          "position": [
+            -0.32,
+            0,
+            0
+          ]
+        },
+        "ear1": {
+          "rotation": [
+            0,
+            0,
+            25
+          ],
+          "position": [
+            0.32,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.eating": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [
+            "-2.5 + (-6.3 * math.sin(query.life_time * 750))",
+            0,
+            0
+          ]
+        },
+        "leg0": {
+          "rotation": [
+            "-5.1 + (5 * math.sin(query.life_time * 800)) - this",
+            0,
+            0
+          ]
+        },
+        "leg1": {
+          "rotation": [
+            "-5.1 - (5 * math.sin(query.life_time * 800)) - this",
+            0,
+            0
+          ]
+        },
+        "leg2": {
+          "rotation": [
+            "10.4 - (-12.4 * math.sin(query.life_time * 750)) - this",
+            0,
+            0
+          ]
+        },
+        "leg3": {
+          "rotation": [
+            "10.4 - (-12.4 * math.sin(query.life_time * 750)) - this",
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.delayed_attacking": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "rotation": [
+            "(-(variable.panda.attack) * 63) - this",
+            0,
+            0
+          ],
+          "position": [
+            0,
+            "-10 + 9 * variable.panda.attack - this",
+            0
+          ]
+        },
+        "head": {
+          "rotation": [
+            "(query.is_baby * -48) + (query.is_delayed_attacking * 88)",
+            0.0,
+            0.0
+          ]
+        },
+        "leg0": {
+          "position": [
+            0,
+            "-0.6 * variable.panda.attack",
+            "variable.panda.attack * 3.4"
+          ],
+          "rotation": [
+            "variable.panda.attack * 63",
+            0,
+            0
+          ]
+        },
+        "leg1": {
+          "position": [
+            0,
+            "-0.6 * variable.panda.attack",
+            "variable.panda.attack * 3.4"
+          ],
+          "rotation": [
+            "variable.panda.attack * 63",
+            0,
+            0
+          ]
+        },
+        "leg2": {
+          "rotation": [
+            "(variable.panda.attack > 1) ? (variable.panda.attack * 103) - this : 0",
+            0,
+            0
+          ]
+        },
+        "leg3": {
+          "rotation": [
+            "(variable.panda.attack > 1) ? (variable.panda.attack * 103) - this : 0",
+            0,
+            0
+          ]
+        },
+        "ear0": {
+          "rotation": [
+            "25 * variable.panda.attack",
+            "-35 * variable.panda.attack",
+            0
+          ]
+        },
+        "ear1": {
+          "rotation": [
+            "25 * variable.panda.attack",
+            "35 * variable.panda.attack",
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_grizzl_bear.baby_transform": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "scale": "query.is_baby * 1.3"
+        }
+      }
+    }
+  }
+}

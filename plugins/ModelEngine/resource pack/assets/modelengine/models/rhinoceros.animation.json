@@ -1,0 +1,263 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pa_rhinoceros.big_head": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "position": [
+            0,
+            0,
+            -1
+          ],
+          "scale": 1.2
+        },
+        "bone": {
+          "position": [
+            0,
+            0,
+            1
+          ],
+          "scale": [
+            1,
+            0.6,
+            1
+          ]
+        },
+        "bone2": {
+          "position": [
+            0,
+            -5,
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_rhinoceros.boss_hydra_look_at_target": {
+      "loop": true,
+      "bones": {
+        "neck1": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "neck2": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "neck3": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "head_1": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            "query.target_y_rotation * 0.25",
+            0
+          ]
+        },
+        "neck5": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "neck6": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "neck7": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "head_2": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            "-25+query.target_y_rotation * 0.25",
+            0
+          ]
+        },
+        "neck9": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "neck10": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "neck11": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            0,
+            "query.target_y_rotation * 0.25"
+          ]
+        },
+        "head_3": {
+          "rotation": [
+            "query.target_x_rotation * 0.25",
+            "25+query.target_y_rotation * 0.25",
+            0
+          ]
+        }
+      }
+    },
+    "animation.pa_rhinoceros.new": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "bb_main": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              -5,
+              0,
+              0
+            ],
+            "1.0": [
+              2.5,
+              0,
+              0
+            ]
+          }
+        },
+        "head": {
+          "rotation": {
+            "0.0": [
+              7.5,
+              0,
+              0
+            ],
+            "0.5": [
+              -30,
+              0,
+              0
+            ],
+            "0.9583": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              0,
+              3,
+              2
+            ],
+            "0.9583": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "bone6": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              -5
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "1.0": [
+              0,
+              0,
+              -7.5
+            ]
+          }
+        },
+        "bone3": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              15.4551,
+              -0.18485,
+              -0.04946
+            ],
+            "1.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "bone4": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              7.5
+            ],
+            "0.5": [
+              0,
+              0,
+              0
+            ],
+            "1.0": [
+              0,
+              0,
+              5
+            ]
+          }
+        },
+        "bone5": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "0.5": [
+              15,
+              0,
+              0
+            ],
+            "1.0": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

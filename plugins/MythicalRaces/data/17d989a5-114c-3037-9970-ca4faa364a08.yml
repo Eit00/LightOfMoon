@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 11
+  xp: 160
+forceRace: true
+playerName: Hinakari123

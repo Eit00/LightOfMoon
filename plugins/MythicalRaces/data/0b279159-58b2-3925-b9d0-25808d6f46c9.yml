@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 3
+  xp: 42
+forceRace: true
+playerName: C70UDDD

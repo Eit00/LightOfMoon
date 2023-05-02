@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 8
+  xp: 10
+forceRace: true
+playerName: Wolfniper

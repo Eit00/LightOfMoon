@@ -1,0 +1,43 @@
+Skills:
+  SkillTree:
+    Main:
+      Level: 0
+      Experience: 0
+      LevelUpExperience: 0
+      SkillPoints: 0
+  Passives:
+    Entropy: 0
+  BETTER_GUTTING: 0
+  LUCK_OF_THE_CATCH: 0
+  MASTER_AUGMENTER: 0
+  TOTEM_LEADER: 0
+  DIVINE_JUDGEMENT: 0
+  TRIBAL_SHOUT: 0
+  COMBO_CATCHER: 0
+  AUGMENT_INFUSION: 0
+MoneyCooldown:
+  Time: 0
+  Earned: 0.0
+Stats:
+  TotalFishCaught: 0
+  BronzeFishCaught: 0
+  SilverFishCaught: 0
+  GoldFishCaught: 0
+  DiamondFishCaught: 0
+  PlatinumFishCaught: 0
+  MythicalFishCaught: 0
+  MoneyMade: 0
+  DeliveriesMade: 0
+  FishGutted: 0
+  CrabsKilled: 0
+  FishKilled: 0
+  AugmentsCrafted: 0
+  LongestFish: 0
+  TournamentsWon: 0
+Delivery:
+  Upgrades:
+    INCREASE_CAPACITY: 0
+    OVERCLOCKED: 0
+    EXPERT_DELIVERER: 0
+    PAY_RISE: 0
+    LUCKY_CHARM: 0

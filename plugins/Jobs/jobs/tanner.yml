@@ -1,0 +1,102 @@
+Tanner:
+  fullname: Кожевник
+  shortname: К
+  FullDescription:
+  - "Зарабатывает на крафте и коженой брони и т.д.."
+  ChatColour: DARK_PURPLE
+  chat-display: full
+  max-level: 450
+  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*2)
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Пополнить запасы
+      Objectives:
+      - Kill;cow;20
+      - Collect;leather;10
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Кожевник add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Убейте 20 коров и соберите 10 кожи
+      - Получите 1000 лунитов и опыта!
+  Gui:
+    Item: leather
+  Craft:
+    leather_boots:
+      income: 1.5
+      points: 3.0
+      experience: 4.0
+    leather_chestplate:
+      income: 2.0
+      points: 4.0
+      experience: 8.0
+    leather_helmet:
+      income: 1.25
+      points: 2.5
+      experience: 5.0
+    leather_leggings:
+      income: 1.75
+      points: 3.5
+      experience: 7.0
+  Craft:
+    bow:
+      income: 0.5
+      points: 1.0
+      experience: 2.0
+  Kill:
+    Cow:
+      income: 3.0
+      points: 5
+      experience: 5.0
+  commands:
+    tanner_craft_1:
+      command:
+      - lp user [player] permission set leather.leather_boots
+      - lp user [player] permission set leather.leather_helmet
+      - lp user [player] permission set leather.leather_chestplate
+      - lp user [player] permission set leather.leather_leggings
+      - lp user [player] permission set leather.leather_axe
+      - lp user [player] permission set leather.leather_pickaxe
+      - lp user [player] permission set leather.leather_shovel
+      - lp user [player] permission set leather.leather_hoe
+      - lp user [player] permission set leather.leather_sword
+      levelFrom: 50
+      levelUntil: 100
+    tanner_craft_2:
+      command:
+      - lp user [player] permission set tanner.bow
+      levelFrom: 100
+      levelUntil: 150
+    tanner_craft_3:
+      command:
+      - lp user [player] permission set tanner.white_banner
+      - lp user [player] permission set tanner.light_gray_banner
+      - lp user [player] permission set tanner.gray_banner
+      - lp user [player] permission set tanner.black_banner
+      - lp user [player] permission set tanner.brown_banner
+      - lp user [player] permission set tanner.red_banner
+      - lp user [player] permission set tanner.orange_banner
+      - lp user [player] permission set tanner.yellow_banner
+      - lp user [player] permission set tanner.lime_banner
+      - lp user [player] permission set tanner.green_banner
+      - lp user [player] permission set tanner.cyan_banner
+      - lp user [player] permission set tanner.light_blue_banner
+      - lp user [player] permission set tanner.blue_banner
+      - lp user [player] permission set tanner.purple_banner
+      - lp user [player] permission set tanner.magenta_banner
+      - lp user [player] permission set tanner.pink_banner
+      levelFrom: 50
+      levelUntil: 100
+    tanner_craft_4:
+      command:
+      - lp user [player] permission set tanner.lead
+      levelFrom: 100
+      levelUntil: 150

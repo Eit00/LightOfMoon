@@ -1,0 +1,683 @@
+# ********************************************** #
+#                                                #
+#     -- Mythical Races Configuration File --    #
+#           -- Version 1.4.0 --                  #
+#                                                #
+# ********************************************** #
+# Attributes are as follows
+# GENERIC_MAX_HEALTH
+# GENERIC_KNOCKBACK_RESISTANCE
+# GENERIC_MOVEMENT_SPEED
+# GENERIC_ATTACK_DAMAGE
+# GENERIC_ATTACK_SPEED
+# GENERIC_ARMOR
+# GENERIC_ARMOR_TOUGHNESS
+# GENERIC_LUCK
+
+# Potion affects are as follows
+# SPEED
+# SLOW
+# FAST_DIGGING
+# SLOW_DIGGING
+# INCREASE_DAMAGE
+# HEAL
+# HARM
+# JUMP
+# CONFUSION
+# REGENERATION
+# DAMAGE_RESISTANCE
+# FIRE_RESISTANCE
+# WATER_BREATHING
+# INVISIBILITY
+# BLINDNESS
+# NIGHT_VISION
+# HUNGER
+# WEAKNESS
+# POISON
+# WITHER
+# HEALTH_BOOST
+# ABSORPTION
+# SATURATION
+# GLOWING
+# LEVITATION
+# LUCK
+# UNLUCK
+# SLOW_FALLING
+# CONDUIT_POWER
+# DOLPHINS_GRACE
+# BAD_OMEN
+# HERO_OF_THE_VILLAGE
+
+
+# You want to add your own race?
+# 
+#    raceName:
+#     displayName: 'DisplayNameOfRace'
+#     material: 'MaterialToUseForGUI'
+#     guiPage: 1 # the page number of the GUI which it should be displayed at
+#     isSubRace: false # is a subrace
+#     subRaceType: '' # type of sub race this race belons to (only if isSubRace is set to true)
+#     treeSlot: 4 # /races tree slot this race is in
+#     levelRequire: 0 # the race level required to pick this race
+#     slot: 11 # the slot the material should be
+#     lvlType: 'RUNNING' # this means how should the race level up - read through all of the top comments to figure out what can go here
+#     maxLevel: 100 # max level this race can be, note do NOT set this below a sub races required level
+#     gainXP: 2 # gain x amount of Xp each time a certain event happens for lvlType
+#     xpPerLevel: 24 # How much XP is needed times the level itself to reach the next level
+#     lore:
+#         - '&4----- &cRace Name Race &4-----'
+#         - '&cDesciptiond and stuff'
+#         - ' '
+#         - '&5----- Day Time Passive Effects -----'
+#         - 'Day time effects and stuff'
+#         - '&5----- Night Time Passive Effects -----'
+#         - 'Night time effects and stuff'
+#     dayPassivePotionEffects: # Only put 'null' if the area is not going to be used
+#         - 'null'
+#     dayPassivePotionEffectsBase:
+#         - 'null'
+#     dayRaceDataPotion: # explained below
+#         - 'null'
+#     dayPassiveGenericAttributes: # ALWAYS LEAVE THIS ATTRIBUTE IN, this is normal speed, if you change it then you get a very fast player or slow
+#         - 'GENERIC_MOVEMENT_SPEED'
+#     dayPassiveGenericAttributesBase:
+#         - 0.1
+#     dayRacePassiveAttributesLevel: what this means is gain X amount of ATTRIBUTE PER LEVEL added onto the BASE Base, if 0.0 then ignore any sort of increasing X per level, max level is at the bottom of the config
+#         - 0.0
+#     dayRaceDataAttribute: # explained below
+#         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+#     nightPassivePotionEffects:
+#         - 'null'
+#     nightPassivePotionEffectsBase:
+#         - 'null'
+#     nightRaceDataPotion: # explained below
+#         - 'null'
+#     nightPassiveGenericAttributes:
+#         - 'GENERIC_MOVEMENT_SPEED'
+#     nightPassiveGenericAttributesBase:
+#         - 0.1
+#     nightRacePassiveAttributesLevel:
+#         - 0.0
+#     nightRaceDataAttribute: # explained below
+#         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+#     executeCommandUponSwitching: # execute a CONSOLE command upon switching to another race, to use a playername it is {player} 
+#         - 'null'
+
+
+# the DATA lists work as such
+# 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+# First argument is BIOMES, ALL meaning ALL biomes, a biome name can be used within that first argument
+# Second argument is Y, this always has to be Y - this indicates players Y axis
+# Third argument is if players Y axis is greater than or equal to NUMBER
+# fourth argument is the number that is related to the third argument
+# fifth argument is what the amplifier should now be if the player isn't in the designated area -1 to remove POTION effects, attribute has to be set to another number for it as you cannot "remove" a attribute
+# sixth argument is when to apply the effects if a certain block is nearby - types are [ALL, ABOVE, MID, BELOW, AROUND] you cannot use multiple for this argument, only one of these
+# seventh argument is what blocks are nearby to apply the desired effect
+# eigth argument is if a storm is occuring in the world then apply effect, types are [TRUE, FALSE, ALL]
+# ninth argument is the 'world' the player is in, types are, [ALL, your worlds] can be seperated using a space'
+
+# An example of what it "could" look like is as follows 'SAVANNA,ANOTHERBIOME Y > -100 -1 ALL STONE,ANOTHERBLOCK ALL world,ANOTHERWORLD' - this means if you are walking on the STONE block in savanna and in all types of weather and in world 'world', then apply the effect
+
+# commas seperate different blocks
+
+# Remember that amplifiers are -1 than what you want, for example if you want LUCK 1, then you would have to put 0 and not 1 under the amplifier
+# So to add a attribute, just add one of the attributes to "day" or "night" that has attributes in it
+# the base for the attributes is below the spot you put it in
+# for example, if you put GENERIC_MAX_HEALTH
+# then the number that applies to generic max health is the exact same spot in the base for it
+# you can look at examples below
+
+# https://youtu.be/Kb7Jn-EHj00 <--- tutorial - this is a tutorial on how to use the plugin, it is a long video that explains it in-depth (sort of)
+# Second tutorial -> https://www.youtube.com/watch?v=blx4iUlyqMI
+# well theres also a third tutorial but thats down in the comments of the second tutorial (gotta love how long these tutorials, but trust its worth it!)
+# Well best of luck user!
+# If you are having trouble adding a race/editing/removing a race, join the support discord server, and ping a guy called Korbsti (which is me), or add his username directly: Korbsti#0001
+# https://discord.gg/GK3rmrze2Q <--- Support discord server if you require help
+
+# use UUIDs to store player data
+# if false then store by player names
+
+# Types of 'lvlType' are as follows
+# HUNTING, RUNNING, HARVESTING, BUILDER, FISHING, EXCAVATION, MINER, WOODCUTTER, TANKER, SWIMMING, FLYING, DIGGER, ARCHER
+# NOTE it is very important that you note that for the races , excavation, building, hunting and harvesting that xp GAIN can be very fast, so make sure to put xpPerLevel to a high number to make it more fair
+
+# Some useful links when creating complicated races
+# > https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/Biome.html
+# > https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+
+
+# NOW for some special data types, below will be some examples
+# 'ALL Y > -1000 -1 VAMPIRE VAMPIRE ALL ALL' - this means apply effect if all blocks above the player to sky limit isnt a solid block
+# 'ALL Y > -1000 -1 CUSTOM[num] [INSERT BLOCKS HERE] ALL ALL' - CUSTOM means, in X radius of blocks next to it, it can be CUSTOM10 or CUSTOM1 or even CUSTOM100 if you hate your server, replace [num] to search for a radius
+# 'ALL Y > -1000 -1 LIGHTA[num] LIGHT ALL ALL' - this means apply effect if the light level is greater than the [num] next to it, example would be LIGHT6, now the limits are [0 - 14] in terms of levels
+# 'ALL Y > -1000 -1 LIGHTB[num] LIGHT ALL ALL' - this means apply effect if the light level is lower than the [num] next to it, example would be LIGHT6, now the limits are [0 - 14] in terms of levels
+
+
+
+other:
+
+   # Store data by UUID, if false store data by player names
+   dataByUUID: true
+
+
+   # Cooldown timer, is in MINUTES, NEVER PUT THIS NUMBER INTO NEGATIVES AND DO NOT TURN THIS NUMBER INTO A DECIMAL AND DO NOT DELETE THE " " MARKS
+   cooldown: "1440"
+   
+   # default race upon joining
+   defaultRace: Human
+   
+   # Force the player to choose a race inside the GUI when the first join the server
+   forceRace: false
+   
+   # When night time starts in ticks
+   nightStart: 12610
+   
+   # When day time starts in ticks
+   nightEnd: 23041
+   
+   # If you are looking for "day" its just the numbers thats not inbetween night and nightTwo
+   
+   # Every X amount of ticks, loop through the server and see if the player has any potion effects that they should have
+   # if they dont have it then add potion effects of race to the player
+   timerCheckingPotionEffects: 100
+   
+   # Gui display name
+   guiName: 'Выбор расы'
+   
+   # Gui head player display name
+   guiPlayerDisplay: 'Ты'
+   
+   # Gui slot number for player head
+   guiPlayerDisplayNumber: 4
+   
+   # Amount of slots the GUI has, max is 54
+   guiSlots: 54
+   
+   # Item for forwardClick
+   forwardClickItem: 'PAPER'
+   
+   # When this slot is clicked, open up next GUI list
+   forwardClick: 53
+   
+   # Next page 
+   forwardClickDisplay: 'Следующая страница'
+   
+   # Lore hovering over the player head
+   guiPlayerLore:
+      - 'Race: {race}'
+   
+   treeNonSlots: 'BLACK_STAINED_GLASS_PANE'
+   
+   treeName: 'Твое древо расы'
+   
+   # Check if there is an update for the plugin
+   checkUpdates: true
+   
+   
+races:
+   Elf:
+     displayName: '&2Эльф'
+     material: 'BOOK'
+     guiPage: 1
+     isSubRace: false
+     subRaceType: ''
+     treeSlot: 4
+     levelRequire: 0
+     slot: 10
+     lvlType: ''
+     maxLevel: 100
+     gainXP: 2
+     xpPerLevel: 24
+     lore:
+         - '&2----- &aРаса Эльф &2-----'
+         - '&aЭльфы обладают непревзойлденной красотой.'
+         - '&aОбычно они живут в малых группах.'
+         - '&aЭльфы быстрые, но уязвимые'
+         - ' '
+         - '&5----- Пассивные эффекты -----'
+         - '&5Скорость II'
+         - '&5Прыжок I'
+         - '&5Макс ХП уменьшено на 1 сердце'
+     dayPassivePotionEffects:
+         - 'SPEED'
+         - 'JUMP'
+     dayPassivePotionEffectsBase:
+         - 1
+         - 0
+     dayRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     dayPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     dayPassiveGenericAttributesBase:
+         - 0.1
+         - 18.0
+     dayRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     dayRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassivePotionEffects:
+         - 'SPEED'
+         - 'JUMP'
+     nightPassivePotionEffectsBase:
+         - 1
+         - 0
+     nightRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     nightPassiveGenericAttributesBase:
+         - 0.1 
+         - 18.0
+     nightRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     nightRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     executeCommandUponSwitching:
+         - 'lp user {player} parent add elf'
+         - 'lp user {player} parent remove human'
+         - 'lp user {player} parent remove orc'
+         - 'lp user {player} parent remove goblin'
+         - 'lp user {player} parent remove dwarf'
+         - 'lp user {player} parent remove gnom'
+   Human:
+     displayName: '&cЧеловек'
+     material: 'BOOK'
+     isSubRace: false
+     subRaceType: ''
+     treeSlot: 4
+     levelRequire: 0
+     guiPage: 1
+     slot: 11
+     lvlType: ''
+     maxLevel: 100
+     gainXP: 2
+     xpPerLevel: 24
+     lore:
+         - '&4----- &cРаса человек &4-----'
+         - '&cДумаю вы знаете кто такие люди'
+         - ' '
+         - '&5----- Пассивные эффекты -----'
+         - '&5Скорость I'
+         - '&5Сила I'
+     dayPassivePotionEffects:
+         - 'SPEED'
+         - 'INCREASE_DAMAGE'
+     dayPassivePotionEffectsBase:
+         - 0
+         - 0
+     dayRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     dayPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     dayPassiveGenericAttributesBase:
+         - 0.1
+         - 20.0
+     dayRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     dayRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassivePotionEffects:
+         - 'INCREASE_DAMAGE'
+         - 'SPEED'
+     nightPassivePotionEffectsBase:
+         - 0
+         - 0
+     nightRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     nightPassiveGenericAttributesBase:
+         - 0.1 
+         - 20.0
+     nightRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     nightRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     executeCommandUponSwitching:
+         - 'lp user {player} parent remove elf'
+         - 'lp user {player} parent add human'
+         - 'lp user {player} parent remove orc'
+         - 'lp user {player} parent remove goblin'
+         - 'lp user {player} parent remove dwarf'
+         - 'lp user {player} parent remove gnom'
+   Dwarf:
+     displayName: '&7Дворф'
+     material: 'BOOK'
+     guiPage: 1
+     isSubRace: false
+     subRaceType: ''
+     treeSlot: 4
+     levelRequire: 0
+     slot: 12
+     lvlType: ''
+     maxLevel: 100
+     gainXP: 2
+     xpPerLevel: 24
+     lore:
+         - '&8----- &7Раса Дворф &8-----'
+         - '&7Частые посетители шахт и кузни,'
+         - '&7Дворф хоть и меньше остальных, но сил им не занимать.'
+         - '&7Также, они много кушают... и могут осушить даже бочку пива!'
+         - ' '
+         - '&5----- Пассивные эффекты -----'
+         - '&5Спешка I'
+         - '&5Медлительность I'
+         - '&5+1 Сердце'
+     dayPassivePotionEffects:
+         - 'FAST_DIGGING'
+         - 'SLOW'
+     dayPassivePotionEffectsBase:
+         - 0
+         - 0
+     dayRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     dayPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     dayPassiveGenericAttributesBase:
+         - 0.1
+         - 22.0
+     dayRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     dayRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassivePotionEffects:
+         - 'FAST_DIGGING'
+         - 'SLOW'
+     nightPassivePotionEffectsBase:
+         - 0
+         - 0
+     nightRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     nightPassiveGenericAttributesBase:
+         - 0.1
+         - 22.0
+     nightRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     nightRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     executeCommandUponSwitching:
+         - 'lp user {player} parent remove elf'
+         - 'lp user {player} parent remove human'
+         - 'lp user {player} parent remove orc'
+         - 'lp user {player} parent remove goblin'
+         - 'lp user {player} parent add dwarf'
+         - 'lp user {player} parent remove gnom'
+   Orc:
+     displayName: '&7Орк'
+     material: 'BOOK'
+     guiPage: 1
+     isSubRace: false
+     subRaceType: ''
+     treeSlot: 5
+     levelRequire: 0
+     slot: 13
+     lvlType: ''
+     maxLevel: 100
+     gainXP: 2
+     xpPerLevel: 24
+     lore:
+         - '&8----- &7Раса Орк &8-----'
+         - '&7Не самые красивые,'
+         - '&7но это не мешает их мускулам.'
+         - ' '
+         - '&5----- Пассивные эффекты -----'
+         - '&5Сила II'
+         - '&5Прыгучесть I'
+     dayPassivePotionEffects:
+         - 'INCREASE_DAMAGE'
+         - 'JUMP'
+     dayPassivePotionEffectsBase:
+         - 1
+         - 0
+     dayRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     dayPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     dayPassiveGenericAttributesBase:
+         - 0.1
+         - 20.0
+     dayRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     dayRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassivePotionEffects:
+         - 'INCREASE_DAMAGE'
+         - 'JUMP'
+     nightPassivePotionEffectsBase:
+         - 1
+         - 0
+     nightRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     nightPassiveGenericAttributesBase:
+         - 0.1
+         - 20.0
+     nightRacePassiveAttributesLevel:
+         - 0.0
+         - 0.0
+     nightRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     executeCommandUponSwitching:
+         - 'lp user {player} parent remove elf'
+         - 'lp user {player} parent remove human'
+         - 'lp user {player} parent add orc'
+         - 'lp user {player} parent remove goblin'
+         - 'lp user {player} parent remove dwarf'
+         - 'lp user {player} parent remove gnom'
+   Goblin:
+     displayName: '&3Гоблин'
+     material: 'BOOK'
+     isSubRace: false
+     subRaceType: ''
+     treeSlot: 6
+     levelRequire: 0
+     guiPage: 1
+     slot: 14
+     lvlType: ''
+     maxLevel: 100
+     gainXP: 2
+     xpPerLevel: 24
+     lore:
+         - '&2----- &aГоблин&2-----'
+         - '&aУ гоблинов плохая репутация...'
+         - '&aВ основном из-за аниме... но по правде '
+         - '&aОни очень проворны'
+         - ' '
+         - '&5----- Пассивные эффекты -----'
+         - '&5+ 0.5 серддца'
+         - '&5Скорость I'
+     dayPassivePotionEffects:
+         - 'SPEED'
+     dayPassivePotionEffectsBase:
+         - 0
+     dayRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     dayPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     dayPassiveGenericAttributesBase:
+         - 0.1
+         - 19.0
+     dayRacePassiveAttributesLevel:
+         - 0
+         - 0
+     dayRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassivePotionEffects:
+         - 'SPEED'
+     nightPassivePotionEffectsBase:
+         - 0
+     nightRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     nightPassiveGenericAttributesBase:
+         - 0.1
+         - 19.0
+     nightRacePassiveAttributesLevel:
+         - 0
+         - 0
+     nightRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     executeCommandUponSwitching:
+         - 'lp user {player} parent remove elf'
+         - 'lp user {player} parent remove human'
+         - 'lp user {player} parent remove orc'
+         - 'lp user {player} parent add goblin'
+         - 'lp user {player} parent remove dwarf'
+         - 'lp user {player} parent remove gnom'
+   Gnom:
+     displayName: '&3Гном'
+     material: 'BOOK'
+     isSubRace: false
+     subRaceType: ''
+     treeSlot: 7
+     levelRequire: 0
+     guiPage: 1
+     slot: 15
+     lvlType: ''
+     maxLevel: 100
+     gainXP: 2
+     xpPerLevel: 24
+     lore:
+         - '&2----- &aГном&2-----'
+         - '&aНе самые большие...'
+         - '&aно самые умные '
+         - ' '
+         - '&5----- Пассивные эффекты -----'
+         - '&5+ 1 сердца'
+         - '&5Сила I'
+         - '&5Медлительность I'
+     dayPassivePotionEffects:
+         - 'INCREASE_DAMAGE'
+         - 'SLOW'
+     dayPassivePotionEffectsBase:
+         - 0
+         - 0
+     dayRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     dayPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     dayPassiveGenericAttributesBase:
+         - 0.1
+         - 22.0
+     dayRacePassiveAttributesLevel:
+         - 0
+         - 0
+     dayRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassivePotionEffects:
+         - 'INCREASE_DAMAGE'
+         - 'SLOW'
+     nightPassivePotionEffectsBase:
+         - 0
+         - 0
+     nightRaceDataPotion:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     nightPassiveGenericAttributes:
+         - 'GENERIC_MOVEMENT_SPEED'
+         - 'GENERIC_MAX_HEALTH'
+     nightPassiveGenericAttributesBase:
+         - 0.1
+         - 22.0
+     nightRacePassiveAttributesLevel:
+         - 0
+         - 0
+     nightRaceDataAttribute:
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+         - 'ALL Y > -1000 -1 ALL ALL ALL ALL'
+     executeCommandUponSwitching:
+         - 'lp user {player} parent remove elf'
+         - 'lp user {player} parent remove human'
+         - 'lp user {player} parent remove orc'
+         - 'lp user {player} parent remove goblin'
+         - 'lp user {player} parent remove dwarf'
+         - 'lp user {player} parent add gnom'
+
+leveling: # this is only for the type 'RUNNING'
+   
+   # this is the distance number
+   distance: 10
+   
+   # every X amount of ticks, 20 ticks = 1 second, calculate distance
+   time: 600
+
+# Messages
+# To change the cooldown time manually for a player, the time is in the data.yml file
+
+cooldownMessage: '&4У вас еще есть перезарядка! Осталось {time} минут до того, как вы сможете выбрать другую расу!'
+currentBiome: '&aСтолкнулись с биомом &2{biome}'
+noPerm: '&4Нет разрешения'
+invalidRace: '&4Недействительная раса'
+listRaces: '&aИзвестные расы: &2{races}'
+chosenRace: '&aВы выбрали расу &2{race}'
+reload: '&aПерезагружены мифические расы'
+switchUserRace: '&aРаса указанного игрока теперь {race}'
+invalidPlayer: '&aНедействительный игрок'
+invalidArgs: '&4Неверные аргументы, наберите /races help'
+levelup: '&aВы повысили уровень! Ваш новый уровень - {level}'
+notRequiredLevel: '&4Ваш уровень недостаточно высок, чтобы выбрать эту расу!'
+setPlayersLevel: '&aУстановить уровень игрока на {lvl}'
+notInt: '&aДолжно быть целым числом'
+update: '&aДоступно обновление для MythicalRaces! Не забудьте прочитать список изменений перед обновлением! Получите плагин на сайте Spigot!'
+profile:
+   - '&a - - - &2{имя} профиль пользователя &a - - -'
+   - '&aРаса: {race}'
+   - '&aУровень: {level}'
+   - '&aОчки опыта: {xp}/{xp-max}'
+help:
+   - '&a - - - &2Меню помощи Mythical Races &a - - -'
+   - '&a/races choose [race] - выбрать конкретную расу'
+   - '&a/races list - показать базовые расы'
+   - '&a/races info [race] - отобразить информацию о расе'
+   - '&a/races gui - показать список рас'
+   - '&a/races tree - отобразить дерево эволюции рас'
+   - '&a/races profile - отобразить профиль вашей расы'
+   - '&a/races profile [player] - просмотреть профиль расы другого игрока'
+   - '&a/races lvlset [player] [целое число]'
+   - '&a/races set [race] [player] - принудительно установить расу игрока'
+   - '&a/races biome - для конфигурационных целей'
+

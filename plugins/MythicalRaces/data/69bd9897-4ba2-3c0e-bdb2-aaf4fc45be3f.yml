@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 7
+  xp: 78
+forceRace: true
+playerName: HiLie123

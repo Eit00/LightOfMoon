@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 1
+  xp: 0
+forceRace: true
+playerName: Joann_Carter

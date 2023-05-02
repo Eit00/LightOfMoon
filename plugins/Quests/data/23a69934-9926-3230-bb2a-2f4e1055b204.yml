@@ -1,0 +1,13 @@
+currentQuests:
+- custom5
+currentStages:
+- 2
+quest-points: 0
+questData:
+  custom5:
+    item-delivery-amounts:
+    - 0
+completed-Quests:
+- custom1
+- custom4
+lastKnownName: EHOTNEWS

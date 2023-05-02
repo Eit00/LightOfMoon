@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 8
+  xp: 54
+forceRace: true
+playerName: ZvezdoChyot

@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 11
+  xp: 256
+forceRace: true
+playerName: AltF4

@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 6
+  xp: 42
+forceRace: true
+playerName: SirMafioznik

@@ -1,0 +1,10 @@
+race: Dwarf
+time: '0'
+Human:
+  level: 1
+  xp: 2
+forceRace: false
+playerName: StyleDeolg
+Dwarf:
+  level: 1
+  xp: 12

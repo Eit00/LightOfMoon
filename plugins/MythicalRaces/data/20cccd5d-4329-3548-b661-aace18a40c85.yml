@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 10
+  xp: 176
+forceRace: true
+playerName: Liveta

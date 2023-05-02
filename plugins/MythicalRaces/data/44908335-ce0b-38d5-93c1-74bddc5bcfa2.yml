@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 4
+  xp: 40
+forceRace: true
+playerName: Kazuhiro

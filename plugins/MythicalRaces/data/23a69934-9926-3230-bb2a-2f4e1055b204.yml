@@ -1,0 +1,10 @@
+race: Goblin
+time: '0'
+Human:
+  level: 6
+  xp: 104
+forceRace: false
+playerName: EHOTNEWS
+Goblin:
+  level: 2
+  xp: 2

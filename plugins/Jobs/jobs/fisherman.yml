@@ -1,0 +1,100 @@
+Fisherman:
+  fullname: Рыболов
+  shortname: Fi
+  FullDescription:
+  - "Зарабатывает через ловлю рыбы."
+  ChatColour: AQUA
+  chat-display: full
+  max-level: 450
+  leveling-progression-equation: 10*(joblevel)+(joblevel*joblevel*2)
+  income-progression-equation: baseincome+(baseincome*(joblevel-1)*0.01)-((baseincome+(baseincome*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  points-progression-equation: basepoints+(basepoints*(joblevel-1)*0.01)-((basepoints+(basepoints*(joblevel-1)*0.01))
+    * ((numjobs-1)*0.05))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 10
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: Хороший улов
+      Objectives:
+      - Fish;cod;20
+      - Fish;salmon;10
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Рыболов add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Поймайте 20 трески и 10 лосося
+      - Получите 1000 лунитов и опыта!
+    '2':
+      Name: Деликатес
+      Objectives:
+      - Fish;tropical_fish;5
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Рыболов add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Поймайте 5 тропической рыбы
+      - Получите 1000 лунитов и опыта!
+    '3':
+      Name: Осторожно, несьбедобно
+      Objectives:
+      - Fish;pufferfish;3
+      RewardCommands:
+      - cmi money give [playerName] 1000
+      - jobs exp [playerName] Рыболов add 1000
+      - msg [playerName] Задание завершено!
+      RewardDesc:
+      - Поймайте 3 рыбы фугу
+      - Получите 1000 лунитов и опыта!
+  Gui:
+    Item: fishing_rod
+  Fish:
+    cod:
+      income: 5.0
+      points: 15.0
+      experience: 15.0
+    salmon:
+      income: 7.0
+      points: 20.0
+      experience: 25.0
+    tropical_fish:
+      income: 7.0
+      points: 25.0
+      experience: 25.0
+    pufferfish:
+      income: 10.0
+      points: 25.0
+      experience: 25.0
+  commands:
+    fisher_craft_1:
+      command:
+      - lp user [player] permission set fisher.fishing_rod  
+      levelFrom: 0
+      levelUntil: 50
+    fisher_craft_1:
+      command:
+      - lp user [player] permission set fisher.oak_boat_with_chest
+      - lp user [player] permission set fisher.birch_boat_with_chest
+      - lp user [player] permission set fisher.spruce_boat_with_chest
+      - lp user [player] permission set fisher.jungle_boat_with_chest
+      - lp user [player] permission set fisher.jungle_boat_with_chest
+      - lp user [player] permission set fisher.dark_oak_boat_with_chest
+      - lp user [player] permission set fisher.mangrove_boat_with_chest
+      levelFrom: 50
+      levelUntil: 100
+  permissions:
+    1:
+      value: true
+      permission: fisher.fishing_rod  
+      level: 0
+    2:
+      value: true
+      permission: fisher.carrot_on_a_stick   
+      level: 0
+    3:
+      value: true
+      permission: fisher.warped_fungus_on_a_stick   
+      level: 0

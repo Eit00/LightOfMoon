@@ -1,0 +1,103 @@
+Skills:
+  SkillTree:
+    Main:
+      Level: 18
+      Experience: 6800
+      LevelUpExperience: 11250
+      SkillPoints: 16
+  Passives:
+    Entropy: 78795
+  BETTER_GUTTING: 0
+  LUCK_OF_THE_CATCH: 2
+  MASTER_AUGMENTER: 0
+  TOTEM_LEADER: 0
+  DIVINE_JUDGEMENT: 0
+  TRIBAL_SHOUT: 0
+  COMBO_CATCHER: 0
+  AUGMENT_INFUSION: 0
+MoneyCooldown:
+  Time: 0
+  Earned: 351450.0
+Stats:
+  TotalFishCaught: 958
+  BronzeFishCaught: 571
+  SilverFishCaught: 160
+  GoldFishCaught: 42
+  DiamondFishCaught: 13
+  PlatinumFishCaught: 1
+  MythicalFishCaught: 2
+  MoneyMade: 351450.0
+  DeliveriesMade: 0
+  FishGutted: 6
+  CrabsKilled: 43
+  FishKilled: 0
+  AugmentsCrafted: 0
+  LongestFish: 0
+  TournamentsWon: 0
+Delivery:
+  Upgrades:
+    INCREASE_CAPACITY: 0
+    OVERCLOCKED: 0
+    EXPERT_DELIVERER: 0
+    PAY_RISE: 0
+    LUCKY_CHARM: 0
+  '1':
+    Status: 2
+    Name: Shinoa
+    Tier: 1
+    Reward: fish giveitem crabclaw %player% 4, &94x Crab Claw
+    Fish:
+    - Bronze:4,7
+    - Bronze:21,7
+    - Silver:18,7
+    StartTime: 1682964703913
+    EndTime: 1682966503913
+  '2':
+    Status: 1
+    Name: Inori
+    Tier: 1
+    Reward: fish giveitem squidtentacle %player% 2, &92x Squid Tentacle
+    Fish:
+    - Bronze:17,20
+  '3':
+    Status: 0
+    Name: Spongebob
+    Tier: 1
+    Reward: fish giveitem entropycrystal %player% 1, &91x Entropy Crystal
+    Fish:
+    - Bronze:11,10
+    - Silver:14,10
+fishbag:
+  items:
+    '0':
+      stack:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3337
+        type: PUFFERFISH
+        meta:
+          ==: ItemMeta
+          meta-type: UNSPECIFIC
+          display-name: '{"extra":[{"bold":true,"italic":false,"color":"dark_purple","text":"Ichigo
+            Fish"}],"text":""}'
+          lore:
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"green","text":"The
+            12th Mythical Fish."}],"text":""}'
+          - '{"text":""}'
+          - '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Information:"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"➤
+            "},{"italic":false,"color":"dark_green","text":"Tier: "},{"italic":false,"color":"green","text":"Mythical"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"➤
+            "},{"italic":false,"color":"dark_green","text":"Weight: "},{"italic":false,"color":"green","text":"???"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"➤
+            "},{"italic":false,"color":"dark_green","text":"Price: "},{"italic":false,"color":"green","text":"$25000.00"}],"text":""}'
+          - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"➤
+            "},{"italic":false,"color":"dark_green","text":"Biomes: "},{"italic":false,"color":"green","text":"All
+            Biomes"}],"text":""}'
+          enchants:
+            DURABILITY: 0
+          ItemFlags:
+          - HIDE_ENCHANTS
+          PublicBukkitValues:
+            pyrofishingpro:fishnumber: 12i
+            pyrofishingpro:price: 25000.0d
+            pyrofishingpro:tier: Mythical

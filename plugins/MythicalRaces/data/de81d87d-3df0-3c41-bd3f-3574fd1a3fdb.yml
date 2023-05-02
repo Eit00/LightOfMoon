@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 5
+  xp: 68
+forceRace: true
+playerName: BaralDag

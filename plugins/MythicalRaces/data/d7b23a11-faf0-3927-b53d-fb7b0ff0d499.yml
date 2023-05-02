@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 1
+  xp: 10
+forceRace: true
+playerName: BeastMark

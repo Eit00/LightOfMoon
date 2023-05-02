@@ -1,0 +1,7 @@
+race: Human
+time: '0'
+Human:
+  level: 17
+  xp: 168
+forceRace: true
+playerName: Cocodjambo

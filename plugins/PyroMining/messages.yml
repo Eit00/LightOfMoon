@@ -1,0 +1,1373 @@
+Stats:
+  Lore:
+    Flux:
+    - '&7Total Fluxes Found: &a%total%'
+    - '&7Basic Fluxes Found: &a%basic%'
+    - '&7Blazed Fluxes Found: &a%blazed%'
+    General:
+    - '§7Money Made: §a$%money%'
+    - '§7Gems Found: §a%gems%'
+    - '§7Rune Guardians Killed: §a%runes%'
+    - '§7Oracles Killed: §a%oracles%'
+    - '§7Artifacts Found: §a%artifacts%'
+    - '§7Artifacts Identified: §a%artifacts_identified%'
+    Passive:
+    - '§7Zeta: §a%zeta%'
+    - '§7Mining Level: §a%level%'
+    - '§7Current XP: §a%current%'
+    - '§7Required XP: §a%required%'
+  Names:
+    General: '&b&lGeneral Stats'
+    Passive: '&6&lPassive Stats'
+    Flux: '&2&lFlux Stats'
+GUI:
+  Journal:
+    Vessels:
+      Lore:
+      - §2Vessels §7are similar to custom enchantments
+      - §7but are only for pickaxes. To craft one
+      - §7you need all §38 §7pieces of the §2Vessel
+      - §7which can be obtained as §6fossils §7from
+      - §aartifacts§7. Place all §38 §7pieces in a
+      - §6Refinery§7 to craft the §2Vessel§7.
+      - §7
+      - §6§oClick me to view a full Vessel list.
+      - §7
+      - §2Vessels §7require you to guess the correct
+      - §4Requium §7order to be able to kill the boss.
+      - §7You can view your previous attempts inside
+      - §7of the §9/mine vessels §7inventory. There
+      - §7is more information inside of that GUI.
+      Name: '&2&lVessels'
+    Oracles:
+      Lore:
+      - §cOracles §7are end game bosses that can be
+      - §7summoned using §eCharged Oracleite§7.
+      - §7This is obtained from §8Mysterious Dust§7.
+      - §7
+      - §cOracles §7should only be fought when level
+      - §b35 §7in §3/mine stats§7. Once you kill the
+      - §7first §3phase §7you will get a §5rune §7to summon
+      - §7the next §3phase.
+      - §7
+      - §7You summon §cOracles §7by using §eCharged
+      - §eOracleite §7on §aEmerald Ore§7.
+      - §7
+      - §cOracles §7will drop items used in the plugin
+      - §7and for §6Blacksmithing§7.
+      Name: '&c&lOracles'
+    Refinery:
+      Lore:
+      - §7A §3Refinery §7is needed to process §fMysterious Dust§7.
+      - §7To create a §3Refinery §7place a §f§nDropper §7facing
+      - §f§nupwards§7. You then need to place a §f§nfence §7on
+      - §7top of this to create the §3Refinery§7.
+      - §7
+      - §7Place the §fMysterious Dust §7inside the §3Refinery
+      - §7to process it into its different components.
+      - §7
+      - §7Alternatively, place all §38 pieces of a §2Vessel
+      - §7in there to craft a §2Vessel§7.
+      Name: '&b&lRefinery'
+    Gemstones:
+      Lore:
+      - §2Gemstones §7drop from each ore apart from
+      - §6Gold §7and §fIron §7ore. You can either sell
+      - §7these using §a/mine shop §7or right click
+      - §7them to §fIdentify §7their quality which
+      - §7can either §2increase §7or §cdecrease
+      - §7the overall sell price of the §2Gemstone§7.
+      Name: '&a&lGemstones'
+    Flux:
+      Name: '&3&lFluxes'
+      Lore:
+      - §3Fluxes §7can be found from mining all ores.
+      - §7- §fBasic Fluxes §7will drop from §fOverworld §7ores.
+      - §7- §cBlazed Fluxes §7will drop from §cNether §7ores.
+      - §7
+      - §3Fluxes §7can be sold to the §a/mine shop
+      - §7for money. They have no other use currently.
+    Blacksmith:
+      Name: '&6&lBlacksmith'
+      Lore:
+      - §7This feature is currently not implemented
+      - §7and will be implemented in a future release.
+      - §7
+      - §7The §6Blacksmith §7is a place to forge
+      - §7and create custom pickaxes using materials
+      - §7from the plugin.
+      - §7
+      - §7These pickaxes have unique §3traits §7and
+      - §3abilities §7which is unique to every
+      - §7pickaxe.
+    Fossils:
+      Lore:
+      - §6Fossils §7are obtained from §3Artifacts§7.
+      - §7Once you have an §6Unidentified Fossil §7place
+      - §7it inside an empty slot inside of §a/mine artifacts§7.
+      - §7
+      - §7Once the identification process is complete you
+      - '§7will get one part of a random §2Vessel§7. You '
+      - §7need §a8 §7parts to craft a §2Vessel§7.
+      Name: '&6&lFossils'
+    Forge:
+      Name: '&2&lForge'
+      Lore:
+      - §7To create §2Vessels §7you will need a forge.
+      - §7This is a multiblock structure.
+      - §7
+      - §6§oClick to view the multiblock structure layout.
+      - §7
+      - §7To use the forge, drop all §a8 §7parts of the
+      - §2Vessel §7you want to craft into the center and
+      - §7hit it with anything! If you have the materials
+      - §7it will craft a §2Vessel §7for you!
+    RuneGuardians:
+      Name: '&5&lRune Guardians'
+      Lore:
+      - §5Rune Guardians §7are mini-bosses that
+      - §7can be summoned using §5Rune Dust §7which
+      - §7is obtained from §8Mysterious Dust§7.
+      - §7
+      - §7To summon one, §cclick §7on an §cRedstone Ore
+      - §7using a §5Rune Dust §7to access the summon
+      - §7inventory. Once this is done you can summon
+      - §7them. They have a cooldown between summons.
+      - §7
+      - §5Runes §7are needed to upgrade and level
+      - §7your §bSingularity§7.
+    NewSingularity:
+      Lore:
+      - §7The §bSingularity §7is based around §5Runes§7.
+      - ''
+      - §7Using these §5Runes, §7you can upgrade it
+      - §7to earn §bpoints§7. With these you can upgrade
+      - §7different abilities that aid you in your progress
+      - §7in other areas of the plugin such as §echeaper
+      - §eupgrades §7or §bIncreased Requium XP§7.
+      Name: '&b&lSingularity'
+    Artifacts:
+      Lore:
+      - §3Artifacts §7are the newest edition to mining.
+      - §7These can be found in ores with a §61% §7base
+      - §7drop chance. You then need to §fright-click
+      - §7it to convert it into a usable §3artifact§7.
+      - §7
+      - §7You then place it inside of §a/mine artifacts
+      - §7in one of the empty slots to start the
+      - §7identification process. After the time is up
+      - §7you have a chance to obtain a §6Fossil §7which
+      - §7are used to make §2Vessels§7.
+      - §7
+      - §7There are upgrades in here to help with processing.
+      Name: '&3&lArtifacts'
+    Requiums:
+      Name: '&4&lRequiums'
+      Lore:
+      - §4Requiums §7are used to kill the §2Vessel
+      - §7boss that you have. Three §4Requiums
+      - §7are needed to successfully kill the boss.
+      - §7
+      - §7There are 12 different §4Requiums §7and each
+      - §7represent a different number. 1 to 12.
+      - §7
+      - §4Requiums §7can be aquired by upgrading
+      - §fFinal Whisper §7upgrade inside of the
+      - §3/mine artifacts §7menu. Once you have
+      - §7done this you need to identify Tier §b3
+      - §7or higher §3artifacts §7to get them.
+      - §7
+      - §7Upon killing a boss, you will get three
+      - §7shattered orbs that can made into a new
+      - §4Requium Orb§7.
+  Main:
+    BackArrow:
+      Name: '&c&lBack'
+      Lore:
+      - '&7Click to go back.'
+    Blacksmith:
+      Name: '&7&lBlacksmith'
+      Lore:
+      - '&7Forge your own path soldier.'
+      - '&7&oWhat custom pickaxe will you make?'
+    PickaxeView:
+      Name: '&9&lPickaxe View:'
+      Lore:
+      - §7When §ashift-clicking §7with your pickaxe
+      - §7you can hotkey a mining menu to open for you.
+      - §7Click this to rotate the available menus.
+      - ''
+      - '§7Current Pickaxe View: §a%view%'
+    Shop:
+      Lore:
+      - '&7Click to open the mining market!'
+      - '&7&oSell all your flux here!'
+      Name: '&6&lMine Shop'
+    Journal:
+      Name: '&3&lJournal'
+      Lore:
+      - '&7An in-game wiki!'
+      - '&7&oWhat does the plugin have?'
+    Vessels:
+      Lore:
+      - '&7Custom enchantments!'
+      - '&7&oWill you collect them all?'
+      Name: '&b&lVessels'
+    Fossils:
+      Name: '&6&lFossils'
+      Lore:
+      - '&7All about Fossils!'
+      - '&7&oWhat unknown creature will you find?'
+    Artifacts:
+      Lore:
+      - '&7Click to manage your artifacts!'
+      - '&7&oWhat will you discover?'
+      Name: '&9&lArtifacts'
+    Stats:
+      Lore:
+      - '&7Click to view your statistics!'
+      - '&7&oWho''s on top?'
+      Name: '&e&lStats'
+    Singularity:
+      Name: '&b&lSingularity'
+      Lore:
+      - '&7The pinnacle of unholy energy.'
+      - '&7&oWill you charge the singularity?'
+  Vessels:
+    VesselBossInfo:
+      Lore:
+      - '§7Vessel Information:'
+      - '§7- Vessel Level: §3%level%'
+      - '§7- Health: §3%health%'
+      - '§7- Damage: §3%damage%'
+      - '§7- Name: §3%name%'
+      - '§7- Anger Level: §3%anger%'
+      - '§7- Thralls Killed: §3%thralls%'
+      - '§7- Quirk: §3%quirk%'
+      - '§7- Thrall CD: §3%time%'
+      Name: '&3&lVessel Information'
+    Information:
+      '2':
+        Name: '&3&lInformation (&b2/4&3)'
+      '4':
+        Name: '&3&lInformation (&b4/4&3)'
+      '1':
+        Name: '&3&lInformation (&b1/4&3)'
+      '3':
+        Name: '&3&lInformation (&b3/4&3)'
+    NotEnoughZeta: '&7You don''t have enough &eZeta &7to do this.'
+    VesselInfo:
+      Lore:
+      - §7Select a pickaxe with a vessel to view
+      - §7and track your current progress.
+      Name: '&c&lVessel Information'
+    Requium:
+      '1':
+        Name: '&c&lRequium #1'
+      '2':
+        Name: '&c&lRequium #2'
+      '3':
+        Name: '&c&lRequium #3'
+    PreviousAttempts:
+      Name: '&c&lPrevious Attempts'
+      Lore:
+      - §7Select a pickaxe with a vessel to view
+      - §7and track your current progress.
+    WithdrawZeta:
+      Lore:
+      - '&7Click to withdraw &e10,000 &7Zeta.'
+      - '&7Right click it again to consume the Zeta.'
+      - ''
+      - '&7&oDo not spam this quickly.'
+      Name: '&6Withdraw Zeta (&e10,000&6)'
+    Info:
+      '4':
+      - '§bThralls:'
+      - §7Each §2Vessel §7has §3Thralls§7. These are
+      - §7little creatures that spawn when mining
+      - §7certain blocks. Killing these will give you
+      - §7anger progress and progress towards unlocking
+      - §7the correct §4Requiums§7.
+      - §7
+      - §7There is a §b2§7 minute cooldown between finding them.
+      '1':
+      - '§bVessels:'
+      - §2Vessels §7are essentially custom enchantments
+      - §7but with a twist. They are a boss and you have
+      - §7to defeat it using §4Requiums§7. Each §2Vessel
+      - §7when killed will apply a unique effect to your
+      - §7pickaxe. See the journal for a full list of these.
+      - §7
+      - §7Each §2Vessel §7has unique abilities reflecting its
+      - §7elemental type. The more §2Vessels §7you add the
+      - §7stronger the next §2Vessel §7you add will be.
+      - §7
+      - §7To level a §2Vessel §7up, simpily add another
+      - §2Vessel §7of the same type (quirk does not matter) to
+      - §7your pickaxe. Once completed, it will level up again.
+      - §7
+      - §7You create a §2Vessel §7by putting all §38§7 parts
+      - §7of it inside of a §6Refinery§7.
+      - §7
+      - §7View all the §2Vessels §7inside of §3/mine journal§7.
+      '2':
+      - '§bRequiums:'
+      - §7Three of these are needed in the correct
+      - §7order to defeat and damage the §2Vessel§7.
+      - §7You can randomly guess and try to find out
+      - §7the correct order or you can kill §3Thralls§7.
+      - §7
+      - §7Killing §3Thralls §7will give progress to
+      - §7unlocking the correct §4Requium §7for that slot.
+      - §7Once you get §b100% §7it will tell you which
+      - §7§4Requium §7you should use in that slot.
+      - §7
+      - §7If you guess correctly and it is in the correct
+      - §7order, you will be told and that §4Requium §7will be
+      - §7unlocked since you will know it.
+      - §7
+      - §7You can view your previous attempts if you
+      - §7hover over the book at the top.
+      - §7
+      - §7You get §4Requiums §7from §aArtifacts§7.
+      - §7Use §a/mine artifacts §7for more information.
+      '3':
+      - '§bQuirks:'
+      - §7Each §2Vessel §7has a chance to come with
+      - §7a unique §3Quirk §7which gives it a unique
+      - '§7ability. The abilities are listed below:'
+    NotSet:
+      '2': '&7Your &fsecond &4Requium &7is &cnot &7set.'
+      '1': '&7Your &ffirst &4Requium &7is &cnot &7set.'
+      '3': '&7Your &fthird &4Requium &7is &cnot &7set.'
+    NoPreviousAttempts: '&cYou have no previous attempts.'
+    Set:
+      '2': '&7Your &fsecond &4Requium &7is now: &c%requium%&7.'
+      '3': '&7Your &fthird &4Requium &7is now: &c%requium%&7.'
+      '1': '&7Your &ffirst &4Requium &7is now: &c%requium%&7.'
+    RemovedVessels:
+      Success: '&7You removed the following Vessels from your pickaxe:'
+    NoVessels: '&7This pickaxe does not have any Vessels!'
+    NoActiveVessel: '&7This pickaxe does not have an active &2vessel&7!'
+    RemoveVessels:
+      Lore:
+      - §7This will §4remove §7all Vessels from
+      - §7your pickaxe. Make sure you are holding
+      - §7your pickaxe before doing this. This will
+      - §7also remove any active Vessels currently
+      - §7in progress.
+      - §7
+      - §7Doing this will return all the Vessels
+      - §7back to your inventory in a completed state.
+      - §7
+      - §7Doing this requires §4100,000 §7Zeta.
+      - §7
+      - §c§oThere is no 'Are you sure' button
+      - §c§oafter clicking this. Be careful!
+      Name: '&4Remove all Vessels'
+    ClickPickaxe:
+      Name: '&bClick Your Pickaxe'
+      Lore:
+      - '&7Click the pickaxe you want to view'
+      - '&7your &2Vessel &7progress on.'
+    HoldingPickaxe: '&7You must be holding a pickaxe before doing this!'
+    WithdrawZetaMessage: '&7You have withdraw &e10,000 &7Zeta.'
+    PreviousAttemptsInfo:
+    - §7- §oRequiums in §agreen §7§oare in the correct place.
+    - §7- §oRequiums in §cred §7§ocould be in the wrong order
+    - §7§oor not in the combination at all.
+    PreviousAttemptsName: '&c&lPrevious Attempts'
+    PlaceFirstRequium:
+    - §7Place the §f§nfirst§r §3Requium §7below this slot.
+    - ''
+    - §7§oMake sure to read about §3Requiums
+    - §7§obefore attempting this.
+    - ''
+    PlaceRequium: '&7You should use &c%requium% &7in this place.'
+    PlaceSecondRequium:
+    - §7Place the §f§nsecond§r §3Requium §7below this slot.
+    - ''
+    - §7§oMake sure to read about §3Requiums
+    - §7§obefore attempting this.
+    - ''
+    HoldingPickaxeRequium: '&7You must select a pickaxe before equipping &4Requiums&7.'
+    LockedRequium:
+    - §7You haven't unlocked the true indenity
+    - §7of this §cRequium §7but you can use
+    - §7a random one and see if it works.
+    PlaceThirdRequium:
+    - §7Place the §f§nthird§r §3Requium §7below this slot.
+    - ''
+    - §7§oMake sure to read about §3Requiums
+    - §7§obefore attempting this.
+    - ''
+    LoadedData: '&7Your current &2Vessel &7progress has been loaded.'
+  Singularity:
+    Runes:
+      Nature:
+        Name: '&aNature Rune'
+      Ghost:
+        Name: '&7Ghost Rune'
+      Fairy:
+        Name: '&dFairy Rune'
+      Water:
+        Name: '&bWater Rune'
+      Fire:
+        Name: '&cFire Rune'
+      Lightning:
+        Name: '&eLightning Rune'
+      Ground:
+        Name: '&6Ground Rune'
+    Upgrades:
+      CHEAPER_UPGRADES:
+        Name: '&bCheaper Upgrades &7| Level: &9%points%'
+      REQUIUM_PROGRESS:
+        Name: '&bRequium Progress &7| Level: &9%points%'
+      ORACLE_DAMAGE:
+        Name: '&bOracle Damage &7| Level: &9%points%'
+      RUNE_DROP_CHANCE:
+        Name: '&bRune Drop Chance &7| Level: &9%points%'
+      MORE_ZETA:
+        Name: '&bMore Zeta &7| Level: &9%points%'
+    Upgrade:
+      Name: '&2Upgrade Singularity'
+      REQUIUM_PROGRESS:
+        Lore:
+        - §7This upgrade gives more §3Requium XP
+        - §7for every Thrall that you kill.
+        - ''
+        - '§7Stats:'
+        - '§8➵ §7Points: §9%points%'
+        - '§8➵ §7Effect: §3%effect%% Bonus XP Gain'
+        - '§8➵ §7Next Point Bonus: §b+%next%% XP Gain'
+        - ''
+      MORE_ZETA:
+        Lore:
+        - §7This upgrade gives you more
+        - §eZeta §7from all sources.
+        - ''
+        - '§7Stats:'
+        - '§8➵ §7Points: §9%points%'
+        - '§8➵ §7Effect: §3%effect%% Bonus Zeta'
+        - '§8➵ §7Next Point Bonus: §b+%next%% Bonus Zeta'
+        - ''
+      Lore:
+      - §7To upgrade your §aSingularity §7to the
+      - '§7next level, you require the following §5Runes§7:'
+      - ''
+      - '%runesneeded%'
+      - ''
+      - '§7Current Level: §3%level%'
+      - §7§oClick to upgrade.
+      LoreLine: '&8➛ %runecolor%%rune% x%runecolor%%amount%'
+      Upgraded: '&7The upgrade &3%name% &7now has &b%points% &7in it.'
+      CHEAPER_UPGRADES:
+        Lore:
+        - §7This upgrade makes all §aupgrades §7cheaper.
+        - §7Like in the Artifact Menu.
+        - ''
+        - '§7Stats:'
+        - '§8➵ §7Points: §9%points%'
+        - '§8➵ §7Effect: §3%effect%% Reduced Cost'
+        - '§8➵ §7Next Point Bonus: §b+%next%% Reduced Cost'
+        - ''
+      ORACLE_DAMAGE:
+        Lore:
+        - §7This upgrade reduces your damage taken from
+        - §7the §eOracles§7 and their attacks they do.
+        - ''
+        - '§7Stats:'
+        - '§8➵ §7Points: §9%points%'
+        - '§8➵ §7Effect: §3%effect%% Damage Reduction'
+        - '§8➵ §7Next Point Bonus: §b+%next%% Damage Reduction'
+        - ''
+      RUNE_DROP_CHANCE:
+        Lore:
+        - §7This upgrade gives a high drop chance
+        - §7for §5Runes §7from §5Rune Guardians§7.
+        - ''
+        - '§7Stats:'
+        - '§8➵ §7Points: §9%points%'
+        - '§8➵ §7Effect: §3%effect%% Bonus Chance'
+        - '§8➵ §7Next Point Bonus: §b+%next%% Bonus Chance'
+        - ''
+    StoredBlocks:
+      Name: '&b&lStored Blocks:'
+      Lore:
+      - '&7You currently have &b%amount% &7stored blocks.'
+      - '&7Use these to upgrade your &bSingularity &7or'
+      - '&7to create &2Vessels&7. Learn more &b/mine vessels&7.'
+      - ''
+      - '&b&oSingularity &7upgrades can be purchased below.'
+      - '&2&oVessels &7are crafted inside of &b/mine vessels&7.'
+    Info:
+      Lore:
+      - §7To upgrade your §aSingularity §7to the
+      - §7next level, you need different §5Runes§7.
+      - ''
+      - §5Runes §7can be earned from killing §5Rune
+      - §5Guardians §7which can be summoned using
+      - §cRedstone Ore §7and §dRune Dust§7.
+      - ''
+      - §7Every time you upgrade the §aSingularity
+      - §7you will need one additional §5Rune§7.
+      - ''
+      - §7This is no limit to the max level of this.
+      - ''
+      - §7Spend your points on the upgrades below.
+      - ''
+      - '§7Singularity Level: §3%level%'
+      - '§7Free Points: §3%points%'
+      Name: '&aInformation'
+    NoPoints: '&7You do not have any &cSingularity Points &7left.'
+    NotEnoughRunes: '&7You do not have enough &5Runes &7to do this.'
+    Upgraded: '&7You have upgraded your &aSingularity &7to level &3%level%&7.'
+  Names:
+    ManageArcanes: '&9&lManage Arcanes'
+    Singularity: '&9&lSingularity'
+    Journal:
+      VesselList: '&2&lVessel List'
+    Blacksmith: '&8&lBlacksmith'
+    JournalMain: '&9&lMiners Journal'
+    Shop: '&9&lMine Shop'
+    JournalGemstones: '&9&lGemstones'
+    Artifact: '&9&lArtifacts'
+    Vessel: '&9&lVessels'
+  Shop:
+    Prices:
+      Name: '&2&lShop Prices:'
+      Lore:
+      - '§7These are the sell prices:'
+      - ''
+      - '§7Flux:'
+      - '§7- §eBasic Flux: %basic%'
+      - '§7- §4Blazed Flux: %blaze%'
+      - ''
+      - '§7Artifacts:'
+      - §7- Price is stated on the item.
+      - ''
+      - '§7Gemstones: (Price §f§nbefore§r§7 examining)'
+    SellPlayerInventory:
+      Lore:
+      - '&7This will sell all of the sellable items'
+      - '&7inside of &f&nyour&r&7 inventory. Great if you don''t'
+      - '&7want to collect &5artifacts &7or &6fluxes&7.'
+      Name: '&bSell All &9(Player Inventory)'
+    SellInventory:
+      Lore:
+      - '&7This will sell all of the sellable items'
+      - '&7inside of the &bmining shop inventory&7. This'
+      - '&7will &f&nnot&r&7 sell anything inside of your'
+      - '&7inventory. Great if you want to sell &6fluxes'
+      - '&7but keep &5artifacts&7 and such instead.'
+      Name: '&2Sell All &a(Mine Shop Inventory)'
+    Back:
+      Name: '&c&lBack'
+      Lore:
+      - '&7Click to return to the main menu.'
+  Artifacts:
+    Indentifying:
+      Fossil: '&7You have started identifying an &6Unidentified Fossil &7and will
+        take %time% &7.'
+    EmptySlot:
+      Lore:
+      - '&7Place an Artifact or Fossil here'
+      - '&7to begin the identification process.'
+      Name: '&cEmpty Slot'
+    Lore:
+      BeingIdentified: '&7This item is currently being identified.'
+    Upgrades:
+      MaxLevel: '&7This upgrade is already max level!'
+      Upgraded: '&7You spent &3%zeta% Zeta &7and upgraded &3%name% &7to level &b%level%&7.'
+    Identifying: '&7This item is currently being identified.'
+    NotEnoughZeta: '&7You do not have enough &cZeta &7to upgrade this. You need another
+      &c%zeta% &7more &cZeta&7!'
+    NoLoot: '&7You were unlucky and got no loot from that Artifact!'
+    PlaceFossil: '&7Please place an &cUnidentified Artifact / Fossil &7inside this
+      slot to identify this item!'
+    Information:
+      Lore:
+      - §7Place §eUnidentified Artifacts §7/ §eFossils
+      - §7inside one of the slots below to start
+      - §7to identify them. Once it is complete
+      - §7you can collect your rewards and loot.
+      - ''
+      - §7You can purchase upgrades at the bottom.
+      - §7You can view all fossils inside §b/mine journal
+      - §7You find §eArtifacts §7from mining ores.
+      - §eFossils §7come from §eArtifacts§7.
+      - ''
+      - §eFossils §7are used to craft §2Vessels§7.
+      - §7You will need a §5Vessel Forge §7for this.
+      - §2/mine vessels §7for more information.
+      Name: '&aInformation:'
+    NotReady: '&7This item is not ready for collection yet.'
+  Oracle:
+    Cancel:
+      Name: '&c&lCancel Summon'
+    Info:
+      Name: '&6&lOracle Information'
+      Lore:
+      - §7The §eOracles§7 work in three phases.
+      - §7Each phase can be started after killing
+      - §7the previous phase. Each phase will get
+      - §7progressively harder until you meet the
+      - §7third phase boss. When an §eOracle §7is killed
+      - §7they will drop a §5Rune §7which can be used to
+      - §7summon the next phase, or used for other
+      - §7plugin related features.
+      - ''
+      - §7Oracles will teleport to you if trapped in a block.
+      - §7Oracles have minions that will help them fight.
+      - §7Oracles all excel at one thing. e.g. fire damage.
+      - ''
+      - §7Hover over the Glass below to read information
+      - §7about each individual §eOracle §7and their phase.
+    Summon:
+      Phase3: '&7You are about to summon &5Tohka&7.'
+      Phase2: '&7You are about to summon &eImpulse&7.'
+      Phase1: '&7You are about to summon &cRadalite&7.'
+      Lore:
+      - §7Click to summon the §eOracle§7.
+      - §7You should hover over the book to
+      - §7read about how the §eOracles§7 work
+      - §7before attempting to fight this.
+      Name: '&2&lConfirm Summon - Phase'
+    Bosses:
+      '3':
+      - §5Tohka §7is the 3rd and final §eOracle§7.
+      - §7She is based around §8Darkness §7and is
+      - §7not to be taken lightly. She will swap
+      - §7resistances every 20 seconds and become
+      - §7immune to all damage exept from the source
+      - §7she states at the time of the swap. She
+      - §7will also summon minions to help fight.
+      - §7When she loses §c500 §7health she will cast
+      - §4Astral Starfall §7which will constantly
+      - §7damage players in a huge radius. When she
+      - §7reaches §c300 §7health she will cast
+      - §4§lAstral Empire§r§7 which buffs all her stats
+      - §7and will deal large amounts of damage.
+      - ''
+      - '§7Oracle Stats:'
+      - '§7- Health: §6%health%'
+      - '§7- Damage: §6%damage%'
+      - '§7- Element: §8Darkness'
+      - ''
+      - '§7Drops:'
+      '2':
+      - §eImpulse §7is the second §eOracle§7.
+      - §7He focuses mainly on electricity, casting
+      - §7lightning and dealing AoE damage
+      - §7and zoning out attackers before they
+      - §7get close. Careful when killing him
+      - §7as he likes to explode!
+      - ''
+      - §7When killed, use the §fLight Rune §7on
+      - §7another Emerald Ore to summon the
+      - §7next Oracle.
+      - ''
+      - '§7Oracle Stats:'
+      - '§7- Health: §6%health%'
+      - '§7- Damage: §6%damage%'
+      - '§7- Element: §eLightning'
+      - ''
+      - '§7Drops:'
+      '1':
+      - §cRadalite §7is the first §eOracle§7.
+      - §7She is fire based and deals bonus
+      - §7damage when she is fought in water.
+      - §7She will set the world on fire with
+      - §7her firey abilities.
+      - ''
+      - §7When killed, use the §4Hell Rune §7on
+      - §7another Emerald Ore to summon the
+      - §7next Oracle.
+      - ''
+      - '§7Oracle Stats:'
+      - '§7- Health: §6%health%'
+      - '§7- Damage: §6%damage%'
+      - '§7- Element: §cFire'
+      - ''
+      - '§7Drops:'
+  FossilTransmutation:
+    Transmuted: '&7You have &btransmuted&7 3 of your fossils into a %vessel% %part%.'
+Events:
+  CollectorsItem:
+    Lore:
+    - '&7A collectors item found from defeating'
+    - '&7a &c%type% class Variant&7.'
+    - ''
+    - '&7This trophy shows that you have defeated'
+    - '&7and took part in the &cHalloween Event&7.'
+    Name: '&cShards of %type%'
+  Halloween:
+    InState: '&7You are already marked for a variant.'
+    Marked: '&7You have been marked by an &cUnknown Variant&7. The next Unknown you
+      find will be a &cVarient&7.'
+    NotEnoughShards: '&7You need &c10 &7Unknown Shards to do this.'
+  UnknownShard:
+    Lore:
+    - '&7A Unknown Shard of mysterious origin.'
+    - '&7Obtained from dealing damage to '
+    - '&7The Unknown when they appear.'
+    - ''
+    - '&7Click with 10 of these to mark yourself'
+    - '&7by an Unknown Varient to obtain mythical'
+    - '&7treasures and items.'
+    Name: '&7Unknown Shard'
+Fossils:
+  Parts:
+    FOOT: Foot
+    TAIL: Tail
+    SPINE: Spine
+    LEG: Leg
+    ARM: Arm
+    SKULL: Skull
+    RIB: Rib
+    WING: Wing
+  Species:
+    PHOENIX: Phoenix
+    WRAITH: Wraith
+    DRAGON: Dragon
+    MANTICORE: Manticore
+  Unidentified:
+    Name: '&6Unidentified %species% Fossil'
+LightRuneLore:
+- §7A rare and mythical rune that
+- §7emits a mysterious aura...
+- §7
+- §7Use this on §aemerald ore §7to
+- §7summon §5Tohka§7.
+Gemstones:
+  '6':
+    Name: '&eTiger''s Eye'
+    Description: '&7This Gemstone is stronger than every creature.'
+    ColorA: '&6'
+    ColorB: '&e'
+  '2':
+    Name: '&cRuby'
+    Description: '&7This Gemstone shimmers in the light.'
+    ColorB: '&4'
+    ColorA: '&c'
+  '1':
+    Description: '&7This bright Gemstone lights the way.'
+    ColorA: '&a'
+    ColorB: '&2'
+    Name: '&aPeridot'
+  '3':
+    Description: '&7This Gemstone''s beauty blinds you.'
+    ColorB: '&6'
+    ColorA: '&e'
+    Name: '&eTopaz'
+  '4':
+    Description: '&7This Gemstone glows in the night sky.'
+    Name: '&dAmethyst'
+    ColorB: '&5'
+    ColorA: '&d'
+  '5':
+    Description: '&7This Gemstone glows in the sea.'
+    Name: '&9Sapphire'
+    ColorB: '&b'
+    ColorA: '&9'
+Vessels:
+  NEFARIS_SHADOWS:
+    Lore:
+    - '&8Nefaris'' Shadows &7gives you a higher'
+    - '&7chance to get runes from rune guardians.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&860% Chance to drop a bonus Rune'
+    - '&7&o(Must be hotbar when killing the'
+    - '&7&oguardian for the buff to apply)'
+    Name: Nefaris' Vessel
+  Added: '&7You have successfully killed %name% &7and their &2Vessel &7has been added
+    to your pickaxe! You may start another &2Vessel &7now.'
+  REZOTHS_DESTRUCTION:
+    Lore:
+    - '&cRezoth''s Destruction &7gives you a chance'
+    - '&7when mining an ore for it to drop a'
+    - '&7mineral from another ore.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&c10% Chance to Double the bonus Mineral'
+    Name: Rezoths' Vessel
+  IMPEROS_WINDS:
+    Name: Imperos' Vessel
+    Lore:
+    - '&eImperos''s Winds &7gives you a higher chance'
+    - '&7to find rarer Artifacts when mining ores.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&e5% Increased Fossil Chance when'
+    - '&eopening Artifacts.'
+  Lore:
+    Completed:
+    - ''
+    - '&7This Vessel is completed and can be'
+    - '&7added without doing the process again.'
+    ItemStack:
+    - '&7To add this to your pickaxe, drag'
+    - '&7and drop it onto the pickaxe.'
+    - '%completed%'
+    - '&8&m---------&r&8[ %color%Stats &8]&m---------'
+    - '%color%Vessel Name: &8➤ &7%name%'
+    - '%color%Required Level: &8➤ &7%reqlevel%'
+    - '%color%Maximum Vessel Level: &8➤ &7%maxlevel%'
+    - '%color%Zeta Cost: &8➤ &7%cost%'
+    - '%color%Element: &8➤ &7%element%'
+    - '%color%Quirk: &8➤ &7%quirk%'
+    - '&8&m---------&r&8[ %color%Stats &8]&m---------'
+    - '%description%'
+    - '&8&m---------&r&8[ %color%Stats &8]&m---------'
+  AURORAS_BLAZE:
+    Lore:
+    - '&4Aurora''s Blaze &7will automatically smelt'
+    - '&7iron and gold ores that you mine.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&425% Chance for a Bonus Ingot to Drop'
+    Name: Auroras' Vessel
+  VARIANTS_WRATH:
+    Name: Variants' Vessel
+    Lore:
+    - '&4Variant''s Wrath &7gives you higher chances'
+    - '&7to find fluxes, artifacts and gemstones'
+    - '&7below Y Level 20.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&4Bonus Extended to below Y Level 50.'
+  NAGYNS_TRANQUILITY:
+    Lore:
+    - '&5Nagyn''s Tranquility &7gives you a higher'
+    - '&7chance to get &8Mysterious Dust&7 from'
+    - '&7mining ores. Higher level the better the chance.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&520% Chance for 2x Mysterious Dust'
+    Name: Nagyns' Vessel
+  NotOwner: '&7You do not own this &cVessel&7!'
+  XOSTRANS_GLARE:
+    Lore:
+    - '&9Xostran''s Glare &7gives you a higher chance'
+    - '&7to get Oracle drops when killing Oracles.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&920% Chance for Double Drops'
+    Name: Xostrans' Vessel
+  MEMENTOS_STOPWATCH:
+    Lore:
+    - '&3Mementos Stopwatch &7gives you a chance'
+    - '&7to get double drops from breaking an ore'
+    - '&7without silktouch.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&3Small chance for triple drops.'
+    Name: Mementos' Vessel
+  NEPTULUS_WAVE:
+    Lore:
+    - '&bNeptulus'' Wave &7gives you bonus XP'
+    - '&7to leveling up your PyroMining level.'
+    - '&7Higher the level, the more XP you get.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&b10% Chance to Triple XP'
+    Name: Neptulus' Vessel
+  VALAKAS_NIGHTFALL:
+    Name: Valakas' Vessel
+    Lore:
+    - '&6Valakas Nightfall &7gives you a chance to'
+    - '&7get &eHaste II &7from breaking an ore'
+    - '&7for &630 - 100 &7seconds.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&6Gives Haste III instead of Haste II'
+  NECROS_REALM:
+    Name: Necros' Vessel
+    Lore:
+    - '&8Necros'' Realm &7gives bonus XP when'
+    - '&7unlocking Requiums and increases thrall'
+    - '&7spawn chance.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&850% Reduced Thrall Spawn Cooldown'
+  SKYLARKS_DREAM:
+    Lore:
+    - '&aSkylark''s Dream &7makes all fluxes that'
+    - '&7you find sell for a higher price. Higher'
+    - '&7the level, the more fluxes will sell for.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&a20% Chance for a Bonus Flux'
+    Name: Skylarks' Vessel
+  SERAPHS_GRASP:
+    Name: Seraphs' Vessel
+    Lore:
+    - '&2Seraphs'' Grasp &7gives you bonus Zeta'
+    - '&7from all ores you mine with it.'
+    - ''
+    - '&7Max Level Bonus:'
+    - '&215% Chance to Triple Zeta gained'
+  ManualKill: '&7You need to kill the &2Vessel &7manually. You will have to find the
+    &2Vessel &7again.'
+  PlayerDied: '&7You died and the &2Vessel &7vanished into the delve.'
+  NeedPickaxe: '&7You need to have the pickaxe in your inventory that the &2Vessel
+    &7was summoned from.'
+  WaterImmune: '&2Vessels &7are immune to damage while in water!'
+Items:
+  BoneMarrow:
+    Name: '&fBone Marrow'
+    Lore:
+    - §7Obtained as a rare drop from §cRadalite§7.
+    - ''
+    - §7Drag and drop onto an §eidentified fossil
+    - §7to duplicate it into another idenitical fossil.
+    - ''
+    - §7Very useful when used in conjunction with
+    - §7a §bFossil Transmuter§7.
+  SealedArtifact:
+    Lore:
+    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
+    - §7Right click to open to get a random artifact
+    - §7of this rarity. There are %color%9 §7rarities of artifacts.
+    - §7This is an artifact of the old war between
+    - §7the Humans and Oracles. Maybe this artifact
+    - §7still contains some Oracle energy...
+    - ''
+    - '§8➣ §7Artifact Rarity: %color%%tier%'
+    - '§8➣ §7Base Identify Time: %color%%time% Minutes'
+    - §7§oArtifacts come sealed to save inventory space.
+    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
+  FossilTransmuter:
+    Lore:
+    - §7Obtained as a rare drop from §eImpulse§7.
+    - ''
+    - §7Drag and drop onto a stack of §e3 Fossils
+    - §7to transmute it into another fossil of the
+    - §7same type. e.g. Skylark's Arm > Nagyn's Arm.
+    - ''
+    - §7Very useful when used in conjunction
+    - §7with §fBone Marrow§7.
+    Name: '&bFossil Transmuter'
+  Fossil:
+    Lore:
+    - §7This mythical creature was lost to the old
+    - §7war with the §eOracles§7. Maybe with all
+    - §7the pieces you could make a §2Vessel§7 to
+    - §7harness the power of the long lost creature...
+    - ''
+    - '§7Fossil Information:'
+    - '§7- Fossil Part: §e%part%'
+    - '§7- Fossil Species: §e%species%'
+    - ''
+    - §7§oPut this inside the §6§oArtifact Identifier
+    - §7§oto uncover the origin of this fossil.
+  IdentifiedFossil:
+    Lore:
+    - §7This is one part of the §e%set% §7fossil set.
+    - §7Collect all §68 §7fossils to craft a §2Vessel§7.
+    - ''
+    - '§7Fossil Information:'
+    - '§7- Fossil Part: §e%part%'
+    - '§7- Fossil Species: §e%species%'
+    - '§7- Fossil Name: §e%name%'
+    - ''
+    - §7Use all §28 §7parts inside a §6Refinery
+    - §7to craft a §2Vessel§7.
+  Artifact:
+    Lore:
+    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
+    - '§7Artifact Info:'
+    - '§8➢ §7Tier: %color%%tier%'
+    - '§8➢ §7Fossil Chance: %color%%fossilchance%%'
+    - '§8➢ §7Identify Time: %color%%time% Minutes'
+    - '§8➢ §7Sell Price: %color%$%price%'
+    - '§8➣ §7Artifact Rarity: %color%%rarity%'
+    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
+    - §7You can either sell this item in the %color%/mine shop
+    - §7or identify it inside of %color%/mine artifacts§7
+    - §7to get loot and maybe a rare fossil.
+    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
+ZetaTear:
+- §7Click to redeem §e10,000 §7Zeta.
+- §7
+- §7Create these inside of §2/mine vessels§7.
+- §7These can be traded between players.
+RequiumOrb:
+  Name: '&4Requium Orb (&c%name%&4)'
+  Lore:
+  - '&7An unknown dark and evil energy source'
+  - '&7from the unknown realm of &cDelve&7.'
+  - ''
+  - '&7Requium Info:'
+  - '&7➛ Time: &c%time%'
+  - ''
+  - '%quote%'
+  - ''
+  - '&7Used when attempting to defeat and obtain'
+  - '&7a &2Vessel&7. Three &4Requiums in the correct'
+  - '&7order could be used to take down a &2Vessel&7.'
+  - '&2/mine vessels &7for more information.'
+CommandList:
+- ''
+- '&8&m]-----------+&r&8[ &9&lPyroMining &r&8]&m+-----------['
+- ''
+- '&b/mine help &7- Shows this command list.'
+- '&b/mine menu &7- Opens the main mining menu.'
+- '&b/mine shop &7- Opens the mining sell shop.'
+- '&b/mine singularity &7- Opens the mining singularity.'
+- '&b/mine journal &7- Shows info on items the plugin has.'
+- '&b/mine stats <player> &7- Opens the passives menu.'
+- '&b/mine artifacts &7- Opens the artifacts menu.'
+- '&b/mine vessels &7- Opens the vessels menu.'
+- '&b/mine blacksmith &7- Opens the blacksmith menu.'
+- '&b/mine zeta &7- Shows you your Zeta balance.'
+- '&9/mine reload &7- Reloads the plugin.'
+- '&9/mine cullmobs &7- Culls all plugin mobs.'
+- '&9/mine give <item> <player> <amount> &7- Gives items.'
+- '&9/mine addxp <player> <amount> &7- Adds Mining XP.'
+- '&9/mine addzeta <player> <amount> &7- Adds Zeta.'
+- '&9/mine addvessel <vessel> <amount> &7- Adds Vessels instantly.'
+- ''
+- '&8&m]-----------+&r&8[ &3Page (1/1) &r&8]&m+------------['
+- ''
+AncientRelic:
+  Name: '&3Ancient Relic'
+  Lore:
+  - '&7Drag and drop onto a &3&nSealed Artifact'
+  - '&7to increase its Tier by 1.'
+  - ''
+  - '&7One time use item.'
+  - ''
+  - '&7Obtained from &eImpulse &7or &5Mysterious Dust&7.'
+RuneDust:
+  Rune:
+    Lore:
+    - §7A mysterious rune obtained from
+    - §7killing a §dRune Guardian§7.
+    - ''
+    - §7Can be used when upgrading your
+    - §7singularity inside of §b/mine singularity§7.
+    - ''
+    - §7Rune Guardians can be summoned
+    - §7by right-clicking on redstone ore
+    - §7with Rune Dust.
+  Lore:
+  - §7Found from Refining Mysterious Dust.
+  - §7Can be used to summon Rune Guardians.
+  - §7§oRune Guardians are mini bosses.
+  - ''
+  - '§dHow to use:'
+  - §7Right click on redstone ore while holding
+  - §7this to summon a random Rune Guardian.
+  - ''
+  - '§7Guardian Health: §d%health%'
+  - '§7Guardian Damage: §d%damage%'
+  Name: '&5Rune Dust'
+AbyssalAccelerator:
+  Name: '&5Abyssal Accelerator'
+  Lore:
+  - §7Obtained as a rare drop from §5Tohka§7.
+  - ''
+  - §7Right click to instantly warp time and finish
+  - §7all items in the §eArtifact Identifier§7.
+Runes:
+  Names:
+    Ghost: '&7Ghost Rune'
+    Ground: '&6Ground Rune'
+    Fairy: '&dFairy Rune'
+    Lightning: '&eLightning Rune'
+    Water: '&bWater Rune'
+    Nature: '&aNature Rune'
+    Fire: '&cFire Rune'
+AstralRune:
+  Lore:
+  - '&7A rare and mythical rune that'
+  - '&7emits a mysterious aura...'
+  - '&7You might be able to use this'
+  - '&7to further explore the Aether.'
+  Name: '&5Astral Rune'
+Artifacts:
+  Upgrades:
+    Archaeologist:
+      Lore:
+      - §7This upgrade gives you a better chance
+      - §7to find §eFossils§7. Each level increases
+      - §7the base chance by §b1% §7flat.
+      Name: '&7Upgrade: &eArchaeologist'
+    Overclocked:
+      Name: '&7Upgrade: &eOverclocked'
+      Lore:
+      - §7This upgrade reduces the time it takes
+      - §7to identify §cArtifacts §7by §b1% §7per level.
+    LuckyCharm:
+      Lore:
+      - §7This upgrade gives you a better chance to
+      - §7get loot from the drop tables of §cArtifacts§7.
+      - §7Each level increases the chance by §b1% §7flat.
+      Name: '&7Upgrade: &eLuckyCharm'
+    Patience:
+      Name: '&7Upgrade: &ePatience'
+      Lore:
+      - §7This upgrade reduces the time it takes
+      - §7to identify §eFossils §7by §b1 minute §7per level.
+    FinalWhisper:
+      Lore:
+      - §7This upgrade gives you a higher chance to
+      - §7find §4Requium Orbs §7inside of the drop
+      - §7table. Find out more with §2/mine vessels§7.
+      - §7Each level increases the drop chance by §b0.5%
+      - §7§oYou can only find orbs in §bTier III §7Artifacts or higher.
+      Name: '&7Upgrade: &eFinal Whisper'
+  Misc:
+    Minutes: ' minutes'
+    FlatBonus: '% flat bonus'
+    MaxLevel: Max Level
+Requium:
+  Description:
+    DALETH: '&7You feel time start to rewind looking at this.'
+    YUD_ALEPH: '&7You feel yourself rift into the future.'
+    TET: '&7You feel someone elses senses from this.'
+    ALEPH: '&7This orb emits an aura similar to speed.'
+    YUD_BET: '&7You feel a time rift going back into the past.'
+    YUD: '&7Peek into the past of this object.'
+    BET: '&7You feel time stall with this orb.'
+    ZAYIN: '&7Time freezes while you hold this.'
+    VAV: '&7Your mind transmits into a past body of yours.'
+    HET: '&7You emit an aura that clones yourself.'
+    HEH: '&7You see a glimpse of the future from this.'
+    GIMEL: '&7You feel yourself age while holding this.'
+Fluxes:
+  Lore:
+  - '&7An uncommon material created from left'
+  - '&7over oracle energy from the old war.'
+  - ''
+  - '&7This can be sold for &b$%price% &7inside'
+  - '&7of &2/mine shop&7.'
+  Names:
+    Blazed: '&cBlazed Flux'
+    Basic: '&eBasic Flux'
+AbyssalShard:
+  Name: '&5Abyssal Shard'
+  Lore:
+  - §7Obtained as a rare drop from §5Tohka§7.
+  - ''
+  - §7Drag and drop onto an §cRequium Orb
+  - §7to duplicate it into another idenitical Requium.
+  - ''
+  - §7Very useful when used in conjunction with
+  - §7the mining §2Vessels§7.
+NotEnoughRunes: '&7You do not have enough &5Runes &7to unlock this!'
+OracleSummonCooldownPhase2: '&7You can''t summon &eImpulse &7for &c%seconds%&7 seconds.'
+OracleSummonCooldownPhase1: '&7You can''t summon &cRadalite &7for &c%seconds%&7 seconds.'
+OracleSummonCooldownPhase3: '&7You can''t summon &5Tohka &7for &c%seconds%&7 seconds.'
+DarkImbued:
+  Already: '&7You are already marked for death by &4The Unknown&7.'
+  Imbued: '&7You have crushed a &4Dark Imbuement&7. You feel a chill run down your
+    spine...'
+DarkCrystal:
+  Name: '&5Dark Crystal'
+  Lore:
+  - '&7This crystal pulsates with rich dark'
+  - '&7energy. You can use this to mark yourself'
+  - '&7for death by &3The Unknown&7. He will'
+  - '&7randomly appear while marked. If he is'
+  - '&7killed, the mark is removed and you'
+  - '&7will get a &8Dark Imbuement&7. This is'
+  - '&7required to summon &5Tohka&7!'
+  - '&7'
+  - '&7If you are killed, you will be placed'
+  - '&7in a &4haunted &7state for &460 &7minutes.'
+  - '&7You take 1.5x bonus damage from all'
+  - '&7damage sources.'
+ErrorPrefix: '&c&lPyroMining &8➤ '
+PlayerNotFound: '&cThat player is not online and or has never joined the server.'
+PickaxeView:
+  SINGULARITY_MENU: SINGULARITY_MENU
+  SHOP_MENU: SHOP_MENU
+  ARTIFACTS_MENU: ARTIFACTS_MENU
+  BLACKSMITH: BLACKSMITH
+  NONE: NONE
+  MAIN_MENU: MAIN_MENU
+  VESSELS_MENU: VESSELS_MENU
+  STATS_MENU: STATS_MENU
+LevelUp: '&7You leveled up your Mining Level to level: &3%level%'
+Astralite:
+  Lore:
+  - '&7A mythical crystal lifeform'
+  - '&7that emits a low sounding howl.'
+  - '&7Maybe it''s trying to tell you'
+  - '&7something? Maybe you can upgrade'
+  - '&7and craft &5Astralite Gear&7.'
+  Name: '&5Astralite'
+Oracle:
+  NewUnchargedOracleite:
+    Lore:
+    - '&7Found from Refining Mysterious Dust.'
+    - '&7Needs to be charged before it can'
+    - '&7become useful. Charge this by holding'
+    - '&7it in your off-hand in a stack-size of 1.'
+    - '&7To gain charge, mine Diamond Ore.'
+    - ''
+    - '&7To gain charge, mine Diamond Ore.'
+    - '&7Current Charge: &8[&c%current%&4/&c%total%&8]'
+  Charged:
+    Name: '&eCharged Oracleite'
+    Lore:
+    - §7Obtained from §cUncharged Oracleite§7.
+    - §7Can be used to summon Oracles.
+    - §7§oOracles are end-game bosses
+    - §7§oand are very hard to defeat.
+    - ''
+    - '§6How to use:'
+    - §7Right click on emerald ore while holding
+    - §7this to summon the Oracle.
+GemLore:
+- §8§m-----------§r§8[%colorB% Information §8]§8§m-----------
+- '%colorA%Chance to Find:§8 ➤ §7%dropchance%%'
+- '%colorA%Found in:§8 ➤ §7%ore%'
+- '%colorA%Sell Price:§8 ➤ §7$%money%'
+- '%colorA%Quality:§8 ➤ §7%quality%'
+- §8§m-----------§r§8[%colorB% Information §8]§8§m-----------
+- §7Sell me inside of %colorA%/mine shop§7.
+- '%id%§7Right-click to reveal the quality of the Gemstone.'
+- '%id%§7by doing this, you risk gaining or losing the base'
+- '%id%§7sell price of the Gemstone. Only do this if you want'
+- '%id%§7to try your luck at making some extra money!'
+- '%ad%§7This gemstone has been examined.'
+- §8§m-----------§r§8[%colorB% Information §8]§8§m-----------
+Commands:
+  AddXP:
+    Sender: '&7You have given &3%amount% &7Mining XP to &3%target%&7.'
+    Target: '&7You have been given &3%amount%&7 Mining XP!'
+  AddZeta:
+    Sender: '&7You have given &3%amount% &7Zeta to &3%target%&7.'
+    Target: '&7You have been given &3%amount%&7 Zeta!'
+  InvalidUsername: '&7You have entered an invalid username.'
+RadaliteTear:
+  Used: '&7Your &5Rune Guardian &7cooldown has been reset!'
+  CantUse: '&7You don''t have a cooldown at the moment.'
+GUINames:
+  FossilTransmuter: '&9&lFossil Transmuter'
+  Stats: '&9&lStatistics: '
+ShatteredOrbs:
+  Failed: '&7You do not have enough &cShattered Requium Orbs &7to do this!'
+  Success: '&7You shattered 4 &cRequium Orbs &7and created a new charged one!'
+ReloadedPlugin: '&9PyroMining has been reloaded successfully.'
+PickaxeViewDisabled: '&7Pickaxe view has been disabled and you cannot use this.'
+RuneGuardian:
+  Summon: '&7You have summoned a %guardian%&7!'
+ServerPrefix_NoColor: PyroMining
+ChargedOracleite: '&7You have just &echarged &7the &eOracleite &7in your off-hand.'
+RuneGuardians:
+  BonusRune: '&7Your &8Nefaris Shadows &7gave you a bonus rune!'
+  NoRune: '&7You were unlucky and &5Rune Guardian &7didn''t drop a rune!'
+  ImmuneInWater: '&5Rune Guardians &7are immune to damage while in water!'
+BossAlive: '&7You cannot access this menu while your boss is alive!'
+RuneGuardianSummonCooldown: '&7You can''t summon another &5Rune Guardian &7for &c%seconds%&7
+  seconds.'
+HellRuneLore:
+- §7A rare and mythical rune that
+- §7emits a mysterious aura...
+- §7
+- §7Use this on §aemerald ore §7to
+- §7summon §eImpulse§7.
+GuardianDropRune: '&7You killed a &5Rune Guardian &7and it dropped a &5Rune&7!'
+MysteriousDustDrops:
+  Lore:
+  - '&7- &5Rune Dust &7(&a%runedust%%&7)'
+  - '&7- &eOracleite &7(&a%oracleite%%&7) - Level 20+'
+  - '&7- &3Ancient Relic &7(&a%ancientrelic%%&7) - Level 25+'
+  - '&7- &cShattered Requium Orb &7(&a%shatteredrequiumorb%%&7) - Level 30+'
+ShatteredRequium:
+  Lore:
+  - §7The dark and evil energy source has
+  - §7dissipated from this orb. §c4 §7of
+  - §7these could be used to create another
+  - §4Requium §7with their residual energy.
+  - ''
+  - §7§oRight click while holding four to
+  - §7§ocreate a random §4§oRequium Orb§7§o.
+  Name: '&4Shattered Requium Orb'
+Misc:
+  Time:
+    NoHours: '%minutes% minutes and %seconds% seconds'
+    Hours: '%hours% hours, %minutes% minutes and %seconds% seconds'
+SellMessage: '&7You earned &bMONEYEARNED$ &7from selling &bITEMSSOLD &7Items!'
+DarkImbuement:
+  Lore:
+  - '&7A rare and mythical rune that'
+  - '&7emits a mysterious aura...'
+  - '&7You might be able to use this'
+  - '&7to further explore the Aether.'
+  Name: '&8Dark Imbuement'
+FoundMysteriousDust: '&7You have found some &7&oMysterious Dust&7&r.'
+SpigotURLNoAccess: '&cYou do not have access to preview this.'
+SuccessPrefix: '&b&lPyroMining &8➤ '
+RadaliteClaw:
+  Name: '&cRadalite Claw'
+  Lore:
+  - '&7Consume to remove any cooldowns'
+  - '&7for summoning &5Rune Guardians&7.'
+  - ''
+  - '&7Dropped by &cRadalite&7.'
+GiveCommandLore:
+- '&8&m]-----------+&r&8[ &9&lItems &8]&m+-----------['
+- '§7Item List:'
+- §7► §9MysteriousDust
+- §7► §9RuneDust
+- §7► §9ChargedOracleite
+- §7► §9Oracleite
+- §7► §9HellRune
+- §7► §9LightRune
+- §7► §9Vessel:<name>
+- §7► §9Requium:<name>
+- §7► §9Gemstone:<name>
+- §7► §9Artifact:<name>
+- §7► §9Fossil:<name>
+- §7► §9BlazedFlux
+- §7► §9BasicFlux
+- §7► §9ShatteredRequiumOrb
+- §7► §9UnidentifiedDragonFossil
+- §7► §9UnidentifiedPhoenixFossil
+- §7► §9UnidentifiedManticoreFossil
+- §7► §9RadaliteClaw
+- '&8&m]-----------+&r&8[ &9&lItems &8]&m+-----------['
+ZetaRedeemed: '&7You have redeemed &e10,000 &7Zeta and now have &6%zeta%&7 Zeta.'
+CannotSpawnRuneGuardianInLocation: '&7You cannot spawn a &5Rune Guardian &7in that
+  location! You need at least 3 blocks above the ore to spawn it.'
+MysteriousDust:
+  Name: '&7Mysterious Dust'
+  Lore:
+  - §7Found while mining ores.
+  - §7Can be refined using a §bRefinery§7.
+  - §7To make a §bRefinery§7 place a §f§ndropper
+  - §7facing §f§nup§r§7 with a §f§nfence§r§7 on top. Place the
+  - §7item inside and interact with the fence.
+  - ''
+  - '§7Possible Drops:'
+FoundFlux: '&7You have found a &aFLUX &7flux.'
+SummonedPhase1Oracle: '&7You have summoned &c&lRadalite (Phase 1)&7!'
+LightRuneName: '&fLight Rune'
+CannotSpawnOracleInLocation: '&7You cannot spawn an &eOracle &7in this location. You
+  need at least 6 blocks above the ore to spawn it.'
+MainGUIPrefix: '&9&lPyroMining'
+ZetaTearName: '&6Zeta Tear (&e10,000&6)'
+HellRuneName: '&4Hell Rune'
+Oracles:
+  Oracleite:
+    Name: '&cUncharged Oracleite'
+SummonedPhase3Oracle: '&7You have summoned &5&lTohka (Phase 3)&7!'
+NoPermission: '&7You do not have permission to do this.'
+DisabledMobWorld: '&7Custom Mining Mobs are disabled in this world.'
+CreativeMode: '&7You cannot access this menu in &ccreative mode&7.'
+ArtifactUpgradeInfoLore:
+- '&7'
+- '&7Upgrade Stats:'
+- '&7- Current Level: &b%current%'
+- '&7- Next Level: &9%next%'
+- '&7- Upgrade Cost: &3%cost% Zeta'
+- '&7- Max Level: &3%max%'
+- '&7'
+- '&7Left-click to upgrade.'
+SummonedPhase2Oracle: '&7You have summoned &e&lImpulse (Phase 2)&7!'
