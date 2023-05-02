@@ -1,0 +1,49 @@
+# This global group will be applied to all players
+globalGroup:
+  prefix: '%cmi_user_prefix%&f'
+  tabname: ''
+  suffix: '%cmi_user_suffix%'
+
+groups:
+  # Vault group name OR player name OR custom group name (custom is assigned via permission)
+
+  Default:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  orc:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  gnom:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  admin:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  dwarf:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  goblin:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  oper:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  moder:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  human:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'
+  elf:
+    prefix: '%cmi_user_prefix%&7'
+    tabname: '%player%'
+    suffix: '%cmi_user_suffix%'

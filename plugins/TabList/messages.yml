@@ -1,0 +1,26 @@
+reloadconfig: '&aПерезагружено!'
+nopermission: '&cУ вас нет прав на это!&7 (%perm%)'
+unknownsub-command: '&cНеизвестная подкоманда&7 %subcmd%&c.'
+noconsole: '&cЭта команда &7/%command%&c может быть выполнена только в игре.'
+set-group:
+  meta-could-not-be-empty: '&cПрефикс не может быть пустым!'
+  meta-set: '&aВы установили префикс для &e%team%&a, который выглядит так: &r%meta%'
+  priority-must-be-number: '&cПриоритет должен быть числом!'
+  not-found: '&cКоманда &7%team%&c не найдена.'
+  removed: '&cКоманда с именем &7%team%&c удалена.'
+toggle:
+  console-usage: '&cИспользование: &7/%command% toggle <игрок/все>'
+  enabled: '&aВкладка включена!'
+  disabled: '&cВкладка выключена!'
+  player-not-found: '&cИгрок &7%player%&c не найден!'
+fake-player:
+  added: '&aДобавлен фейковый игрок &7%name%&a'
+  removed: '&cУдален фейковый игрок &7%name%&c'
+  already-added: '&cФейковый игрок &7%name%&c уже добавлен.'
+  not-exists: '&cФейковый игрок с таким именем не существует.'
+  no-fake-player: '&cФейковых игроков нет.'
+  disabled: '&cОпция фейковых игроков отключена в конфиге.'
+  ping-can-not-be-less: '&cЗадержка должна быть больше &e%amount%&c и быть числом.'
+  list:
+  - '&cФейковые игроки&7 (&e%amount%&7):'
+  - '&r%fake-players%'
