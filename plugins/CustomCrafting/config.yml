@@ -1,0 +1,297 @@
+# Config for CustomCrafting v4.16.6.4
+# -
+# PlaceholderAPI:
+# Identifier: customcrafting
+# Placeholders:
+#   - %customcrafting_crafts%       > The total custom recipes the player has crafted
+#   - %customcrafting_recipes_[option]%
+#       - %customcrafting_recipes_vanilla%        > The total vanilla recipes that are loaded
+#       - %customcrafting_recipes_custom%         > The total custom recipes that are loaded
+#       - %customcrafting_recipes_available%      > The amount of custom recipes that the player has permission to use
+#   - %customcrafting_recipe_[option]_[namespaced_key]%
+#       - %customcrafting_recipe_type_[namespaced_key]%         > The type of the recipe
+#       - %customcrafting_recipe_crafts_[namespaced_key]%       > How often the player has crafted the recipe
+#       - %customcrafting_recipe_advanced_[namespaced_key]%     > If the recipe is an advanced crafting table recipe
+#       - %customcrafting_recipe_permission_[namespaced_key]%   > If the recipe requires a permission
+#       - %customcrafting_recipe_available_[namespaced_key]%    > If the recipe is available for the player
+
+debug: false
+language: ru_RU
+gui:
+  # Specifies if the background glass panes should be placed into the gui. If disabled things like crafting grids/slots won't be apparent anymore! Best in combination with custom gui textures!
+  draw_background: true
+creator:
+  # Configure if the stored values and items you put or configured in the GUI should be cleared after saving a recipe.
+  reset_after_save: true
+commands:
+  # Aliases for the main command of the plugin.
+  # This is often used to prevent incompatibility with other plugins that use the same alias as ChatClear, etc.
+  alias:
+  - cc
+local_storage:
+  # this should always be true if you don't use a database or want to export your data to the database.
+  # If you use a database you can still load local data, but configure how it loads them with the following settings below.
+  load: true
+  # Specifies if the local storage should be loaded before or after the database.
+  # This is useful if you have items/recipes that depend on items in the database or other way around.
+  # Make sure that the dependencies of items and recipes are loaded in the correct order.
+  before_database: true
+  # Sets if already existing recipes/items with the same namespaced key should be replaced when registered.
+  # Useful if you want to override a database recipe/item with the one from local storage.
+  # Or when "before_database" enabled override local recipes/items with database data.
+  # The recipes can only be replaced in Minecraft 1.15+, because the API pre 1.15 is unstable.
+  override_data: false
+database:
+  # If the database feature should be used or not.
+  enabled: false
+  # The type of the database. Currently, only MYSQL
+  type: MYSQL
+  # The ip or hostname of the data bank
+  host: localhost
+  # The port of the data bank
+  port: 3306
+  # The name of the schema
+  schema: mc_plugins
+  # The username of the user to use for the connection.
+  username: minecraft
+  # The users password
+  password: ''
+data:
+  # Toggle if the stacktrace should be printed out if a recipe or item fails to load.
+  print_stacktrace: false
+  # Do not change this number! It is used for internal conversion of items between Bukkit versions to make sure they are up-to-date.
+  bukkit_version: 3337
+  # Do not change this number! It is used to update configs of recipes and items to new formats!
+  version: 5
+crafting_table:
+  # If the advanced crafting table is enabled or not.
+  enable: true
+  # If the crafting table item should be reset on each server start. This means the config is replaced with a new version.
+  reset: true
+recipe_book:
+  # If the recipe book item should be reset on each server start. This means the config is replaced with a new version.
+  reset: true
+  # If closed and opened again, it'll open up the recipe and menu the player last left on.
+  keep_last_open: true
+  # The title of the single recipe menu
+  recipe_type_titles:
+    crafting_shaped: <translate:recipe.type.crafting.crafting_shaped>
+    crafting_shapeless: <translate:recipe.type.crafting.crafting_shapeless>
+    elite_crafting_shaped: <translate:recipe.type.crafting.elite_crafting_shaped>
+    elite_crafting_shapeless: <translate:recipe.type.crafting.crafting_shaped>
+    furnace: <translate:recipe.type.cooking.furnace>
+    blast_furnace: <translate:recipe.type.cooking.blast_furnace>
+    smoker: <translate:recipe.type.cooking.smoker>
+    campfire: <translate:recipe.type.cooking.campfire>
+    smithing: <translate:recipe.type.smithing>
+    anvil: <translate:recipe.type.anvil>
+    cauldron: <translate:recipe.type.cauldron>
+    stonecutter: <translate:recipe.type.stonecutter>
+    grindstone: <translate:recipe.type.grindstone>
+    brewing_stand: <translate:recipe.type.brewing_stand>
+workstation:
+  cauldron:
+    interaction: NORMAL
+    sound: {}
+    gui:
+      main_menu:
+        title: <translate:inventories.cauldron.cauldron.default_title>
+      result_menu:
+        title: <translate:inventories.cauldron.cauldron.default_title>
+custom_items:
+  # Use this option if you have saved CustomItems and your players got them in their inventory. Each time a Player joins the server it will try to update the CustomItems.
+  update: true
+recipes:
+  # Toggle the Brewing Recipes. They are off by default to prevent possible duplication issues
+  brewing: true
+  # Used to block any kind of custom recipe. If enabled no one will be able to craft any custom recipe anymore.
+  lockdown: false
+  # If the configs like items or recipes should be saved using formatting or just one continuous String.
+  pretty_printing: true
+  # The vanilla or custom recipes that are blocked from crafting.
+  disabled_recipes:
+  - minecraft:diamond_pickaxe
+  - minecraft:birch_button
+  - minecraft:lime_dye
+  - minecraft:brown_banner
+  - minecraft:light_gray_dye_from_oxeye_daisy
+  - minecraft:golden_carrot
+  - minecraft:orange_dye_from_red_yellow
+  - minecraft:netherite_scrap_from_blasting
+  - minecraft:acacia_button
+  - minecraft:magenta_dye_from_lilac
+  - minecraft:purple_candle
+  - minecraft:bone_meal
+  - minecraft:blue_banner
+  - minecraft:birch_pressure_plate
+  - minecraft:cyan_candle
+  - minecraft:orange_dye_from_orange_tulip
+  - minecraft:golden_apple
+  - minecraft:orange_candle
+  - minecraft:recovery_compass
+  - minecraft:red_candle
+  - minecraft:jungle_chest_boat
+  - minecraft:crimson_pressure_plate
+  - minecraft:light_gray_dye_from_azure_bluet
+  - minecraft:magenta_dye_from_blue_red_white_dye
+  - minecraft:activator_rail
+  - minecraft:leather_chestplate
+  - minecraft:honey_bottle
+  - minecraft:purple_dye
+  - minecraft:netherite_sword_smithing
+  - minecraft:spruce_chest_boat
+  - minecraft:honey_block
+  - minecraft:netherite_scrap
+  - minecraft:spruce_button
+  - minecraft:light_blue_banner
+  - minecraft:magenta_dye_from_blue_red_pink
+  - minecraft:light_blue_dye_from_blue_white_dye
+  - minecraft:cyan_dye
+  - minecraft:light_gray_dye_from_gray_white_dye
+  - minecraft:magenta_dye_from_purple_and_pink
+  - minecraft:spruce_pressure_plate
+  - minecraft:purple_banner
+  - minecraft:magenta_candle
+  - minecraft:heavy_weighted_pressure_plate
+  - minecraft:red_banner
+  - minecraft:spyglass
+  - minecraft:golden_axe
+  - minecraft:leather_horse_armor
+  - minecraft:light_gray_dye_from_black_white_dye
+  - minecraft:golden_leggings
+  - minecraft:oak_chest_boat
+  - minecraft:cookie
+  - minecraft:candle
+  - customcrafting:fisherman/fishing_rod
+  - minecraft:lightning_rod
+  - minecraft:oak_button
+  - minecraft:red_dye_from_poppy
+  - minecraft:tnt_minecart
+  - minecraft:light_gray_candle
+  - minecraft:lime_banner
+  - minecraft:netherite_pickaxe_smithing
+  - minecraft:diamond_shovel
+  - minecraft:lead
+  - minecraft:observer
+  - minecraft:birch_chest_boat
+  - minecraft:redstone_lamp
+  - minecraft:light_blue_candle
+  - minecraft:stone_pressure_plate
+  - minecraft:oak_pressure_plate
+  - minecraft:dropper
+  - minecraft:lime_dye_from_smelting
+  - minecraft:jukebox
+  - minecraft:warped_fungus_on_a_stick
+  - minecraft:cyan_banner
+  - minecraft:composter
+  - minecraft:netherite_shovel_smithing
+  - minecraft:netherite_helmet_smithing
+  - minecraft:mangrove_chest_boat
+  - minecraft:gray_banner
+  - minecraft:pink_dye_from_red_white_dye
+  - minecraft:firework_rocket
+  - minecraft:note_block
+  - minecraft:yellow_dye_from_sunflower
+  - minecraft:pink_dye_from_peony
+  - minecraft:music_disc_5
+  - minecraft:bow
+  - minecraft:diamond_helmet
+  - minecraft:crimson_button
+  - minecraft:golden_hoe
+  - minecraft:sticky_piston
+  - minecraft:conduit
+  - minecraft:netherite_axe_smithing
+  - minecraft:light_blue_dye_from_blue_orchid
+  - minecraft:clock
+  - minecraft:warped_button
+  - minecraft:chest_minecart
+  - minecraft:white_dye
+  - minecraft:green_candle
+  - minecraft:golden_helmet
+  - customcrafting:enginee/crymson_button
+  - minecraft:compass
+  - minecraft:rail
+  - minecraft:bone_meal_from_bone_block
+  - minecraft:diamond_hoe
+  - minecraft:red_dye_from_beetroot
+  - minecraft:piston
+  - minecraft:powered_rail
+  - minecraft:pink_candle
+  - minecraft:light_weighted_pressure_plate
+  - minecraft:red_dye_from_rose_bush
+  - minecraft:blue_dye
+  - minecraft:yellow_dye_from_dandelion
+  - minecraft:diamond_sword
+  - minecraft:dark_oak_button
+  - minecraft:firework_star
+  - minecraft:white_banner
+  - minecraft:black_banner
+  - minecraft:lever
+  - minecraft:gray_candle
+  - minecraft:light_gray_banner
+  - minecraft:end_crystal
+  - minecraft:acacia_pressure_plate
+  - minecraft:yellow_banner
+  - minecraft:diamond_leggings
+  - minecraft:golden_shovel
+  - minecraft:dispenser
+  - minecraft:detector_rail
+  - minecraft:daylight_detector
+  - minecraft:iron_door
+  - minecraft:pink_dye_from_pink_tulip
+  - minecraft:white_dye_from_lily_of_the_valley
+  - minecraft:yellow_candle
+  - minecraft:golden_sword
+  - minecraft:golden_boots
+  - minecraft:netherite_chestplate_smithing
+  - minecraft:melon
+  - minecraft:hopper_minecart
+  - minecraft:golden_pickaxe
+  - minecraft:dark_oak_chest_boat
+  - minecraft:melon_seeds
+  - minecraft:firework_star_fade
+  - minecraft:comparator
+  - minecraft:hopper
+  - minecraft:pink_banner
+  - minecraft:netherite_boots_smithing
+  - minecraft:brown_dye
+  - minecraft:repeater
+  - minecraft:magenta_dye_from_allium
+  - minecraft:firework_rocket_simple
+  - minecraft:black_dye_from_wither_rose
+  - minecraft:warped_pressure_plate
+  - minecraft:redstone_torch
+  - minecraft:fishing_rod
+  - minecraft:magenta_banner
+  - minecraft:gray_dye
+  - minecraft:furnace_minecart
+  - minecraft:dark_oak_pressure_plate
+  - minecraft:green_banner
+  - minecraft:diamond_boots
+  - minecraft:netherite_hoe_smithing
+  - minecraft:cake
+  - minecraft:diamond_axe
+  - minecraft:orange_banner
+  - minecraft:brown_candle
+  - minecraft:pumpkin_seeds
+  - minecraft:leather_boots
+  - minecraft:mangrove_button
+  - minecraft:diamond_chestplate
+  - minecraft:black_candle
+  - minecraft:brewing_stand
+  - minecraft:jungle_pressure_plate
+  - minecraft:netherite_ingot
+  - minecraft:blue_candle
+  - minecraft:golden_chestplate
+  - minecraft:white_candle
+  - minecraft:stone_button
+  - minecraft:beehive
+  - minecraft:beacon
+  - minecraft:jungle_button
+  - minecraft:leather_leggings
+  - minecraft:leather_helmet
+  - minecraft:mangrove_pressure_plate
+  - minecraft:red_dye_from_tulip
+  - minecraft:netherite_leggings_smithing
+  - minecraft:tnt
+  - minecraft:lime_candle

@@ -1,0 +1,19 @@
+top:
+  Loc: world;-344.52;67.87;-799.48
+  LOSInterval: 0.1
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Lines:
+  - 1. %ajlb_lb_cmi_user_playtime_hoursf_1_weekly_name% &c~ &f%ajlb_lb_cmi_user_playtime_hoursf_1_weekly_value%&ah
+  - 2. %ajlb_lb_cmi_user_playtime_hoursf_2_weekly_name% &c~ &f%ajlb_lb_cmi_user_playtime_hoursf_2_weekly_value%&ah
+  - 3. %ajlb_lb_cmi_user_playtime_hoursf_3_weekly_name% &c~ &f%ajlb_lb_cmi_user_playtime_hoursf_3_weekly_value%&ah
+balancetop:
+  Loc: world;-352.61;68.3;-799.65
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Lines:
+  - '%cmi_baltop_name_[1-10]%'
