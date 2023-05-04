@@ -1,432 +1,418 @@
 Stats:
   Lore:
     Flux:
-    - '&7Total Fluxes Found: &a%total%'
-    - '&7Basic Fluxes Found: &a%basic%'
-    - '&7Blazed Fluxes Found: &a%blazed%'
+    - '&7Всего найдено потоков: &a%total%'
+    - '&7Базовых потоков найдено: &a%basic%'
+    - '&7Найдено заряженных потоков: &a%blazed%'
     General:
-    - '§7Money Made: §a$%money%'
-    - '§7Gems Found: §a%gems%'
-    - '§7Rune Guardians Killed: §a%runes%'
-    - '§7Oracles Killed: §a%oracles%'
-    - '§7Artifacts Found: §a%artifacts%'
-    - '§7Artifacts Identified: §a%artifacts_identified%'
+    - '§7Заработано денег: §a$%money%'
+    - '§7Найдено драгоценных камней: §a%gems%'
+    - '§7Убито опекунов рун: §a%runes%'
+    - '§7Убито оракулов: §a%oracles%'
+    - '§7Найдено артефактов: §a%artifacts%'
+    - '§7Идентифицировано артефактов: §a%artifacts_identified%'
     Passive:
-    - '§7Zeta: §a%zeta%'
-    - '§7Mining Level: §a%level%'
-    - '§7Current XP: §a%current%'
-    - '§7Required XP: §a%required%'
+    - '§7Зета: §a%zeta%'
+    - '§7Уровень горного дела: §a%level%'
+    - '§7Текущий опыт: §a%current%'
+    - '§7Требуемый опыт: §a%required%'
   Names:
-    General: '&b&lGeneral Stats'
-    Passive: '&6&lPassive Stats'
-    Flux: '&2&lFlux Stats'
+    General: '&b&lОбщая статистика'
+    Passive: '&6&lПассивная статистика'
+    Flux: '&2&lСтатистика потоков'
 GUI:
   Journal:
     Vessels:
       Lore:
-      - §2Vessels §7are similar to custom enchantments
-      - §7but are only for pickaxes. To craft one
-      - §7you need all §38 §7pieces of the §2Vessel
-      - §7which can be obtained as §6fossils §7from
-      - §aartifacts§7. Place all §38 §7pieces in a
-      - §6Refinery§7 to craft the §2Vessel§7.
+      - §2Суда §7похожи на индивидуальные зачарования
+      - §7, но доступны только для кирок. Чтобы создать одно
+      - §7судно, вам нужно получить все §38 §7кусочков §2Судна§7,
+      - §7которые можно получить в виде §6ископаемых §7из 
+      - §aартефактов§7. Поместите все §38 §7кусочков в 
+      - §6Переработчик§7, чтобы создать §2Судно§7.
       - §7
-      - §6§oClick me to view a full Vessel list.
+      - §6§oНажмите, чтобы посмотреть полный список судов.
       - §7
-      - §2Vessels §7require you to guess the correct
-      - §4Requium §7order to be able to kill the boss.
-      - §7You can view your previous attempts inside
-      - §7of the §9/mine vessels §7inventory. There
-      - §7is more information inside of that GUI.
-      Name: '&2&lVessels'
+      - §2Судна §7требуют от вас угадать правильный
+      - §4Порядок Риквиема§7, чтобы убить босса.
+      - §7Вы можете просмотреть свои предыдущие попытки внутри 
+      - §7инвентаря §9/моя судна§7. В этом GUI также есть более 
+      - §7подробная информация.
+      Name: '&2&lСуда'
     Oracles:
       Lore:
-      - §cOracles §7are end game bosses that can be
-      - §7summoned using §eCharged Oracleite§7.
-      - §7This is obtained from §8Mysterious Dust§7.
+      - §cОракулы §7- это боссы конца игры, которых можно вызвать, 
+      - §7используя §eЗаряженный Оракулит§7.
+      - §7Это получается из §8Таинственной Пыли§7.
       - §7
-      - §cOracles §7should only be fought when level
-      - §b35 §7in §3/mine stats§7. Once you kill the
-      - §7first §3phase §7you will get a §5rune §7to summon
-      - §7the next §3phase.
+      - §cОракулов §7нужно бить только при уровне
+      - §b35 §7в §3/мои показатели§7. После того, как вы убьете первую §3фазу
+      - §7, вы получите §5руну§7, чтобы вызвать следующую §3фазу.§7
       - §7
-      - §7You summon §cOracles §7by using §eCharged
-      - §eOracleite §7on §aEmerald Ore§7.
+      - §7Вы вызываете §cОракулов §7, используя §eЗаряженный 
+      - §eОракулит §7на §aИзумрудную Руду§7.
       - §7
-      - §cOracles §7will drop items used in the plugin
-      - §7and for §6Blacksmithing§7.
-      Name: '&c&lOracles'
+      - §cОракулы §7будут сбрасывать предметы, используемые в плагине
+      - §7и для §6Кузнечества§7.
+      Name: '&c&lОракулы'
     Refinery:
       Lore:
-      - §7A §3Refinery §7is needed to process §fMysterious Dust§7.
-      - §7To create a §3Refinery §7place a §f§nDropper §7facing
-      - §f§nupwards§7. You then need to place a §f§nfence §7on
-      - §7top of this to create the §3Refinery§7.
+      - §7Для обработки §fТаинственной Пыли§7 необходим §3Переработчик§7.
+      - §7Чтобы создать §3Переработчик§7, поместите §f§nДроппер§7
+      - §f§nвверх§7. Затем вам нужно поместить §f§nзабор§7 на 
+      - §7вершину этого, чтобы создать §3Переработчик§7.
       - §7
-      - §7Place the §fMysterious Dust §7inside the §3Refinery
-      - §7to process it into its different components.
+      - §7Поместите §fТаинственную Пыль§7 внутрь §3Переработчика,
+      - §7чтобы обработать ее в различные компоненты.
       - §7
-      - §7Alternatively, place all §38 pieces of a §2Vessel
-      - §7in there to craft a §2Vessel§7.
-      Name: '&b&lRefinery'
+      - §7В качестве альтернативы, поместите все §38 кусочков §2Судна
+      - §7туда, чтобы создать §2Судно§7.
+      Name: '&b&lПереработчик'
     Gemstones:
       Lore:
-      - §2Gemstones §7drop from each ore apart from
-      - §6Gold §7and §fIron §7ore. You can either sell
-      - §7these using §a/mine shop §7or right click
-      - §7them to §fIdentify §7their quality which
-      - §7can either §2increase §7or §cdecrease
-      - §7the overall sell price of the §2Gemstone§7.
-      Name: '&a&lGemstones'
+      - §2Драгоценные камни§7 выпадают из каждой руды, кроме §6Золотой§7
+      - §7и §fЖелезной§7 руды. Вы можете продать их, используя §a/магазин руды§7 или щелкнуть 
+      - §7правой кнопкой мыши, чтобы §fОпределить§7 их качество, 
+      - §7которое может как §2увеличить§7, так и §cуменьшить§7 общую цену продажи §2Драгоценных Камней§7.
+      Name: '&a&lДрагоценные камни'
     Flux:
-      Name: '&3&lFluxes'
+      Name: '&3&lФлюксы'
       Lore:
-      - §3Fluxes §7can be found from mining all ores.
-      - §7- §fBasic Fluxes §7will drop from §fOverworld §7ores.
-      - §7- §cBlazed Fluxes §7will drop from §cNether §7ores.
+      - §3Флюксы§7 могут быть найдены при добыче всех руд.
+      - §7- §fОсновные Флюксы§7 будут выпадать из §fОбычных мировых§7 руд.
+      - §7- §cИспепеляющие Флюксы§7 будут выпадать из §cНижнеразмерных§7 руд.
       - §7
-      - §3Fluxes §7can be sold to the §a/mine shop
-      - §7for money. They have no other use currently.
+      - §3Флюксы§7 могут быть проданы в §a/магазин руды§7 на деньги. 
+      - §7На данный момент они не имеют другого применения.
     Blacksmith:
-      Name: '&6&lBlacksmith'
+      Name: '&6&lКузнец'
       Lore:
-      - §7This feature is currently not implemented
-      - §7and will be implemented in a future release.
+      - §7Эта функция в настоящее время не внедрена и будет реализована в следующем выпуске.
       - §7
-      - §7The §6Blacksmith §7is a place to forge
-      - §7and create custom pickaxes using materials
-      - §7from the plugin.
+      - §6Кузнечная §7- это место для ковки и создания индивидуальных кирок, 
+      - §7используя материалы из плагина.
       - §7
-      - §7These pickaxes have unique §3traits §7and
-      - §3abilities §7which is unique to every
-      - §7pickaxe.
+      - §7Эти кирки имеют уникальные §3характеристики§7 и
+      - §3способности§7, которые уникальны для каждой кирки.
     Fossils:
       Lore:
-      - §6Fossils §7are obtained from §3Artifacts§7.
-      - §7Once you have an §6Unidentified Fossil §7place
-      - §7it inside an empty slot inside of §a/mine artifacts§7.
+      - §6Ископаемые останки§7 получаются из §3Артефактов§7.
+      - §7После того, как у вас есть §6Неопределенные ископаемые останки§7, поместите
+      - §7их в пустой слот внутри §a/мои артефакты§7.
       - §7
-      - §7Once the identification process is complete you
-      - '§7will get one part of a random §2Vessel§7. You '
-      - §7need §a8 §7parts to craft a §2Vessel§7.
-      Name: '&6&lFossils'
+      - §7После завершения процесса идентификации вы получите одну часть случайного §2Судна§7. 
+      - §7Вам нужно §a8§7 частей, чтобы создать §2Судно§7.
+      Name: '&6&lИскопаемые останки'
     Forge:
-      Name: '&2&lForge'
-      Lore:
-      - §7To create §2Vessels §7you will need a forge.
-      - §7This is a multiblock structure.
+      Name: '&2&lКузница'
+      Описание:
+      - §7Для создания §2Судов§7 вам нужна кузница.
+      - §7Это мультиблочная структура.
       - §7
-      - §6§oClick to view the multiblock structure layout.
+      - §6§oНажмите, чтобы посмотреть макет мультиблока.
       - §7
-      - §7To use the forge, drop all §a8 §7parts of the
-      - §2Vessel §7you want to craft into the center and
-      - §7hit it with anything! If you have the materials
-      - §7it will craft a §2Vessel §7for you!
+      - §7Чтобы использовать кузницу, бросьте все §a8§7 частей
+      - §2Судна§7, которое вы хотите создать, в центр и
+      - §7ударьте его чем-нибудь! Если у вас есть материалы, 
+      - §7они создадут для вас §2Судно§7!
     RuneGuardians:
-      Name: '&5&lRune Guardians'
+      Name: '&5&lСтражи Руны'
       Lore:
-      - §5Rune Guardians §7are mini-bosses that
-      - §7can be summoned using §5Rune Dust §7which
-      - §7is obtained from §8Mysterious Dust§7.
+      - §5Стражи Руны §7- это мини-боссы,
+      - §7которых можно вызвать, используя §5Рунную Пыль§7,
+      - §7которая получается из §8Таинственной Пыли§7.
       - §7
-      - §7To summon one, §cclick §7on an §cRedstone Ore
-      - §7using a §5Rune Dust §7to access the summon
-      - §7inventory. Once this is done you can summon
-      - §7them. They have a cooldown between summons.
+      - §7Чтобы призвать их, нажмите на §cКрасную Руду§7,
+      - §7используя §5Рунную Пыль§7, чтобы получить доступ к инвентарю для призыва.
+      - §7После этого вы можете вызвать их. У них есть задержка между призывами.
       - §7
-      - §5Runes §7are needed to upgrade and level
-      - §7your §bSingularity§7.
+      - §5Руны §7необходимы для улучшения и повышения уровня
+      - §7вашего §bСингулярити§7.
     NewSingularity:
       Lore:
-      - §7The §bSingularity §7is based around §5Runes§7.
+      - §7§bСингулярити§7 основана на §5Рунах§7.
       - ''
-      - §7Using these §5Runes, §7you can upgrade it
-      - §7to earn §bpoints§7. With these you can upgrade
-      - §7different abilities that aid you in your progress
-      - §7in other areas of the plugin such as §echeaper
-      - §eupgrades §7or §bIncreased Requium XP§7.
-      Name: '&b&lSingularity'
+      - §7Используя эти §5Руны§7, вы можете улучшать ее,
+      - §7чтобы заработать §bочки§7. С их помощью вы можете улучшать
+      - §7различные способности, которые помогут вам продвигаться
+      - §7в других областях плагина, таких как §eболее дешевые
+      - §eулучшения§7 или §bувеличение опыта Реквиума§7.
+      Name: '&b&lСингулярити'
     Artifacts:
       Lore:
-      - §3Artifacts §7are the newest edition to mining.
-      - §7These can be found in ores with a §61% §7base
-      - §7drop chance. You then need to §fright-click
-      - §7it to convert it into a usable §3artifact§7.
+      - §3Артефакты §7- это новейшее дополнение к шахтерству.
+      - §7Их можно найти в рудах с §61% §7базовой вероятностью выпадения.
+      - §7Затем вам нужно §fщелкнуть правой кнопкой мыши§7, 
+      - §7чтобы превратить их в полезный §3артефакт§7.
       - §7
-      - §7You then place it inside of §a/mine artifacts
-      - §7in one of the empty slots to start the
-      - §7identification process. After the time is up
-      - §7you have a chance to obtain a §6Fossil §7which
-      - §7are used to make §2Vessels§7.
+      - §7Затем поместите его внутри §a/mine артефакты§7
+      - §7в один из пустых слотов, чтобы начать процесс идентификации.
+      - §7По истечении времени у вас есть шанс получить §6Ископаемое§7,
+      - §7которое используется для изготовления §2Сосудов§7.
       - §7
-      - §7There are upgrades in here to help with processing.
-      Name: '&3&lArtifacts'
+      - §7Здесь есть улучшения, которые помогают при обработке.
+      Name: '&3&lАртефакты'
     Requiums:
-      Name: '&4&lRequiums'
+      Name: '&4&lРеквиумы'
       Lore:
-      - §4Requiums §7are used to kill the §2Vessel
-      - §7boss that you have. Three §4Requiums
-      - §7are needed to successfully kill the boss.
+      - §4Реквиумы §7используются для убийства §2босса Сосуда§7.
+      - §7Для успешного убийства босса требуется три §4Реквиума§7.
       - §7
-      - §7There are 12 different §4Requiums §7and each
-      - §7represent a different number. 1 to 12.
+      - §7Есть 12 различных §4Реквиумов§7, и каждый
+      - §7представляет собой различное число. От 1 до 12.
       - §7
-      - §4Requiums §7can be aquired by upgrading
-      - §fFinal Whisper §7upgrade inside of the
-      - §3/mine artifacts §7menu. Once you have
-      - §7done this you need to identify Tier §b3
-      - §7or higher §3artifacts §7to get them.
+      - §4Реквиумы§7 могут быть получены путем улучшения
+      - §fФинального Шепота §7в меню §3/mine артефакты§7.
+      - §7После этого вам необходимо идентифицировать §b3
+      - §7или более высокий §3артефакты§7, чтобы их получить.
       - §7
-      - §7Upon killing a boss, you will get three
-      - §7shattered orbs that can made into a new
-      - §4Requium Orb§7.
+      - §7После убийства босса вы получите три
+      - §7раздробленных орбиты, которые можно превратить в новый
+      - §4Реквиумный Орб§7.
   Main:
     BackArrow:
-      Name: '&c&lBack'
+      Name: '&c&lНазад'
       Lore:
-      - '&7Click to go back.'
+      - '&7Нажмите, чтобы вернуться назад.'
     Blacksmith:
-      Name: '&7&lBlacksmith'
+      Name: '&7&lКузнец'
       Lore:
-      - '&7Forge your own path soldier.'
-      - '&7&oWhat custom pickaxe will you make?'
+      - '&7Куй свой собственный путь, солдат.'
+      - '&7&oКакую пользовательскую кирку ты сделаешь?'
     PickaxeView:
-      Name: '&9&lPickaxe View:'
+      Name: '&9&lПросмотр Кирки:'
       Lore:
-      - §7When §ashift-clicking §7with your pickaxe
-      - §7you can hotkey a mining menu to open for you.
-      - §7Click this to rotate the available menus.
+      - §7При §aшифт-клике§7 киркой
+      - §7вы можете быстро открыть горное меню.
+      - §7Кликните здесь, чтобы повернуть доступные меню.
       - ''
-      - '§7Current Pickaxe View: §a%view%'
+      - '§7Текущий вид кирки: §a%view%'
     Shop:
       Lore:
-      - '&7Click to open the mining market!'
-      - '&7&oSell all your flux here!'
-      Name: '&6&lMine Shop'
+      - '&7Нажмите, чтобы открыть майнинговый магазин!'
+      - '&7&oПродайте здесь всю свою пыль!'
+      Name: '&6&lМагазин Шахтера'
     Journal:
-      Name: '&3&lJournal'
+      Name: '&3&lЖурнал'
       Lore:
-      - '&7An in-game wiki!'
-      - '&7&oWhat does the plugin have?'
+      - '&7В игровой вики!'
+      - '&7&oЧто есть в плагине?'
     Vessels:
       Lore:
-      - '&7Custom enchantments!'
-      - '&7&oWill you collect them all?'
-      Name: '&b&lVessels'
+      - '&7Пользовательские зачарования!'
+      - '&7&oВы соберете их все?'
+      Name: '&b&lСосуды'
     Fossils:
-      Name: '&6&lFossils'
+      Name: '&6&lИскопаемые'
       Lore:
-      - '&7All about Fossils!'
-      - '&7&oWhat unknown creature will you find?'
+      - '&7Все об ископаемых!'
+      - '&7&oКакое неизвестное существо вы найдете?'
     Artifacts:
       Lore:
-      - '&7Click to manage your artifacts!'
-      - '&7&oWhat will you discover?'
-      Name: '&9&lArtifacts'
+      - '&7Нажмите, чтобы управлять своими артефактами!'
+      - '&7&oЧто вы откроете?'
+      Name: '&9&lАртефакты'
     Stats:
       Lore:
-      - '&7Click to view your statistics!'
-      - '&7&oWho''s on top?'
-      Name: '&e&lStats'
+      - '&7Нажмите, чтобы просмотреть свою статистику!'
+      - '&7&oКто на вершине?'
+      Name: '&e&lСтатистика'
     Singularity:
-      Name: '&b&lSingularity'
+      Name: '&b&lСингулярити'
       Lore:
-      - '&7The pinnacle of unholy energy.'
-      - '&7&oWill you charge the singularity?'
+      - '&7Вершина нежной энергии.'
+      - '&7&oВы зарядите сингулярити?'
   Vessels:
     VesselBossInfo:
       Lore:
-      - '§7Vessel Information:'
-      - '§7- Vessel Level: §3%level%'
-      - '§7- Health: §3%health%'
-      - '§7- Damage: §3%damage%'
-      - '§7- Name: §3%name%'
-      - '§7- Anger Level: §3%anger%'
-      - '§7- Thralls Killed: §3%thralls%'
-      - '§7- Quirk: §3%quirk%'
-      - '§7- Thrall CD: §3%time%'
-      Name: '&3&lVessel Information'
+      - '§7Информация о корабле:'
+      - '§7- Уровень корабля: §3%level%'
+      - '§7- Здоровье: §3%health%'
+      - '§7- Урон: §3%damage%'
+      - '§7- Имя: §3%name%'
+      - '§7- Уровень гнева: §3%anger%'
+      - '§7- Убито приспешников: §3%thralls%'
+      - '§7- Особенность: §3%quirk%'
+      - '§7- Время до спавна приспешника: §3%time%'
+      Name: '&3&lИнформация о корабле'
     Information:
       '2':
-        Name: '&3&lInformation (&b2/4&3)'
+        Name: '&3&lИнформация (&b2/4&3)'
       '4':
-        Name: '&3&lInformation (&b4/4&3)'
+        Name: '&3&lИнформация (&b4/4&3)'
       '1':
-        Name: '&3&lInformation (&b1/4&3)'
+        Name: '&3&lИнформация (&b1/4&3)'
       '3':
-        Name: '&3&lInformation (&b3/4&3)'
-    NotEnoughZeta: '&7You don''t have enough &eZeta &7to do this.'
+        Name: '&3&lИнформация (&b3/4&3)'
+    NotEnoughZeta: '&7У вас недостаточно &eZeta&7 для этого действия.'
     VesselInfo:
       Lore:
-      - §7Select a pickaxe with a vessel to view
-      - §7and track your current progress.
-      Name: '&c&lVessel Information'
+      - §7Выберите кирку с кораблем для просмотра
+      - §7и отслеживания своего текущего прогресса.
+      Name: '&c&lИнформация о корабле'
     Requium:
       '1':
-        Name: '&c&lRequium #1'
+        Name: '&c&lРеквием #1'
       '2':
-        Name: '&c&lRequium #2'
+        Name: '&c&lРеквием #2'
       '3':
-        Name: '&c&lRequium #3'
+        Name: '&c&lРеквием #3'
     PreviousAttempts:
-      Name: '&c&lPrevious Attempts'
+      Name: '&c&lПредыдущие попытки'
       Lore:
-      - §7Select a pickaxe with a vessel to view
-      - §7and track your current progress.
+      - §7Выберите кирку с кораблем для просмотра
+      - §7и отслеживания своего текущего прогресса.
     WithdrawZeta:
       Lore:
-      - '&7Click to withdraw &e10,000 &7Zeta.'
-      - '&7Right click it again to consume the Zeta.'
+      - '&7Нажмите, чтобы вывести &e10,000 &7Zeta.'
+      - '&7Нажмите правую кнопку мыши еще раз, чтобы их потратить.'
       - ''
-      - '&7&oDo not spam this quickly.'
-      Name: '&6Withdraw Zeta (&e10,000&6)'
+      - '&7&oНе нажимайте быстро и повторно.'
+      Name: '&6Вывести Zeta (&e10,000&6)'
     Info:
       '4':
-      - '§bThralls:'
-      - §7Each §2Vessel §7has §3Thralls§7. These are
-      - §7little creatures that spawn when mining
-      - §7certain blocks. Killing these will give you
-      - §7anger progress and progress towards unlocking
-      - §7the correct §4Requiums§7.
+      - '§bПриспешники:'
+      - §7У каждого §2корабля §7есть свои §3приспешники§7. Они появляются,
+      - §7когда вы добываете определенные блоки. Убийство приспешников
+      - §7дает прогресс в гневе и прогресс разблокировки правильных
+      - §4Реквиемов§7.
       - §7
-      - §7There is a §b2§7 minute cooldown between finding them.
+      - §7Между нахождением приспешников есть §b2§7-минутное охлаждение.
       '1':
-      - '§bVessels:'
-      - §2Vessels §7are essentially custom enchantments
-      - §7but with a twist. They are a boss and you have
-      - §7to defeat it using §4Requiums§7. Each §2Vessel
-      - §7when killed will apply a unique effect to your
-      - §7pickaxe. See the journal for a full list of these.
+      - '§bКорабли:'
+      - §2Корабли §7представляют собой кастомные зачарования,
+      - §7но с отличием. Они являются боссами, и их нужно победить,
+      - §7используя §4Реквиемы§7. Каждый §2корабль§7 при убийстве
+      - §7применяет уникальный эффект к вашей кирке. См. журнал для
+      - §7полного списка.
       - §7
-      - §7Each §2Vessel §7has unique abilities reflecting its
-      - §7elemental type. The more §2Vessels §7you add the
-      - §7stronger the next §2Vessel §7you add will be.
+      - §7У каждого §2корабля §7уникальные способности, отражающие
+      - §7его элементный тип. Чем больше §2кораблей §7вы накапливаете,
+      - §7тем сильнее будет следующий §2корабль§7, который вы добавите.
       - §7
-      - §7To level a §2Vessel §7up, simpily add another
-      - §2Vessel §7of the same type (quirk does not matter) to
-      - §7your pickaxe. Once completed, it will level up again.
+      - §7Для повышения уровня §2корабля§7 просто добавьте еще один
+      - §2корабль §7того же типа (особенность не имеет значения) в свою кирку.
+      - §7Как только это будет выполнено, он повысится на уровень.
       - §7
-      - §7You create a §2Vessel §7by putting all §38§7 parts
-      - §7of it inside of a §6Refinery§7.
+      - §7Создать §2корабль§7 можно, поместив все §38§7 частей
+      - §7внутрь §6Очистительной Кузницы§7.
       - §7
-      - §7View all the §2Vessels §7inside of §3/mine journal§7.
+      - §7Просмотрите все §2корабли§7 внутри §3/журнала шахтера§7.
       '2':
-      - '§bRequiums:'
-      - §7Three of these are needed in the correct
-      - §7order to defeat and damage the §2Vessel§7.
-      - §7You can randomly guess and try to find out
-      - §7the correct order or you can kill §3Thralls§7.
+      - '§bРеквиемы:'
+      - §7Чтобы победить и нанести урон §2кораблю§7, нужны три из
+      - §7них в правильном порядке. Вы можете случайным образом угадывать
+      - §7и пытаться выяснить правильный порядок, или же убивать §3приспешников§7.
       - §7
-      - §7Killing §3Thralls §7will give progress to
-      - §7unlocking the correct §4Requium §7for that slot.
-      - §7Once you get §b100% §7it will tell you which
-      - §7§4Requium §7you should use in that slot.
+      - §7Убийство §3приспешников §7дает прогресс для разблокировки правильного
+      - §4Реквиема §7для этого слота. Когда вы достигнете §b100%§7, то узнаете,
+      - §7какой §4Реквием §7следует использовать для этого слота.
       - §7
-      - §7If you guess correctly and it is in the correct
-      - §7order, you will be told and that §4Requium §7will be
-      - §7unlocked since you will know it.
+      - §7Если вы будете угадывать правильно в правильном порядке,
+      - §7вас об этом уведомят, и этот §4Реквием §7будет разблокирован,
+      - §7так как он вам станет известен.
       - §7
-      - §7You can view your previous attempts if you
-      - §7hover over the book at the top.
+      - §7Вы можете просматривать свои предыдущие попытки,
+      - §7наведя указатель мыши на книгу вверху.
       - §7
-      - §7You get §4Requiums §7from §aArtifacts§7.
-      - §7Use §a/mine artifacts §7for more information.
+      - §7Вы получаете §4Реквиемы §7из §aАртефактов§7.
+      - §7Используйте §a/mine artifacts §7для получения дополнительной информации.
       '3':
-      - '§bQuirks:'
-      - §7Each §2Vessel §7has a chance to come with
-      - §7a unique §3Quirk §7which gives it a unique
-      - '§7ability. The abilities are listed below:'
+      - '§bОсобенности:'
+      - §7У каждого §2корабля §7есть шанс стать с особой
+      - §7уникальной §3особенностью§7, которая дает ему уникальную
+      - §7способность. Эти способности перечислены ниже:'
     NotSet:
-      '2': '&7Your &fsecond &4Requium &7is &cnot &7set.'
-      '1': '&7Your &ffirst &4Requium &7is &cnot &7set.'
-      '3': '&7Your &fthird &4Requium &7is &cnot &7set.'
-    NoPreviousAttempts: '&cYou have no previous attempts.'
+      '2': '&7Ваш второй §4Реквием &cне установлен&7.'
+      '1': '&7Ваш &fпервый §4Реквием &cне установлен&7.'
+      '3': '&7Ваш &fтретий &4Реквием &7is &cне установлен&7.'
+    NoPreviousAttempts: '&cУ вас нет предыдущих попыток.'
     Set:
-      '2': '&7Your &fsecond &4Requium &7is now: &c%requium%&7.'
-      '3': '&7Your &fthird &4Requium &7is now: &c%requium%&7.'
-      '1': '&7Your &ffirst &4Requium &7is now: &c%requium%&7.'
+      '2': '&7Ваш &fвторой §4Реквием &7теперь: &c%requium%&7.'
+      '3': '&7Ваш &fтретий &4Реквием &7теперь: &c%requium%&7.'
+      '1': '&7Ваш &fпервый &4Реквием &7теперь: &c%requium%&7.'
     RemovedVessels:
-      Success: '&7You removed the following Vessels from your pickaxe:'
-    NoVessels: '&7This pickaxe does not have any Vessels!'
-    NoActiveVessel: '&7This pickaxe does not have an active &2vessel&7!'
+      Success: '&7Вы удалили следующие сосуды из кирки:'
+    NoVessels: '&7У этой кирки нет никаких сосудов!'
+    NoActiveVessel: '&7У этой кирки нет активного &2сосуда&7!'
     RemoveVessels:
       Lore:
-      - §7This will §4remove §7all Vessels from
-      - §7your pickaxe. Make sure you are holding
-      - §7your pickaxe before doing this. This will
-      - §7also remove any active Vessels currently
-      - §7in progress.
+      - §7Это §4удалит §7все сосуды из
+      - §7вашей кирки. Убедитесь, что вы держите
+      - §7вашу кирку перед этим. Это также
+      - §7удалит любой активный сосуд, который
+      - §7находится в процессе выполнения.
       - §7
-      - §7Doing this will return all the Vessels
-      - §7back to your inventory in a completed state.
+      - §7При этом все сосуды вернутся
+      - §7обратно в ваш инвентарь в завершенном состоянии.
       - §7
-      - §7Doing this requires §4100,000 §7Zeta.
+      - §7Для этого требуется §4100,000 §7Zeta.
       - §7
-      - §c§oThere is no 'Are you sure' button
-      - §c§oafter clicking this. Be careful!
-      Name: '&4Remove all Vessels'
+      - §c§oПосле нажатия нет кнопки 'Вы уверены'.
+      - §c§oБудьте осторожны!
+      Name: '&4Удалить все сосуды'
     ClickPickaxe:
-      Name: '&bClick Your Pickaxe'
+      Name: '&bНажмите на вашу кирку'
       Lore:
-      - '&7Click the pickaxe you want to view'
-      - '&7your &2Vessel &7progress on.'
-    HoldingPickaxe: '&7You must be holding a pickaxe before doing this!'
-    WithdrawZetaMessage: '&7You have withdraw &e10,000 &7Zeta.'
+      - '&7Нажмите на кирку, на которой хотите просмотреть'
+      - '&7ваш прогресс &2сосудов&7.'
+    HoldingPickaxe: '&7Вы должны держать кирку, прежде чем делать это!'
+    WithdrawZetaMessage: '&7Вы сняли &e10,000 &7Zeta.'
     PreviousAttemptsInfo:
-    - §7- §oRequiums in §agreen §7§oare in the correct place.
-    - §7- §oRequiums in §cred §7§ocould be in the wrong order
-    - §7§oor not in the combination at all.
-    PreviousAttemptsName: '&c&lPrevious Attempts'
+    - §7- §oRequiums в §aзеленом §7§oнаходятся в правильном месте.
+    - §7- §oRequiums в §cкрасном §7§oможет быть в неправильном порядке
+    - §7§oили вообще не в комбинации.
+    PreviousAttemptsName: '&c&lПредыдущие попытки'
     PlaceFirstRequium:
-    - §7Place the §f§nfirst§r §3Requium §7below this slot.
+    - §7Положите §f§nпервый§r §3Requium §7ниже этого слота.
     - ''
-    - §7§oMake sure to read about §3Requiums
-    - §7§obefore attempting this.
+    - §7§oУбедитесь, что вы читали о §3Requiums
+    - §7§oперед попыткой этого.
     - ''
-    PlaceRequium: '&7You should use &c%requium% &7in this place.'
+    PlaceRequium: '&7Вы должны использовать &c%requium% &7в этом месте.'
     PlaceSecondRequium:
-    - §7Place the §f§nsecond§r §3Requium §7below this slot.
+    - §7Положите §f§nвторой§r §3Requium §7ниже этого слота.
     - ''
-    - §7§oMake sure to read about §3Requiums
-    - §7§obefore attempting this.
+    - §7§oУбедитесь, что вы читали о §3Requiums
+    - §7§oперед попыткой этого.
     - ''
-    HoldingPickaxeRequium: '&7You must select a pickaxe before equipping &4Requiums&7.'
+    HoldingPickaxeRequium: '&7Вы должны выбрать кирку, прежде чем снаряжать &4Requiums&7.'
     LockedRequium:
-    - §7You haven't unlocked the true indenity
-    - §7of this §cRequium §7but you can use
-    - §7a random one and see if it works.
+    - §7Вы не разблокировали настоящую личность
+    - §7этого §cRequium§7, но вы можете использовать
+    - §7случайный и посмотреть, работает ли это.
     PlaceThirdRequium:
-    - §7Place the §f§nthird§r §3Requium §7below this slot.
+    - §7Положите §f§nтретий§r §3Requium §7ниже этого слота.
     - ''
-    - §7§oMake sure to read about §3Requiums
-    - §7§obefore attempting this.
+    - §7§oУбедитесь, что вы читали о §3Requiums
+    - §7§oперед попыткой этого.
     - ''
-    LoadedData: '&7Your current &2Vessel &7progress has been loaded.'
+    LoadedData: '&7Ваш текущий прогресс &2сосудов&7 был загружен.'
   Singularity:
     Runes:
       Nature:
-        Name: '&aNature Rune'
+        Name: '&aРуна природы'
       Ghost:
-        Name: '&7Ghost Rune'
+        Name: '&7Руна духа'
       Fairy:
-        Name: '&dFairy Rune'
+        Name: '&dРуна феи'
       Water:
-        Name: '&bWater Rune'
+        Name: '&bРуна воды'
       Fire:
-        Name: '&cFire Rune'
+        Name: '&cРуна огня'
       Lightning:
-        Name: '&eLightning Rune'
+        Name: '&eРуна молнии'
       Ground:
-        Name: '&6Ground Rune'
+        Name: '&6Руна земли'
     Upgrades:
       CHEAPER_UPGRADES:
-        Name: '&bCheaper Upgrades &7| Level: &9%points%'
+        Name: '&bДешевые улучшения &7| Уровень: &9%points%'
       REQUIUM_PROGRESS:
-        Name: '&bRequium Progress &7| Level: &9%points%'
+        Name: '&bПрогресс Requium &7| Уровень: &9%points%'
       ORACLE_DAMAGE:
-        Name: '&bOracle Damage &7| Level: &9%points%'
+        Name: '&bУрон оракула &7| Уровень: &9%points%'
       RUNE_DROP_CHANCE:
-        Name: '&bRune Drop Chance &7| Level: &9%points%'
+        Name: '&bШанс выпадения руны &7| Уровень: &9%points%'
       MORE_ZETA:
         Name: '&bMore Zeta &7| Level: &9%points%'
     Upgrade:
@@ -695,12 +681,12 @@ GUI:
 Events:
   CollectorsItem:
     Lore:
-    - '&7A collectors item found from defeating'
-    - '&7a &c%type% class Variant&7.'
+    - '&7Предмет коллекционирования, найденный при победе'
+    - '&7над &c%type% классом Вариантом&7.'
     - ''
-    - '&7This trophy shows that you have defeated'
-    - '&7and took part in the &cHalloween Event&7.'
-    Name: '&cShards of %type%'
+    - '&7Этот трофей показывает, что вы победили'
+    - '&7и приняли участие в &cХэллоуинском событии&7.'
+    Name: '&cОсколки %type%'
   Halloween:
     InState: '&7You are already marked for a variant.'
     Marked: '&7You have been marked by an &cUnknown Variant&7. The next Unknown you
@@ -916,98 +902,99 @@ Vessels:
   WaterImmune: '&2Vessels &7are immune to damage while in water!'
 Items:
   BoneMarrow:
-    Name: '&fBone Marrow'
+    Name: '&fКостный мозг'
     Lore:
-    - §7Obtained as a rare drop from §cRadalite§7.
+    - §7Получается редким выпадением из §cРадалита§7.
     - ''
-    - §7Drag and drop onto an §eidentified fossil
-    - §7to duplicate it into another idenitical fossil.
+    - §7Перетащите на §eопределенный идентификатор
+    - §7фоссилии, чтобы дублировать ее в другую
+    - §7идентичную фоссилию.
     - ''
-    - §7Very useful when used in conjunction with
-    - §7a §bFossil Transmuter§7.
+    - §7Очень полезно в сочетании с
+    - §7§bТрансмутатором Фоссилий§7.
   SealedArtifact:
     Lore:
-    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
-    - §7Right click to open to get a random artifact
-    - §7of this rarity. There are %color%9 §7rarities of artifacts.
-    - §7This is an artifact of the old war between
-    - §7the Humans and Oracles. Maybe this artifact
-    - §7still contains some Oracle energy...
+    - §8§m=----------=§r§8[%color%Артефакт§8]§m--------------=
+    - §7Щелкните правой кнопкой мыши, чтобы открыть и получить случайный артефакт
+    - §7этой редкости. Существует %color%9 §7редкостей артефактов.
+    - §7Это артефакт от старой войны между
+    - §7Людьми и Оракулами. Может быть этот артефакт
+    - §7еще содержит некоторую энергию Оракула...
     - ''
-    - '§8➣ §7Artifact Rarity: %color%%tier%'
-    - '§8➣ §7Base Identify Time: %color%%time% Minutes'
-    - §7§oArtifacts come sealed to save inventory space.
-    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
+    - '§8➣ §7Редкость артефакта: %color%%tier%'
+    - '§8➣ §7Время идентификации: %color%%time% Минут'
+    - §7§oАртефакты запечатаны, чтобы сохранить место в инвентаре.
+    - §8§m=----------=§r§8[%color%Артефакт§8]§m--------------=
   FossilTransmuter:
     Lore:
-    - §7Obtained as a rare drop from §eImpulse§7.
+    - §7Получается редким выпадением из §eИмпульса§7.
     - ''
-    - §7Drag and drop onto a stack of §e3 Fossils
-    - §7to transmute it into another fossil of the
-    - §7same type. e.g. Skylark's Arm > Nagyn's Arm.
+    - §7Перетащите на стопку из §e3 Фоссилий
+    - §7чтобы трансмутировать их в другую фоссилию
+    - §7того же типа. например, Рука Скайларка > Рука Нагина.
     - ''
-    - §7Very useful when used in conjunction
-    - §7with §fBone Marrow§7.
-    Name: '&bFossil Transmuter'
+    - §7Очень полезно в сочетании
+    - §7с §fКостным Мозгом§7.
+    Name: '&bТрансмутатор Фоссилий'
   Fossil:
     Lore:
-    - §7This mythical creature was lost to the old
-    - §7war with the §eOracles§7. Maybe with all
-    - §7the pieces you could make a §2Vessel§7 to
-    - §7harness the power of the long lost creature...
+    - §7Это мифическое существо было потеряно в старой
+    - §7войне с §eОракулами§7. Может быть, собрав все
+    - §7части, вы сможете создать §2Сосуд§7, чтобы
+    - §7использовать силу давно потерянного существа...
     - ''
-    - '§7Fossil Information:'
-    - '§7- Fossil Part: §e%part%'
-    - '§7- Fossil Species: §e%species%'
+    - '§7Информация о Фоссилии:'
+    - '§7- Часть Фоссилии: §e%part%'
+    - '§7- Вид Фоссилии: §e%species%'
     - ''
-    - §7§oPut this inside the §6§oArtifact Identifier
-    - §7§oto uncover the origin of this fossil.
+    - §7§oПоложите это внутри §6§oИдентификатора Артефактов
+    - §7§oчтобы раскрыть происхождение этой фоссилии.
   IdentifiedFossil:
     Lore:
-    - §7This is one part of the §e%set% §7fossil set.
-    - §7Collect all §68 §7fossils to craft a §2Vessel§7.
+    - §7Это одна часть фоссилий из набора §e%set%§7.
+    - §7Соберите все §68 §7фоссилий, чтобы создать §2Сосуд§7.
     - ''
-    - '§7Fossil Information:'
-    - '§7- Fossil Part: §e%part%'
-    - '§7- Fossil Species: §e%species%'
-    - '§7- Fossil Name: §e%name%'
+    - '§7Информация о Фоссилии:'
+    - '§7- Часть Фоссилии: §e%part%'
+    - '§7- Вид Фоссилии: §e%species%'
+    - '§7- Название Фоссилии: §e%name%'
     - ''
-    - §7Use all §28 §7parts inside a §6Refinery
-    - §7to craft a §2Vessel§7.
+    - §7Используйте все §28 §7частей внутри §6Переработчика
+    - §7§oчтобы создать §2Сосуд§7.
   Artifact:
     Lore:
-    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
-    - '§7Artifact Info:'
-    - '§8➢ §7Tier: %color%%tier%'
-    - '§8➢ §7Fossil Chance: %color%%fossilchance%%'
-    - '§8➢ §7Identify Time: %color%%time% Minutes'
-    - '§8➢ §7Sell Price: %color%$%price%'
-    - '§8➣ §7Artifact Rarity: %color%%rarity%'
-    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
-    - §7You can either sell this item in the %color%/mine shop
-    - §7or identify it inside of %color%/mine artifacts§7
-    - §7to get loot and maybe a rare fossil.
-    - §8§m=----------=§r§8[%color%Artifact§8]§m--------------=
+    - §8§m=----------=§r§8[%color%Артефакт§8]§m--------------=
+    - '§7Информация об Артефакте:'
+    - '§8➢ §7Редкость: %color%%tier%'
+    - '§8➢ §7Шанс Фоссилии: %color%%fossilchance%'
+    - '§8➢ §7Время Идентификации: %color%%time% Минут'
+    - '§8➢ §7Цена продажи: %color%$%price%'
+    - '§8➣ §7Редкость артефакта: %color%%rarity%'
+    - §8§m=----------=§r§8[%color%Артефакт§8]§m--------------=
+    - §7Вы можете продать этот предмет в %color%/mine магазине
+    - §7или идентифицировать его внутри %color%/mine артефактов§7
+    - §7чтобы получить добычу и, возможно, редкую фоссилию.
+    - §8§m=----------=§r§8[%color%Артефакт§8]§m--------------=
 ZetaTear:
-- §7Click to redeem §e10,000 §7Zeta.
+- §7Нажмите, чтобы получить §e10 000 §7Зета.
 - §7
-- §7Create these inside of §2/mine vessels§7.
-- §7These can be traded between players.
+- §7Создавайте их внутри §2/mine сосудов§7.
+- §7Их можно передавать между игроками.
 RequiumOrb:
-  Name: '&4Requium Orb (&c%name%&4)'
+  Name: '&4Сфера Реквиема (&c%name%&4)'
   Lore:
-  - '&7An unknown dark and evil energy source'
-  - '&7from the unknown realm of &cDelve&7.'
+  - '&7Неизвестный источник темной и злой энергии'
+  - '&7из неизвестного мира &cДелва&7.'
   - ''
-  - '&7Requium Info:'
-  - '&7➛ Time: &c%time%'
+  - '&7Информация о Реквиеме:'
+  - '&7➛ Время: &c%time%'
   - ''
   - '%quote%'
   - ''
-  - '&7Used when attempting to defeat and obtain'
-  - '&7a &2Vessel&7. Three &4Requiums in the correct'
-  - '&7order could be used to take down a &2Vessel&7.'
-  - '&2/mine vessels &7for more information.'
+  - '&7Используется при попытке победить и получить'
+  - '&7§2Сосуд§7. Три §4Реквиема в правильном порядке'
+  - '&7могут использоваться для сбития §2Сосуда§7.'
+  - '&2/mine сосуды &7для получения более подробной информации.'
 CommandList:
 - ''
 - '&8&m]-----------+&r&8[ &9&lPyroMining &r&8]&m+-----------['
@@ -1191,183 +1178,179 @@ PickaxeView:
   MAIN_MENU: MAIN_MENU
   VESSELS_MENU: VESSELS_MENU
   STATS_MENU: STATS_MENU
-LevelUp: '&7You leveled up your Mining Level to level: &3%level%'
+LevelUp: '&7Вы повысили свой уровень Шахтерства до уровня: &3%level%'
 Astralite:
   Lore:
-  - '&7A mythical crystal lifeform'
-  - '&7that emits a low sounding howl.'
-  - '&7Maybe it''s trying to tell you'
-  - '&7something? Maybe you can upgrade'
-  - '&7and craft &5Astralite Gear&7.'
-  Name: '&5Astralite'
+  - '&7Мифический кристаллический организм,'
+  - '&7испускающий низкий вой, возможно, пытаясь'
+  - '&7сказать вам что-то. Можете улучшить и создать'
+  - '&5Astralite Gear&7.'
+  Name: '&5Астралит'
 Oracle:
   NewUnchargedOracleite:
     Lore:
-    - '&7Found from Refining Mysterious Dust.'
-    - '&7Needs to be charged before it can'
-    - '&7become useful. Charge this by holding'
-    - '&7it in your off-hand in a stack-size of 1.'
-    - '&7To gain charge, mine Diamond Ore.'
+    - '&7Получен из переработки Загадочной пыли.'
+    - '&7Нужно зарядить, прежде чем'
+    - '&7пользоваться. Зарядите, держа в слоте'
+    - '&7для неправой руки, в стаке по 1. Чтобы зарядить,'
+    - '&7добывайте Алмазную Руду.'
     - ''
-    - '&7To gain charge, mine Diamond Ore.'
-    - '&7Current Charge: &8[&c%current%&4/&c%total%&8]'
+    - '&7Чтобы зарядить, добывайте Алмазную Руду.'
+    - '&7Текущий заряд: &8[&c%current%&4/&c%total%&8]'
   Charged:
-    Name: '&eCharged Oracleite'
+    Name: '&eЗаряженный Oracleite'
     Lore:
-    - §7Obtained from §cUncharged Oracleite§7.
-    - §7Can be used to summon Oracles.
-    - §7§oOracles are end-game bosses
-    - §7§oand are very hard to defeat.
+    - §7Получен из §cНеактивированного Oracleite§7.
+    - §7Можно использовать для призыва Оракулов.
+    - §7§oОракулы - боссы для энд-гейма,
+    - §7§oи сражаться с ними очень сложно.
     - ''
-    - '§6How to use:'
-    - §7Right click on emerald ore while holding
-    - §7this to summon the Oracle.
+    - '§6Как использовать:'
+    - §7Правый клик по изумрудной руде, держа
+    - §7этот предмет, чтобы призвать Оракула.
 GemLore:
-- §8§m-----------§r§8[%colorB% Information §8]§8§m-----------
-- '%colorA%Chance to Find:§8 ➤ §7%dropchance%%'
-- '%colorA%Found in:§8 ➤ §7%ore%'
-- '%colorA%Sell Price:§8 ➤ §7$%money%'
-- '%colorA%Quality:§8 ➤ §7%quality%'
-- §8§m-----------§r§8[%colorB% Information §8]§8§m-----------
-- §7Sell me inside of %colorA%/mine shop§7.
-- '%id%§7Right-click to reveal the quality of the Gemstone.'
-- '%id%§7by doing this, you risk gaining or losing the base'
-- '%id%§7sell price of the Gemstone. Only do this if you want'
-- '%id%§7to try your luck at making some extra money!'
-- '%ad%§7This gemstone has been examined.'
-- §8§m-----------§r§8[%colorB% Information §8]§8§m-----------
+- §8§m-----------§r§8[%colorB% Информация §8]§8§m-----------
+- '%colorA%Шанс выпадения:§8 ➤ §7%dropchance%%'
+- '%colorA%Добывается в:§8 ➤ §7%ore%'
+- '%colorA%Цена продажи:§8 ➤ §7$%money%'
+- '%colorA%Качество:§8 ➤ §7%quality%'
+- §8§m-----------§r§8[%colorB% Информация §8]§8§m-----------
+- §7Продайте меня в магазине %colorA%/mine shop§7.
+- '%id%§7ПКМ, чтобы узнать качество камня.'
+- '%id%§7Это может повысить или понизить базовую'
+- '%id%§7цену камня. Только если вы готовы'
+- '%id%§7рискнуть своей удачей и заработать немного деньжат!'
+- '%ad%§7Это камень был исследован.'
+- §8§m-----------§r§8[%colorB% Информация §8]§8§m-----------
 Commands:
   AddXP:
-    Sender: '&7You have given &3%amount% &7Mining XP to &3%target%&7.'
-    Target: '&7You have been given &3%amount%&7 Mining XP!'
+    Sender: '&7Вы дали &3%amount% &7очков горного дела игроку &3%target%&7.'
+    Target: '&7Вы получили &3%amount%&7 очков горного дела!'
   AddZeta:
-    Sender: '&7You have given &3%amount% &7Zeta to &3%target%&7.'
-    Target: '&7You have been given &3%amount%&7 Zeta!'
-  InvalidUsername: '&7You have entered an invalid username.'
+    Sender: '&7Вы дали &3%amount% &7единиц Зета игроку &3%target%&7.'
+    Target: '&7Вы получили &3%amount%&7 Зета!'
+  InvalidUsername: '&7Вы ввели неверное имя пользователя.'
 RadaliteTear:
-  Used: '&7Your &5Rune Guardian &7cooldown has been reset!'
-  CantUse: '&7You don''t have a cooldown at the moment.'
+  Used: '&7Ваш перезарядка на &5Страже Руны &7сброшена!'
+  CantUse: '&7У вас в данный момент нет перезарядки.'
 GUINames:
-  FossilTransmuter: '&9&lFossil Transmuter'
-  Stats: '&9&lStatistics: '
+  FossilTransmuter: '&9&lПревратитель Ископаемых'
+  Stats: '&9&lСтатистика: '
 ShatteredOrbs:
-  Failed: '&7You do not have enough &cShattered Requium Orbs &7to do this!'
-  Success: '&7You shattered 4 &cRequium Orbs &7and created a new charged one!'
-ReloadedPlugin: '&9PyroMining has been reloaded successfully.'
-PickaxeViewDisabled: '&7Pickaxe view has been disabled and you cannot use this.'
+  Failed: '&7У вас недостаточно &cРаздробленных сфер Гимна Реквиема &7для этого!'
+  Success: '&7Вы раздробили 4 &cСферы Реквиема &7и создали новую заряженную!'
+ReloadedPlugin: '&9PyroMining успешно перезагружен.'
+PickaxeViewDisabled: '&7Просмотр киркой был отключен, и теперь вы не можете этого использовать.'
 RuneGuardian:
-  Summon: '&7You have summoned a %guardian%&7!'
+  Summon: '&7Вы призвали &5%guardian%&7!'
 ServerPrefix_NoColor: PyroMining
-ChargedOracleite: '&7You have just &echarged &7the &eOracleite &7in your off-hand.'
+ChargedOracleite: '&7Вы только что &eзарядили &7ваш &eОраклит &7во второй руке.'
 RuneGuardians:
-  BonusRune: '&7Your &8Nefaris Shadows &7gave you a bonus rune!'
-  NoRune: '&7You were unlucky and &5Rune Guardian &7didn''t drop a rune!'
-  ImmuneInWater: '&5Rune Guardians &7are immune to damage while in water!'
-BossAlive: '&7You cannot access this menu while your boss is alive!'
-RuneGuardianSummonCooldown: '&7You can''t summon another &5Rune Guardian &7for &c%seconds%&7
-  seconds.'
+  BonusRune: '&7Ваши &8Тенеты Нефариса &7дали вам запас руны!'
+  NoRune: '&7Вы не были удачливы, и &5Страж Руны &7не уронил руну!'
+  ImmuneInWater: '&5Стражи Руны &7невосприимчивы к урону, находясь в воде!'
+BossAlive: '&7Вы не можете получить доступ к этому меню, пока ваш босс жив!'
+RuneGuardianSummonCooldown: '&7Вы не можете призвать другого &5Стража Руны &7в течение &c%seconds%&7
+  секунд.'
 HellRuneLore:
-- §7A rare and mythical rune that
-- §7emits a mysterious aura...
+- §7Редкая и мифическая руна, которая
+- §7исходит загадочной аурой...
 - §7
-- §7Use this on §aemerald ore §7to
-- §7summon §eImpulse§7.
-GuardianDropRune: '&7You killed a &5Rune Guardian &7and it dropped a &5Rune&7!'
+- §7Используйте при добыче изумрудной руды,
+- §7чтобы вызвать §eИмпульс§7.
+GuardianDropRune: '&7Вы убили &5Стража Руны &7и он уронил &5Руну&7!'
 MysteriousDustDrops:
   Lore:
-  - '&7- &5Rune Dust &7(&a%runedust%%&7)'
-  - '&7- &eOracleite &7(&a%oracleite%%&7) - Level 20+'
-  - '&7- &3Ancient Relic &7(&a%ancientrelic%%&7) - Level 25+'
-  - '&7- &cShattered Requium Orb &7(&a%shatteredrequiumorb%%&7) - Level 30+'
+  - '&7- &5Рунная пыль &7(&a%runedust%%&7)'
+  - '&7- &eОраклит &7(&a%oracleite%%&7) — C уровня 20 и выше'
+  - '&7- &3Древний реликт &7(&a%ancientrelic%%&7) — Уровень 25 и выше'
+  - '&7- &cРаздробленная сфера Реквиема &7(&a%shatteredrequiumorb%%&7) — Уровень 30 и выше'
 ShatteredRequium:
   Lore:
-  - §7The dark and evil energy source has
-  - §7dissipated from this orb. §c4 §7of
-  - §7these could be used to create another
-  - §4Requium §7with their residual energy.
+  - §7Темная и зловещая источник энергии
+  - §7рассеялась из этой сферы. §c4 §7из
+  - §7них можно использовать, чтобы создать еще
+  - §4Реквием§7 с их остаточной энергией.
   - ''
-  - §7§oRight click while holding four to
-  - §7§ocreate a random §4§oRequium Orb§7§o.
-  Name: '&4Shattered Requium Orb'
+  - §7§oЩелкните правой кнопкой мыши, удерживая
+  - §7§oчетыре, чтобы создать случайную §4§oСферу Реквиема§7§o.
+  Name: '&4Раздробленная сфера Реквиема'
 Misc:
   Time:
-    NoHours: '%minutes% minutes and %seconds% seconds'
-    Hours: '%hours% hours, %minutes% minutes and %seconds% seconds'
-SellMessage: '&7You earned &bMONEYEARNED$ &7from selling &bITEMSSOLD &7Items!'
+    NoHours: '%minutes% минут %seconds% секунд'
+    Hours: '%hours% часов %minutes% минут %seconds% секунд'
+SellMessage: '&7Вы получили &bMONEYEARNED$ &7за продажу &bITEMSSOLD &7предметов!'
 DarkImbuement:
   Lore:
-  - '&7A rare and mythical rune that'
-  - '&7emits a mysterious aura...'
-  - '&7You might be able to use this'
-  - '&7to further explore the Aether.'
-  Name: '&8Dark Imbuement'
-FoundMysteriousDust: '&7You have found some &7&oMysterious Dust&7&r.'
-SpigotURLNoAccess: '&cYou do not have access to preview this.'
+  - '&7Редкая и мифическая руна, которая'
+  - '&7исходит загадочной аурой...'
+  - '&7Возможно, вы сможете использовать это,'
+  - '&7чтобы дальше исследовать Эфир.'
+  Name: '&8Темное окование'
+FoundMysteriousDust: '&7Вы нашли немного &7&oРунной пыли&7&r.'
+SpigotURLNoAccess: '&cУ вас нет доступа к предварительному просмотру этого.'
 SuccessPrefix: '&b&lPyroMining &8➤ '
 RadaliteClaw:
-  Name: '&cRadalite Claw'
+  Name: '&cКоготь Радалита'
   Lore:
-  - '&7Consume to remove any cooldowns'
-  - '&7for summoning &5Rune Guardians&7.'
+  - '&7Используйте, чтобы сбросить любые перезарядки'
+  - '&7для призыва &5Стражей Руны&7.'
   - ''
-  - '&7Dropped by &cRadalite&7.'
+  - '&7Падает с &cРадалита&7.'
 GiveCommandLore:
-- '&8&m]-----------+&r&8[ &9&lItems &8]&m+-----------['
-- '§7Item List:'
-- §7► §9MysteriousDust
-- §7► §9RuneDust
-- §7► §9ChargedOracleite
-- §7► §9Oracleite
-- §7► §9HellRune
-- §7► §9LightRune
-- §7► §9Vessel:<name>
-- §7► §9Requium:<name>
-- §7► §9Gemstone:<name>
-- §7► §9Artifact:<name>
-- §7► §9Fossil:<name>
-- §7► §9BlazedFlux
-- §7► §9BasicFlux
-- §7► §9ShatteredRequiumOrb
-- §7► §9UnidentifiedDragonFossil
-- §7► §9UnidentifiedPhoenixFossil
-- §7► §9UnidentifiedManticoreFossil
-- §7► §9RadaliteClaw
-- '&8&m]-----------+&r&8[ &9&lItems &8]&m+-----------['
-ZetaRedeemed: '&7You have redeemed &e10,000 &7Zeta and now have &6%zeta%&7 Zeta.'
-CannotSpawnRuneGuardianInLocation: '&7You cannot spawn a &5Rune Guardian &7in that
-  location! You need at least 3 blocks above the ore to spawn it.'
+ - '&8&m]-----------+&r&8[ &9&lПредметы &8]&m+-----------['
+ - '§7Список предметов:'
+ - §7► §9MysteriousDust
+ - §7► §9RuneDust
+ - §7► §9ChargedOracleite
+ - §7► §9Oracleite
+ - §7► §9HellRune
+ - §7► §9LightRune
+ - §7► §9Vessel:<name>
+ - §7► §9Requium:<name>
+ - §7► §9Gemstone:<name>
+ - §7► §9Artifact:<name>
+ - §7► §9Fossil:<name>
+ - §7► §9BlazedFlux
+ - §7► §9BasicFlux
+ - §7► §9ShatteredRequiumOrb
+ - §7► §9UnidentifiedDragonFossil
+ - §7► §9UnidentifiedPhoenixFossil
+ - §7► §9UnidentifiedManticoreFossil
+ - §7► §9RadaliteClaw
+ - '&8&m]-----------+&r&8[ &9&lПредметы &8]&m+-----------['
+ZetaRedeemed: '&7Вы обменяли &e10,000 &7Zeta и теперь у вас есть &6%zeta%&7 Zeta.'
+CannotSpawnRuneGuardianInLocation: '&7Вы не можете призвать &5Rune Guardian &7в этом месте! Нужно как минимум 3 блока над рудой для призыва.'
 MysteriousDust:
-  Name: '&7Mysterious Dust'
+  Name: '&7Загадочная пыль'
   Lore:
-  - §7Found while mining ores.
-  - §7Can be refined using a §bRefinery§7.
-  - §7To make a §bRefinery§7 place a §f§ndropper
-  - §7facing §f§nup§r§7 with a §f§nfence§r§7 on top. Place the
-  - §7item inside and interact with the fence.
+  - §7Найдена при добыче руд.
+  - §7Можно переработать с помощью §bПерерабатывающей машины§7.
+  - §7Чтобы сделать §bПерерабатывающую машину§7, поставьте §f§nдиспенсер§7
+  - §7смотрящий §f§nвверх§r§7 с §f§nзабором§r§7 сверху. Положите предмет внутрь и взаимодействуйте с забором.
   - ''
-  - '§7Possible Drops:'
-FoundFlux: '&7You have found a &aFLUX &7flux.'
-SummonedPhase1Oracle: '&7You have summoned &c&lRadalite (Phase 1)&7!'
-LightRuneName: '&fLight Rune'
-CannotSpawnOracleInLocation: '&7You cannot spawn an &eOracle &7in this location. You
-  need at least 6 blocks above the ore to spawn it.'
+  - '§7Может дропнуться:'
+FoundFlux: '&7Вы нашли &aFLUX &7поток.'
+SummonedPhase1Oracle: '&7Вы призвали &c&lRadalite (Фаза 1)&7!'
+LightRuneName: '&fСветовой рунный камень'
+CannotSpawnOracleInLocation: '&7Вы не можете призвать &eOracle &7в этом месте. Нужно как минимум 6 блоков над рудой для призыва.'
 MainGUIPrefix: '&9&lPyroMining'
-ZetaTearName: '&6Zeta Tear (&e10,000&6)'
-HellRuneName: '&4Hell Rune'
+ZetaTearName: '&6Zeta Слеза (&e10,000&6)'
+HellRuneName: '&4Адский рунный камень'
 Oracles:
   Oracleite:
-    Name: '&cUncharged Oracleite'
-SummonedPhase3Oracle: '&7You have summoned &5&lTohka (Phase 3)&7!'
-NoPermission: '&7You do not have permission to do this.'
-DisabledMobWorld: '&7Custom Mining Mobs are disabled in this world.'
-CreativeMode: '&7You cannot access this menu in &ccreative mode&7.'
+    Name: '&cНеактивированный Oracleite'
+SummonedPhase3Oracle: '&7Вы призвали &5&lTohka (Фаза 3)&7!'
+NoPermission: '&7У вас нет прав на это.'
+DisabledMobWorld: '&7Кастомные шахтерские мобы отключены в этом мире.'
+CreativeMode: '&7Вы не можете использовать этот меню в &ccreative mode&7.'
 ArtifactUpgradeInfoLore:
 - '&7'
-- '&7Upgrade Stats:'
-- '&7- Current Level: &b%current%'
-- '&7- Next Level: &9%next%'
-- '&7- Upgrade Cost: &3%cost% Zeta'
-- '&7- Max Level: &3%max%'
+- '&7Статистика апгрейдов:'
+- '&7- Текущий уровень: &b%current%'
+- '&7- Следующий уровень: &9%next%'
+- '&7- Стоимость апгрейда: &3%cost% Zeta'
+- '&7- Максимальный уровень: &3%max%'
 - '&7'
-- '&7Left-click to upgrade.'
-SummonedPhase2Oracle: '&7You have summoned &e&lImpulse (Phase 2)&7!'
+- '&7Нажмите левую кнопку мыши чтобы апгрейднуть.'
+SummonedPhase2Oracle: '&7Вы призвали &e&lImpulse (Фаза 2)&7!'

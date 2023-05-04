@@ -37,7 +37,7 @@ Settings:
       #Supports multiple commands
       Commands:
         - 'eco give %player% %money%'
-        - 'msg %player% You got %money%$!'
+        - 'msg %player% Ты получил %money%$!'
     
     #This option will make "/mine" open the menu instead of "/mine menu"
     MakeMineOpenMenu: false

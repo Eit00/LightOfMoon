@@ -54,7 +54,7 @@ anticheat:
       hide-itemmeta-with-visual-effects: false
 chunks:
   auto-save-interval: default
-  delay-chunk-unloads-by: 10s
+  delay-chunk-unloads-by: 7s
   entity-per-chunk-save-limit:
     area_effect_cloud: 8
     arrow: 16
@@ -81,7 +81,7 @@ collisions:
   allow-player-cramming-damage: false
   allow-vehicle-collisions: true
   fix-climbing-bypassing-cramming-rule: false
-  max-entity-collisions: 8
+  max-entity-collisions: 2
   only-players-collide: false
 entities:
   armor-stands:
@@ -150,29 +150,29 @@ entities:
     creative-arrow-despawn-rate: default
     despawn-ranges:
       ambient:
-        hard: 128
-        soft: 32
+        hard: 56
+        soft: 30
       axolotls:
-        hard: 128
-        soft: 32
+        hard: 56
+        soft: 30
       creature:
-        hard: 128
-        soft: 32
+        hard: 56
+        soft: 30
       misc:
-        hard: 128
-        soft: 32
+        hard: 56
+        soft: 30
       monster:
-        hard: 128
-        soft: 32
+        hard: 56
+        soft: 30
       underground_water_creature:
-        hard: 128
-        soft: 32
+        hard: 56
+        soft: 30
       water_ambient:
-        hard: 64
-        soft: 32
+        hard: 56
+        soft: 30
       water_creature:
-        hard: 128
-        soft: 32
+        hard: 56
+        soft: 30
     disable-mob-spawner-spawn-egg-transformation: false
     duplicate-uuid:
       mode: SAFE_REGEN
@@ -231,9 +231,9 @@ environment:
   portal-search-radius: 128
   portal-search-vanilla-dimension-scaling: true
   treasure-maps:
-    enabled: true
+    enabled: false
     find-already-discovered:
-      loot-tables: default
+      loot-tables: false
       villager-trade: false
   water-over-lava-flow-speed: 5
 feature-seeds:
@@ -251,8 +251,8 @@ fixes:
   tnt-entity-height-nerf: disabled
 hopper:
   cooldown-when-full: true
-  disable-move-event: false
-  ignore-occluding-blocks: false
+  disable-move-event: true
+  ignore-occluding-blocks: true
 lootables:
   auto-replenish: false
   max-refills: -1
@@ -261,8 +261,8 @@ lootables:
   reset-seed-on-fill: true
   restrict-player-reloot: true
 maps:
-  item-frame-cursor-limit: 128
-  item-frame-cursor-update-interval: 10
+  item-frame-cursor-limit: 64
+  item-frame-cursor-update-interval: 20
 max-growth-height:
   bamboo:
     max: 16
@@ -280,7 +280,7 @@ misc:
   show-sign-click-command-failure-msgs-to-player: false
   update-pathfinding-on-block-update: true
 scoreboards:
-  allow-non-player-entities-on-scoreboards: false
+  allow-non-player-entities-on-scoreboards: true
   use-vanilla-world-scoreboard-name-coloring: false
 spawn:
   allow-using-signs-inside-spawn-protection: false
@@ -290,9 +290,9 @@ tick-rates:
   behavior:
     villager:
       validatenearbypoi: -1
-  container-update: 1
-  grass-spread: 1
-  mob-spawner: 1
+  container-update: 2
+  grass-spread: 3
+  mob-spawner: 4
   sensor:
     villager:
       secondarypoisensor: 40
